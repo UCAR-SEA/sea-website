@@ -1,11 +1,12 @@
 # ------------------------------------
 # -------- Project Information -------
 # ------------------------------------
-site_name: NCAR MkDocs Template
-site_description: A template for creating NCAR mkdocs
-repo_url: https://github.com/NCAR/NCAR_mkdocs_template/
-site_url: https://NCAR.github.io/NCAR_mkdocs_template/
-site_author: CISL CSG (Consulting Services Group)
+site_name: UCAR Software Engineering Assembly
+site_description: The public facing site for the UCAR SEA featuring news, event information, and best practices.
+repo_url: https://github.com/UCAR-SEA/sea-website
+repo_name: UCAR-SEA/sea-website
+site_url: https://UCAR-SEA.github.io/sea-website
+site_author: SEA Steering Committee
 edit_uri: edit/main/docs/
 
 # directories to watch for automatic rebuilding when running "mkdocs serve"
@@ -32,9 +33,15 @@ validation:
 # ----------- content ----------------
 # ------------------------------------
 nav:
-  - Home : index.md
-
-  - How to Use This Template?: getting-started.md
+  - Home: index.md
+  - ISS Conference:
+    - iss/index.md
+    - 2024: iss/2024.md
+  - Open Discussions: discussions/index.md
+  - Community:
+    - community/index.md
+    - Slack: https://ucarsea.slack.com
+    - Mailing List: community/listserv.md
 
 # ------------------------------------
 # -- configuration - themes
@@ -58,8 +65,7 @@ markdown_extensions:
   - md_in_html
   - def_list
   - toc:
-      permalink: true
-      title: "Page Outline"
+      permalink: "🔗&#xFE0E;"
 
   # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
   - pymdownx.highlight:
