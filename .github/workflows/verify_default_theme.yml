@@ -12,12 +12,5 @@ jobs:
 
       - name: Verify theme.yml
         run: |
-          [[ -L theme.yml ]]                                         || { echo "ERROR: theme.yml should be a symlink -> themes/NCAR_primary.yml"; exit 1; }
-          [[ "$(readlink theme.yml)" == "themes/NCAR_primary.yml" ]] || { echo "ERROR: theme.yml should be a symlink -> themes/NCAR_primary.yml"; exit 1; }
-
-# (no longer required - embedded in themes/*/css)
-#      - name: Verify docs/stylesheets/custom.css
-#        run: |
-#          cd docs/stylesheets/
-#          [[ -L custom.css ]]                                  || { echo "ERROR: custom.css should be a symlink -> NCAR_primary.css"; exit 1; }
-#          [[ "$(readlink custom.css)" == "NCAR_primary.css" ]] || { echo "ERROR: custom.css should be a symlink -> NCAR_primary.css"; exit 1; }
+          [[ -L theme.yml ]]                                || { echo "ERROR: theme.yml should be a symlink -> themes/SEA.yml"; exit 1; }
+          [[ "$(readlink theme.yml)" == "themes/SEA.yml" ]] || { echo "ERROR: theme.yml should be a symlink -> themes/SEA.yml"; exit 1; }
