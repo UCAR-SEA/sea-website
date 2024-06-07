@@ -52,7 +52,19 @@ INHERIT: theme.yml
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
 
-copyright: '&copy; 2024 UCAR, Licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons CC-BY-SA 4.0</a>.'
+copyright: '
+  <div class="ucar_links">
+    <span>&copy; 2024 UCAR</span>
+    <span><a href="https://www.ucar.edu/accessibility">Accessibility</a></span>
+    <span><a href="https://www.ucar.edu/cookie-other-tracking-technologies-notice">Cookies</a></span>
+    <span><a href="https://www.ucar.edu/notification-copyright-infringement-digital-millenium-copyright-act">Copyright Issues</a></span>
+    <span><a href="https://www.ucar.edu/who-we-are/ethics-integrity/nondiscrimination">Nondiscrimination</a></span>
+    <span><a href="https://www.ucar.edu/privacy-notice">Privacy</a></span>
+    <span><a href="https://www.ucar.edu/terms-of-use">Terms of Use</a></span>
+    <span><a href="https://ncar.ucar.edu/">NSF NCAR Home</a></span>
+    <span><a href="https://www.ucar.edu/">UCAR Home</a></span>
+  </div>
+  <p class="bold">Postal Address:</p> P.O. Box 3000, Boulder, CO 80307-3000 • <p class="bold">Shipping Address:</p> 3090 Center Green Drive, Boulder, CO 80301'
 
 # ------------------------------------
 # -- configuration - extensions
@@ -158,8 +170,8 @@ extra:
     property: G-RZLJ37D0K6
   social:
     - icon: material/home-circle
-      link: https://arc.ucar.edu/
-    - icon: material/help-circle
-      link: https://ithelp.ucar.edu/plugins/servlet/desk/site/rc
-    - icon: fontawesome/brands/github
-      link: https://github.com/NCAR
+      link: https://sea.ucar.edu
+    - icon: material/slack
+      link: https://ucarsea.slack.com
+    - icon: material/email
+      link: mailto:sea_committee@ucar.edu
