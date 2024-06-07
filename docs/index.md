@@ -1,6 +1,3 @@
-# The UCAR Software Engineering Assembly
-
-
 <img style="float: right; max-width: 30%" src="assets/images/2024_SEA_Logo.png">
 The UCAR Software Engineering Assembly (SEA) exists to serve the interests of the software engineering community at UCAR and NCAR.
 All members are encouraged to interact with the SE community at UCAR, participate in communities of practice, attend our yearly
