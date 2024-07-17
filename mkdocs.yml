@@ -33,7 +33,9 @@ validation:
 # ----------- content ----------------
 # ------------------------------------
 nav:
-  - Home: index.md
+  #  - Home: index.md
+  - Home:
+    - index.md
   - ISS Conference:
     - iss/index.md
     - 2024: iss/2024.md
@@ -42,6 +44,9 @@ nav:
     - community/index.md
     - Slack: https://ucarsea.slack.com
     - Mailing List: community/listserv.md
+  - About Us:
+    - about/index.md
+    - Legacy Site Archive: archive/index.html
 
 # ------------------------------------
 # -- configuration - themes
@@ -157,17 +162,16 @@ plugins:
   - minify:
       minify_html: true
   - open-in-new-tab
-  - redirects:
-      redirect_maps:
-        'nhug/index.md': 'https://nhug.readthedocs.io/en/latest/'
+#  - redirects:
+#      redirect_maps:
+#        'index.md': 'blog/index.md'
+  - blog:
+      blog_dir: .
 
 # ------------------------------------
 # -- configuration - extras
 # ------------------------------------
 extra:
-  analytics:
-    provider: google
-    property: G-RZLJ37D0K6
   social:
     - icon: material/home-circle
       link: https://sea.ucar.edu
