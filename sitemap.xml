@@ -2,32 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://UCAR-SEA.github.io/sea-website/</loc>
-         <lastmod>2024-06-07</lastmod>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/about/</loc>
+         <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://UCAR-SEA.github.io/sea-website/community/</loc>
-         <lastmod>2024-06-07</lastmod>
+         <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://UCAR-SEA.github.io/sea-website/community/listserv/</loc>
-         <lastmod>2024-06-07</lastmod>
+         <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://UCAR-SEA.github.io/sea-website/discussions/</loc>
-         <lastmod>2024-06-07</lastmod>
+         <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://UCAR-SEA.github.io/sea-website/iss/</loc>
-         <lastmod>2024-06-07</lastmod>
+         <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://UCAR-SEA.github.io/sea-website/iss/2024/</loc>
-         <lastmod>2024-06-07</lastmod>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/2024/07/16/upcoming-sea-open-discussion-on-gpus-and-accelerators/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/2024/07/23/welcome-to-the-new-sea-website/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/archive/2024/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/category/announcements/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/category/website/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/category/open-discussions/</loc>
+         <lastmod>2024-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://UCAR-SEA.github.io/sea-website/category/gpus/</loc>
+         <lastmod>2024-07-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
