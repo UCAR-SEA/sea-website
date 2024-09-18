@@ -13,33 +13,35 @@ Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open
 
 ## Next Discussion
 
-**Subject: GPUs and other Accelerators**  
-**Time: 13 August 2024 at 11 AM Mountain Time**
+**Subject: Developer Exchange Programs**  
+**Time: 10 October 2024 at 2 PM Mountain Time**
 
-Join the UCAR Software Engineering Assembly for a lightly-moderated discussion
-on the use of GPUs or any other hardware accelerators across UCAR.
+Join the UCAR Software Engineering Assembly (SEA) at 2pm on October 10th for a
+short presentation on developer exchange programs followed by a
+lightly-moderated discussion.
 
-Any discussion topics are welcome, as are all experience levels. We encourage
-you to share your experiences, good and bad.
+Inspired by the 'visiting scientist' concept, ACOM and Unidata piloted a
+Developer Exchange Program. From January to July of last year, Kyle Shores
+(ACOM) and Ward Fisher (Unidata) asynchronously dedicated a portion of their
+time working on projects across organizations. Kyle spent three months
+contributing cmake and modern build & test infrastructure expertise to the
+netCDF project at Unidata, after which Ward reciprocated with 3 three months of
+expertise in structured software engineering and cross-platform software
+development to the Musica project at ACOM.  Kyle and Ward's work focused on how
+their skill sets could benefit the other's projects. With the successful
+completion of this pilot program, we want to gauge interest in expanding this
+program so that any software developer can participate.
 
-Some potential discussion topics include:  
-
-* Current uses of GPUs and accelerators, including applications, discovered
-benefits, and methods of implementation (CUDA, OpenACC, etc.).
-* Barriers, challenges, or pitfalls to using GPUs.
-* Thoughts on UCAR/NCAR pursuing GPU or accelerator capabilities versus other
-  software-related goals or facilities. 
-* What could SEA do to help support and/or advocate for community needs in this area?  
-
-Hope to see you there! For NCAR/UCAR Staff, add [this
-event](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=djVqNWswNm90Nmp0NHFuNmtib3I5aW9yNDQgdmFuZGVyd2JAdWNhci5lZHU&tmsrc=vanderwb%40ucar.edu)
-to your calendar. If you are external, please email [Taysia
-Peterson](mailto:taysia@ucar.edu) for an invitation.
+If you wish to join us for this event and you are NCAR/UCAR Staff, add [this
+event](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MG9wbW1mb2U2aTlwM2s5NTNyZnRhcHA3c2sgdmFuZGVyd2JAdWNhci5lZHU&tmsrc=vanderwb%40ucar.edu)
+to your calendar. If you are external, please [email Taysia Peterson for an
+invitation](mailto:taysia@ucar.edu?subject=Requesting an invite for SEA event on Developer Exchange Programs).
 
 ## Past Discussions
 
 | Topic         | Date        | Notes |
 | -----         | ----        | ----- |
+| Accelerators  | 13 Aug 2024 | [Link](https://docs.google.com/document/d/18cQ0j3FcfFg-bmgvNw1yv7mBw0qvgJHeZovcSOrv_lE/edit?usp=drive_link)  |
 | Mentorship    | 6 Jun 2024  | [Link](https://docs.google.com/document/d/1kzO5-X5wCERdd0rJmpV4K-NBZLWCDakS5rRBKEo9New/edit?usp=drive_link)  |
 | Documentation | 14 Mar 2024 | [Link](https://docs.google.com/document/d/1yCuHm0QwbEreKrhUQkghK49ip54i_qvw0pPxAR-u2Uw/edit?usp=drive_link)  |
 | Code Review   | 9 Jan 2024  | [Link](https://docs.google.com/document/d/1Tc5_pGy30tSld5uWKxZfp07BhzYdoH3HT7_PUmIMkQQ/edit?usp=drive_link)  |
