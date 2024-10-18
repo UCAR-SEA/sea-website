@@ -168,11 +168,6 @@ plugins:
   - blog:
       blog_dir: .
 
-  - redirects:
-      redirect_maps:
-        'conference/index.md': 'iss/index.md'
-        'conference/2024.md': 'iss/2024.md'
-
 # ------------------------------------
 # -- configuration - extras
 # ------------------------------------
