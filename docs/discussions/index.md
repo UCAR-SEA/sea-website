@@ -11,7 +11,7 @@ like to host an Open Discussion event for your particular topic of interest,
 please reach out to the [SEA Steering
 Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open Discussion).
 
-## Next Discussion
+## Previous Discussion
 
 **Subject: Developer Exchange Programs**  
 **Time: 10 October 2024 at 2 PM Mountain Time**
@@ -32,15 +32,11 @@ their skill sets could benefit the other's projects. With the successful
 completion of this pilot program, we want to gauge interest in expanding this
 program so that any software developer can participate.
 
-If you wish to join us for this event and you are NCAR/UCAR Staff, add [this
-event](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MG9wbW1mb2U2aTlwM2s5NTNyZnRhcHA3c2sgdmFuZGVyd2JAdWNhci5lZHU&tmsrc=vanderwb%40ucar.edu)
-to your calendar. If you are external, please [email Taysia Peterson for an
-invitation](mailto:taysia@ucar.edu?subject=Requesting an invite for SEA event on Developer Exchange Programs).
-
 ## Past Discussions
 
 | Topic         | Date        | Notes |
 | -----         | ----        | ----- |
+| Developer Exchange  | 10 Oct 2024 | [Link](https://docs.google.com/document/d/1k-Q7Uor3SEjBFVuTwD2Zj-G9SD7wKiuHAtjLZ2H4ljM/edit?usp=sharing)  |
 | Accelerators  | 13 Aug 2024 | [Link](https://docs.google.com/document/d/18cQ0j3FcfFg-bmgvNw1yv7mBw0qvgJHeZovcSOrv_lE/edit?usp=drive_link)  |
 | Mentorship    | 6 Jun 2024  | [Link](https://docs.google.com/document/d/1kzO5-X5wCERdd0rJmpV4K-NBZLWCDakS5rRBKEo9New/edit?usp=drive_link)  |
 | Documentation | 14 Mar 2024 | [Link](https://docs.google.com/document/d/1yCuHm0QwbEreKrhUQkghK49ip54i_qvw0pPxAR-u2Uw/edit?usp=drive_link)  |
