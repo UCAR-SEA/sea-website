@@ -13,7 +13,7 @@ Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open
 
 ## Next Discussion
 
-**Subject: Strategic Plans - "not strategic, not plans" - navigating big picture themes**  
+**Subject: Strategic Plans and navigating big picture themes**  
 **Time: 14 November 2024 at 9 AM Mountain Time**
 
 Recently, NSF NCAR staff were invited to provide feedback on the first draft of

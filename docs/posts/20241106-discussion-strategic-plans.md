@@ -9,7 +9,7 @@ categories:
   - Strategic Planning
 ---
 
-# Upcoming SEA Discussion: Strategic Plans - "not strategic, not plans"
+# Upcoming SEA Discussion: Strategic Plans and navigating big picture themes
 
 Join the UCAR Software Engineering Assembly (SEA) at 9:00 am MT on November 14th
 for a lightly-moderated discussion on Strategic Plans and navigating big picture
