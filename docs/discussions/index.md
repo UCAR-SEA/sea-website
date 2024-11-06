@@ -11,34 +11,36 @@ like to host an Open Discussion event for your particular topic of interest,
 please reach out to the [SEA Steering
 Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open Discussion).
 
-## Previous Discussion
+## Next Discussion
 
-**Subject: Developer Exchange Programs**  
-**Time: 10 October 2024 at 2 PM Mountain Time**
+**Subject: Strategic Plans - "not strategic, not plans" - navigating big picture themes**  
+**Time: 14 November 2024 at 9 AM Mountain Time**
 
-Join the UCAR Software Engineering Assembly (SEA) at 2pm on October 10th for a
-short presentation on developer exchange programs followed by a
-lightly-moderated discussion.
+Recently, NSF NCAR staff were invited to provide feedback on the first draft of
+the 2025-2029 NSF NCAR Strategic Plan (if you are staff, see [this Sundog
+link](https://sundog.ucar.edu/page/8842) for more information and the draft
+itself). Initial feedback from staff is due at the end of November, and so the
+SEA is holding this impromptu discussion for two primary purposes: (a) provide a
+venue for research software engineers within our organization to discuss the
+draft document and (b) to discuss strategic planning in general. In addition to
+specific feedback the SEA can pass forward to management, we’d encourage you to
+bring your thoughts on:
 
-Inspired by the 'visiting scientist' concept, ACOM and Unidata piloted a
-Developer Exchange Program. From January to July of last year, Kyle Shores
-(ACOM) and Ward Fisher (Unidata) asynchronously dedicated a portion of their
-time working on projects across organizations. Kyle spent three months
-contributing cmake and modern build & test infrastructure expertise to the
-netCDF project at Unidata, after which Ward reciprocated with 3 three months of
-expertise in structured software engineering and cross-platform software
-development to the Musica project at ACOM.  Kyle and Ward's work focused on how
-their skill sets could benefit the other's projects. With the successful
-completion of this pilot program, we want to gauge interest in expanding this
-program so that any software developer can participate.
+ - What do you focus on when reviewing or drafting a strategic plan?
+ - Do you feel represented in strategic plans? If not, how could that be
+   improved?
+ - Do you see the impact of strategic plans on your work and/or environment?
+
+This event is primarily intended for NSF NCAR/UCAR Staff. To join, [add this
+event to your calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=cWxpcXExdW41c2FrM3R1bm05Y2ZoODQwaGcgdmFuZGVyd2JAdWNhci5lZHU&tmsrc=vanderwb%40ucar.edu).
 
 ## Past Discussions
 
-| Topic         | Date        | Notes |
-| -----         | ----        | ----- |
-| Developer Exchange  | 10 Oct 2024 | [Link](https://docs.google.com/document/d/1k-Q7Uor3SEjBFVuTwD2Zj-G9SD7wKiuHAtjLZ2H4ljM/edit?usp=sharing)  |
-| Accelerators  | 13 Aug 2024 | [Link](https://docs.google.com/document/d/18cQ0j3FcfFg-bmgvNw1yv7mBw0qvgJHeZovcSOrv_lE/edit?usp=drive_link)  |
-| Mentorship    | 6 Jun 2024  | [Link](https://docs.google.com/document/d/1kzO5-X5wCERdd0rJmpV4K-NBZLWCDakS5rRBKEo9New/edit?usp=drive_link)  |
-| Documentation | 14 Mar 2024 | [Link](https://docs.google.com/document/d/1yCuHm0QwbEreKrhUQkghK49ip54i_qvw0pPxAR-u2Uw/edit?usp=drive_link)  |
-| Code Review   | 9 Jan 2024  | [Link](https://docs.google.com/document/d/1Tc5_pGy30tSld5uWKxZfp07BhzYdoH3HT7_PUmIMkQQ/edit?usp=drive_link)  |
-| CI/CD at UCAR | 24 Oct 2023 | [Link](https://docs.google.com/document/d/1JrsNadn8I__tWA38OE2DFloZYI8kATC9NQgVMWaeXCA/edit?usp=drive_link)  |
+| Topic                 | Date        | Notes |
+| -----                 | ----        | ----- |
+| Developer Exchange    | 10 Oct 2024 | [Link](https://docs.google.com/document/d/1k-Q7Uor3SEjBFVuTwD2Zj-G9SD7wKiuHAtjLZ2H4ljM/edit?usp=sharing)    |
+| Accelerators          | 13 Aug 2024 | [Link](https://docs.google.com/document/d/18cQ0j3FcfFg-bmgvNw1yv7mBw0qvgJHeZovcSOrv_lE/edit?usp=drive_link) |
+| Mentorship            | 6 Jun 2024  | [Link](https://docs.google.com/document/d/1kzO5-X5wCERdd0rJmpV4K-NBZLWCDakS5rRBKEo9New/edit?usp=drive_link) |
+| Documentation         | 14 Mar 2024 | [Link](https://docs.google.com/document/d/1yCuHm0QwbEreKrhUQkghK49ip54i_qvw0pPxAR-u2Uw/edit?usp=drive_link) |
+| Code Review           | 9 Jan 2024  | [Link](https://docs.google.com/document/d/1Tc5_pGy30tSld5uWKxZfp07BhzYdoH3HT7_PUmIMkQQ/edit?usp=drive_link) |
+| CI/CD at UCAR         | 24 Oct 2023 | [Link](https://docs.google.com/document/d/1JrsNadn8I__tWA38OE2DFloZYI8kATC9NQgVMWaeXCA/edit?usp=drive_link) |
