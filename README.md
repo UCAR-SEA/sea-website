@@ -1,16 +1,33 @@
-# Welcome to the NCAR MkDocs Template repository!
+# UCAR Software Engineering Assembly Website
 
 [![Documentation Status](https://readthedocs.org/projects/ncar-mkdocs-template/badge/?version=latest)](https://ncar-mkdocs-template.readthedocs.io/en/latest/?badge=latest)
 
-This repository serves as a template for generating documentation from markdown files using the [MkDocs](https://www.mkdocs.org/) platform along with the customized [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. The theme files have been customized to align with NCAR branding and colors and is available in the [NCAR_mkdocs_material_themes](https://github.com/NCAR/NCAR_mkdocs_material_themes).
+This repository generates the UCAR SEA website from markdown files using the [MkDocs](https://www.mkdocs.org/) platform along with the customized [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. The theme files have been customized to align with NCAR branding and colors and is available in the [NCAR_mkdocs_material_themes](https://github.com/NCAR/NCAR_mkdocs_material_themes).
 
 
-## How to Use this Template Repository? 🛠️
+## How to contribute updates/changes
 
-For detailed information on how to get started using this template repository, please visit [this page](https://ncar-mkdocs-template.readthedocs.io/en/latest/getting-started/).
-
-Example documentations created using this template can be found at [NCAR HPC Documentation](https://ncar-hpc-docs.readthedocs.io/en/latest/).
-
+1. Fork this repository
+2. Clone it on your local computer and ensure the theme submodule is cloned too:
+```
+git clone git@github.com:<user>/sea-website.git
+cd sea-website
+git submodule init
+git submodule update
+```
+3. Install [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) (or miniconda) *if you do not have it already*
+4. Create a mkdocs environment for testing the website locally:
+```
+conda env create -n mkdocs conda.yaml
+```
+5. Activate the environment by running `micromamba activate mkdocs`
+6. Create and check out a new update branch using `git checkout -b branch-name`
+7. Make modifications to pages contained in `docs/` subdirectory
+8. If you add content that requires menu navigation, make sure to edit the `nav:` section of **mkdocs.yaml** too
+9. Preview your changes by running `mkdocs serve` and opening the localhost link in your browser
+10. Once satisfied :smile_cat: with how your changes appear, add and commit modifications
+11. Push your branch to your fork on Github using `git push -u origin branch-name`
+12. Create the pull request on Github
 
 ## License
 
