@@ -18,7 +18,7 @@ git submodule update
 3. Install [micromamba](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) (or miniconda) *if you do not have it already*
 4. Create a mkdocs environment for testing the website locally:
 ```
-conda env create -n mkdocs conda.yaml
+micromamba env create -n mkdocs conda.yaml
 ```
 5. Activate the environment by running `micromamba activate mkdocs`
 6. Create and check out a new update branch using `git checkout -b branch-name`
