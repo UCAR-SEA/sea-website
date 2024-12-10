@@ -38,6 +38,7 @@ nav:
     - index.md
   - ISS Conference:
     - iss/index.md
+    - 2025: iss/2025.md
     - 2024: iss/2024.md
   - Open Discussions: discussions/index.md
   - Community:
