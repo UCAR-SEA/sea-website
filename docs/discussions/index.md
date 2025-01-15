@@ -13,31 +13,40 @@ Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open
 
 ## Next Discussion
 
-**Subject: Strategic Plans and navigating big picture themes**  
-**Time: 14 November 2024 at 9 AM Mountain Time**
+**Subject: Language Interoperability Panel Discussion**  
+**Time: 26 February 2025 at 3 PM Mountain Time**
 
-Recently, NSF NCAR staff were invited to provide feedback on the first draft of
-the 2025-2029 NSF NCAR Strategic Plan (if you are staff, see [this Sundog
-link](https://sundog.ucar.edu/page/8842) for more information and the draft
-itself). Initial feedback from staff is due at the end of November, and so the
-SEA is holding this impromptu discussion for two primary purposes: (a) provide a
-venue for research software engineers within our organization to discuss the
-draft document and (b) to discuss strategic planning in general. In addition to
-specific feedback the SEA can pass forward to management, we’d encourage you to
-bring your thoughts on:
+The UCAR Software Engineering Assembly will hold a panel of lightning talks
+followed by a discussion on language interoperability at 3 PM MT on Wednesday
+February 26, 2025.
 
- - What do you focus on when reviewing or drafting a strategic plan?
- - Do you feel represented in strategic plans? If not, how could that be
-   improved?
- - Do you see the impact of strategic plans on your work and/or environment?
+The discussion can include more traditional Fortran-C/C++ interoperability, but
+we're especially interested in interoperability of compiled codes with
+interpreted languages such as Python and Julia. For example, the Earth System
+Modeling Framework (ESMF) team is considering building out capabilities to
+facilitate the coupling of model components written in Python or Julia with
+those in Fortran, C and C++.
 
-This event is primarily intended for NSF NCAR/UCAR Staff. To join, [add this
-event to your calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=cWxpcXExdW41c2FrM3R1bm05Y2ZoODQwaGcgdmFuZGVyd2JAdWNhci5lZHU&tmsrc=vanderwb%40ucar.edu).
+We currently have the following panel speakers, who will present ~5 minute
+lightning talks on related experiences and perspectives:
+
+* **Bill Sacks** - thoughts on prospective ESMF capabilities to facilitate the
+  coupling of model components written in Python and Julia with C/C++/Fortran
+  code
+* **Kyle Shores** - team maintains a lot of C++ code with C interface exposed
+  for Fortran and Python interoperability
+* **Orhan Eroglu** - GeoCAT experiences leveraging Python-Fortran (via f2py) and
+  Python-C++  (via Cython) interoperability
+
+If you are NCAR/UCAR staff, you can use [this calendar
+link](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDVhOGVuNDNqZWRlcHYwaG1nZjR1aGM1cDAgdmFuZGVyd2JAdWNhci5lZHU&tmsrc=vanderwb%40ucar.edu)
+to save this event.
 
 ## Past Discussions
 
 | Topic                 | Date        | Notes |
 | -----                 | ----        | ----- |
+| Strategic Plans       | 14 Nov 2024 | [Link](https://docs.google.com/document/d/1e2kAyUePe5YQcWpw5jX2NoKI8QCIs0cg4UrW8-KcV34/edit?usp=drive_link) |
 | Developer Exchange    | 10 Oct 2024 | [Link](https://docs.google.com/document/d/1k-Q7Uor3SEjBFVuTwD2Zj-G9SD7wKiuHAtjLZ2H4ljM/edit?usp=sharing)    |
 | Accelerators          | 13 Aug 2024 | [Link](https://docs.google.com/document/d/18cQ0j3FcfFg-bmgvNw1yv7mBw0qvgJHeZovcSOrv_lE/edit?usp=drive_link) |
 | Mentorship            | 6 Jun 2024  | [Link](https://docs.google.com/document/d/1kzO5-X5wCERdd0rJmpV4K-NBZLWCDakS5rRBKEo9New/edit?usp=drive_link) |
