@@ -1111,7 +1111,7 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell">Damien Rouson</div>
+            <div class="cell">Damian Rouson</div>
             <div class="cell-content">
     ??? abstract cell "Cloud microphysics training and aerosol inference with the Fiats deep learning library"
         *Damian Rouson is a Senior Scientist and the Group Lead for the Computer
