@@ -640,7 +640,8 @@
             <div class="cell"><b>4:10 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? success cell "Office Hours"
+        ??? success cell "Notebook Proceedings Office Hours"
+            During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
     </div>
         </div>
     </div>
@@ -1108,7 +1109,7 @@
             <div class="cell"></div>
             <div class="cell-content">
     ??? success cell "Notebook Proceedings Office Hours"
-    During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
+        During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
         </div>
         </div>
     </div>
@@ -2058,7 +2059,7 @@
             <div class="cell"></div>
             <div class="cell-content">
     ??? success cell "Notebook Proceedings Office Hours"
-    During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
+        During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
         </div>
         </div>
         <div class="row">
