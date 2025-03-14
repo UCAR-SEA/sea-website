@@ -1625,7 +1625,7 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Ligia Bernardet</div>
             <div class="cell-content">
     ??? info cell "TBA"
         </div>
