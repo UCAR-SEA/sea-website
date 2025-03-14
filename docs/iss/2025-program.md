@@ -60,7 +60,7 @@
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? abstract cell "Invited Keynote"
+    ??? abstract cell "Invited Keynote: TBA"
         </div>
         </div>
         <div class="row">
