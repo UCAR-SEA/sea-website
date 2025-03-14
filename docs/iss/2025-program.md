@@ -45,10 +45,17 @@
     Science to Meet Tomorrow’s Challenges**</figcaption>
 </figure>
 
-## Conference Program
+## Online Program
 
 === "Monday, April 7"
     <div class="table">
+        <div class="row">
+            <div class="cell"><b>8:30 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Opening Remarks"
+        </div>
+        </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell"></div>
@@ -242,7 +249,7 @@
             <div class="cell">Agnieszka Żaba</div>
             <div class="cell-content">
     ??? abstract cell "Continuous Integration with research notebooks: on maintaining reproducibility in atmospheric modeling"
-        *I am a PhD student in the Environmental Physics Group
+        *Agnieszka is a PhD student in the Environmental Physics Group
         (zfs.agh.edu.pl/en) at the Faculty of Physics and Applied Computer
         Science, AGH University of Krakow. My research interests lie at the
         intersection between cloud microphysics and climate-science applications
@@ -401,7 +408,9 @@
             <div class="cell">Isaac Schluesche</div>
             <div class="cell-content">
     ??? abstract cell "Using Julia for Next-Generation Atmospheric Analysis Software"
-        *Isaac am a second year master's student at Colorado State University
+        **Coauthors: Dr. Michael M Bell**
+
+        *Isaac is a second year master's student at Colorado State University
         working on developing machine learning algorithms to remove
         non-meteorological data from radar sweeps using Julia.*
 
@@ -466,6 +475,8 @@
             <div class="cell">Jen DeHart</div>
             <div class="cell-content">
     ??? abstract cell "Improved Accessibility and Community Knowledge of Lidar and Radar Data Analysis"
+        **Coauthors: Ana Espinoza**
+        
         *Jen is a Research Scientist II at Colorado State University. In her
         research, Jen uses a combination of polarimetric radar observations and
         mesoscale models to understand the processes responsible for heavy
@@ -536,6 +547,8 @@
             <div class="cell">Amit Ruhela</div>
             <div class="cell-content">
     ??? abstract cell "An introduction to TACC HPCPerfStats"
+        **Coauthors: John Cazes**
+
         *Dr. Amit Ruhela works as a Manager in the HPC group at TACC, Austin. He
         earned a Ph.D. in Computer Science from IIT Delhi and postdoc experience
         from The Ohio State University. Dr. Ruhela conducts research and
@@ -642,9 +655,17 @@
             <div class="cell-content">
         ??? success cell "Notebook Proceedings Office Hours"
             During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
-    </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>5:00 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? warning cell "End of Day 1"
+        </div>
         </div>
     </div>
+    
 === "Tuesday, April 8"
     <div class="table">
         <div class="row">
@@ -768,6 +789,8 @@
             <div class="cell">David Pettifor</div>
             <div class="cell-content">
     ??? abstract cell "Designing a spectrum visualization platform with flexibility in mind"
+        **Coauthor: Melissa Harden**
+
         *David Pettifor, Research Software Engineer Manager, has been working
         for the Center for Research Computing at the University of Notre Dame
         for 14 years. His background is in software development, specifically
@@ -883,6 +906,8 @@
             <div class="cell">Katherine Rasmussen</div>
             <div class="cell-content">
     ??? note cell "Julienne + Assert == Correctness-Checking for Functional Fortran"
+        **Coauthors: Damian Rouson, Dan Bonachea**
+
         *Katherine Rasmussen is a Computer Systems Engineer who applies
         Linguistics knowledge to developing, testing, and compiling programming
         languages for high-performance computing. She has experience in language
@@ -1112,6 +1137,13 @@
         During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
         </div>
         </div>
+        <div class="row">
+            <div class="cell"><b>5:00 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? warning cell "End of Day 2"
+        </div>
+        </div>
     </div>
 === "Wednesday, April 9"
     <div class="table">
@@ -1281,7 +1313,8 @@
             <div class="cell">Joshna Kurra</div>
             <div class="cell-content">
     ??? abstract cell "Toward Generating Experiment-Specific Notebooks in FABRIC"
-        *Co-authors: Mami Hayashida, Joshna Kurra, Zongming Fei, James Griffioen
+        **Coauthors: Mami Hayashida, Joshna Kurra, Zongming Fei, James
+        Griffioen**
 
         Joshna is a recent graduate with a Bachelor’s degree from the
         University of Kentucky. She is currently in her first semester of
@@ -1620,14 +1653,29 @@
     ??? info cell "Networking Event"
         </div>
         </div>
+        <div class="row">
+            <div class="cell"><b>5:00 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? warning cell "End of Day 3"
+        </div>
+        </div>
     </div>
 === "Thursday, April 10"
     <div class="table">
+        <div class="row">
+            <div class="cell"><b>8:30 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Closing Remarks"
+        </div>
+        </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell">Ligia Bernardet</div>
             <div class="cell-content">
     ??? info cell "Invited Keynote: TBA"
+
         </div>
         </div>
         <div class="row">
@@ -1820,7 +1868,7 @@
             <div class="cell">Maria Patrou</div>
             <div class="cell-content">
     ??? abstract cell "Modernization and Standardization of Software tools in Spectroscopy"
-        *Co-authors: Maria Patrou, Kyle Ma, Andrei Savici*
+        **Coauthors: Kyle Ma, Andrei Savici*
 
         *Dr. Maria Patrou joined Oak Ridge National Laboratory (ORNL) in 2023.
         Her focus is on designing, developing, and deploying data reduction and
@@ -1870,6 +1918,9 @@
             <div class="cell">Clint Lohr</div>
             <div class="cell-content">
     ??? abstract cell "Riding the Waves: Modernizing the Common Package Ingest Pipeline for Resilient Ocean Acoustic Data Management"
+        **Coauthors: Carrie Wall Bell, Charles Anderson, Quincy Cantu, Emilie
+        Barbattini**
+
         *Clint is one of two software developers on the Ocean Acoustics team. I,
         along with my colleague and fellow software engineer, started our
         positions at CIRES Summer 2024. We have brought with us a fresh set of
