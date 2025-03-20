@@ -58,7 +58,7 @@
         </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jacob Carley</div>
             <div class="cell-content">
     ??? abstract cell "Invited Keynote: TBA"
         </div>
@@ -1674,8 +1674,35 @@
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell">Ligia Bernardet</div>
             <div class="cell-content">
-    ??? info cell "Invited Keynote: TBA"
+    ??? abstract cell "Invited Keynote: Earth System Model Development Activities at the NOAA Global Systems Laboratory - A software engineering perspective"
+        *Ligia Bernardet is a meteorologist with a PhD in atmospheric sciences
+        from Colorado State University. She is the chief of the Earth Prediction
+        Advancement Division within the NOAA Global Systems Laboratory in
+        Boulder, CO, a member of the Unified Forecast System (UFS) steering
+        committee, and co-leads the Community Earth System Model (CESM) Software
+        Engineering Working Group. Her experience in code management and user
+        support for community models has given her an appreciation for the
+        importance of software engineering best practices.*
 
+        NOAA GSL develops Earth System prediction models on a variety of
+        spatiotemporal scales (large-eddy to seasonal), readiness levels (basic
+        research to near-operational), and approaches (physical and
+        data-driven). Physical models use diverse infrastructures, such as the
+        Unified Forecast System (UFS), the Weather Research and Forecast (WRF)
+        model, and the Model for Prediction Across Scales (MPAS). All models are
+        evaluated for computational and scientific performance and must produce
+        actionable information for users and stakeholders. Excellence in
+        development relies on best practices in software engineering, such as
+        component modularity with clear interfaces and sound code management
+        with robust testing. The need for best practices is heightened by the
+        distributed nature of our development, which includes partners from
+        other NOAA entities, NCAR, and the broader community. This talk will
+        describe the model development activities at NOAA GSL and provide
+        highlights of selected efforts, including the management of physical
+        parameterizations using the Common Community Physics Package (CCPP), the
+        orchestration of scientific workflows with the Unified Workflow Tools
+        package, and the training of machine learning models for weather
+        prediction.
         </div>
         </div>
         <div class="row">
@@ -1687,54 +1714,10 @@
         </div>
         <div class="row">
             <div class="cell"><b>10:20 AM</b></div>
-            <div class="cell">Anna Pauls</div>
+            <div class="cell"></div>
             <div class="cell-content">
-    ??? abstract cell "Lessons learned from re-writing the legacy Fortran NCAR-LES code using modern object-oriented Fortran"
-        *Anna is pursuing her PhD in Civil Engineering at CU Boulder studying
-        the influence of submesoscale dynamics on biogeochemical tracers in the
-        ocean with Peter Hamlington as her PI. She discovered her passion for
-        numerical modeling research as an undergraduate studying Mechanical
-        Engineering at UMass Amherst modeling electromagnetic levitation
-        experiments. This led to an internship at NASA's Marshall Space Flight
-        Center in 2020. In graduate school, Anna was awarded the NSF GRFP in
-        2023 and is currently focusing on refactoring NCAR LES in hopes of
-        making it more user friendly and to learn proper coding practices.*
-
-        The legacy NCAR large eddy simulation (NCAR-LES) code is a computational
-        fluid dynamics model for small-scale, high-resolution atmospheric and
-        oceanic simulations riginally created in 1984 by Chin-Hoh Moeng, James
-        McWilliams, and Peter Sullivan. The code as distributed today is written
-        as a Fortran 77 imperative-programming style, contained in a single long
-        file, making NCAR-LES a tightly-coupled, monolithically-structured
-        program with no real documentation, unit tests, friendly user
-        configuration capabilities, or inclusion of any modern (2003 or later)
-        Fortran language features. Additionally, there is no central open-source
-        code repository, and our group’s version of the code has been handed
-        down from researcher to researcher with many small additions and
-        subtractions over time, resulting in dead code and many non-functional
-        user-configuration flags. It was thus extremely frustrating for new
-        incoming PhD students to learn to use, and was an absolute nightmare to
-        extend with new developments.
-
-        Several attempts to directly refactor the code into modern Fortran
-        programming conventions were conducted over the last decade, with
-        limited success, due to the use of obsolete, deprecated, or otherwise
-        non-standard-conforming coding conventions throughout the code, and
-        especially within NCAR FFT-PACK. As such, we recently undertook an
-        effort to completely re-write the functionality of NCAR-LES in a new,
-        modern and object-oriented Fortran programming style — without directly
-        refactoring the legacy code base — that uses GPU-enabled and
-        exascale-ready third-party packages for parallel FFTs, time integration,
-        and hybrid MPI + OpenACC parallelism to achieve a combination of
-        radically improved user-friendliness, developer-friendliness,
-        performance efficiency, and future-proof compiler and hardware
-        compatibility.
-
-        This talk will focus on the most important lessons we learned along the
-        way, from initial refactoring efforts to our team participating in the
-        2025 NREL/NCAR/NOAA Open Hackathon, about how best to upgrade a
-        workhorse legacy Fortran 77 code into modern Fortran 2018.
-            </div>
+    ??? info cell "TBA"
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>10:40 AM</b></div>
@@ -1912,69 +1895,6 @@
             <div class="cell-content">
     ??? info cell "Lunch"
         </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>1:00 PM</b></div>
-            <div class="cell">Clint Lohr</div>
-            <div class="cell-content">
-    ??? abstract cell "Riding the Waves: Modernizing the Common Package Ingest Pipeline for Resilient Ocean Acoustic Data Management"
-        **Coauthors: Carrie Wall Bell, Charles Anderson, Quincy Cantu, Emilie
-        Barbattini**
-
-        *Clint is one of two software developers on the Ocean Acoustics team. I,
-        along with my colleague and fellow software engineer, started our
-        positions at CIRES Summer 2024. We have brought with us a fresh set of
-        perspectives and skills that have helped to modernize and improve upon
-        the team's existing software.* 
-
-        *Our team, comprising research scientists, data managers, and software
-        engineers, develops and maintains systems for packaging raw acoustic
-        data, managing data pipelines, and automating workflows to improve
-        efficiency and resilience. 
-
-        *4-5 team members are planning to participate in this talk, each speaking
-        on our chosen topic from their unique role and perspective.*
-
-        The Ocean Acoustics team at the University of Colorado Cooperative
-        Institute for Research in Environmental Sciences (CIRES) supports NOAA's
-        National Centers for Environmental Information (NCEI) by managing and
-        ingesting large, complex acoustic datasets. Our team, comprising
-        research scientists, data managers, and software engineers, develops and
-        maintains systems for packaging raw acoustic data, managing data
-        pipelines, and automating workflows to improve efficiency and
-        resilience.
-
-        The team’s pipeline called Common Package Ingest (CPI) is a Python-based
-        system designed to process and archive Passive Acoustic Data (PAD) and
-        Water Column Sonar Data (WCSD) into NCEI’s national archive. CPI ingests
-        data from external USB drives or local spinning disks, archives it on
-        internal servers, pushes it to cloud storage, generates ISO metadata,
-        mints DOIs, and updates Oracle database schemas that enable data search
-        and discovery on dedicated data portals. With distributed processing and
-        threading, CPI processes up to 6 TB of data per day and has facilitated
-        the archival of nearly 1 PB of data since 2017.
-
-        This presentation focuses on our efforts to modernize CPI’s codebase to
-        increase efficiency, add modularity, and expand system resilience.
-        Initially developed under tight time constraints, CPI prioritized
-        functionality over scalability, which has become a limitation as the
-        volume and complexity of data have grown. As part of our efforts to
-        address this, we’ve focused on improving scalability and robustness,
-        particularly in handling connection failures during long data ingests.
-
-        PAD and WCSD are high volume data types, with single datasets ranging
-        from several hundred GBs to 20+ TB. Given these large sizes, ingest can
-        take hours to days to complete, making manual monitoring impractical. To
-        mitigate this, CPI has been enhanced to include robust error handling
-        and logging for lost database connections, automatic progress saving,
-        and continuous attempts at reconnection until successful. This
-        resilience is critical for mitigating interruptions caused by routine
-        database maintenance or unexpected outages.
-
-        We believe that CPI serves as a relevant example of the importance of
-        modernizing scientific software that meets immediate needs and ensures a
-        robust, scalable, and resilient workflow for future demands.
-            </div>
         </div>
         <div class="row">
             <div class="cell"><b>1:20 PM</b></div>
