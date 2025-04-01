@@ -60,7 +60,37 @@
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell">Jacob Carley</div>
             <div class="cell-content">
-    ??? abstract cell "Invited Keynote: TBA"
+    ??? abstract cell "Invited Keynote: Bringing Agility to the Operational Production Suite"
+        *Jacob Carley earned his PhD in 2012 from Purdue University studying
+        hybrid ensemble-3DVar methods for the assimilation of radar data under
+        the support of an NSF Graduate Research Fellowship. Following his PhD he
+        began as a Post Doc at the Environmental Modeling Center (EMC) working
+        on data impact studies with the North American Mesoscale Forecast System
+        (NAM). Later, as a contractor at EMC, he helped lead the last two
+        operational implementations of the NAM. He also worked on the Real Time
+        and UnRestricted Mesoscale Analysis systems and oversaw six operational
+        implementations. He became a federal employee at EMC in 2018 in the Data
+        Assimilation and Quality Control Group and led the development of NOAA’s
+        next generation, convection-allowing ensemble prediction system, the
+        Rapid Refresh Forecast System. In 2024 he became the Chief of the
+        Engineering and Implementation Branch of EMC.*
+
+        The Environmental Modeling Center develops, maintains, and transitions
+        analysis and prediction systems of the Earth system to operations. Over
+        the past couple of decades the production suite has become increasingly
+        complex with the advancement of science and technology. The development
+        and implementation methods of the past are no longer suitable for the
+        level of complexity of today’s systems. We now find ourselves with
+        increasingly risky, high-stakes, big bang implementations that are
+        susceptible to costly delays.
+
+        An alternative approach is one that features more frequent, smaller
+        upgrades underpinned by a robust foundation of proven agile
+        methodologies, such as CI/CD and unit testing of the substantial
+        repository of scientific software. This presentation will propose a
+        restructuring of the entire development and implementation process in an
+        effort to move toward a more sustainable and agile practice that meets
+        the evolving needs of the National Weather Service’s mission.
         </div>
         </div>
         <div class="row">
@@ -668,6 +698,13 @@
     
 === "Tuesday, April 8"
     <div class="table">
+        <div class="row">
+            <div class="cell"><b>8:30 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Opening Remarks"
+        </div>
+        </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell">Romit Maulik</div>
