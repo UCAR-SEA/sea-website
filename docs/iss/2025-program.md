@@ -709,11 +709,42 @@
             <div class="cell"><b>8:40 AM</b></div>
             <div class="cell">Romit Maulik</div>
             <div class="cell-content">
-    ??? abstract cell "Invited Keynote: Differentiable Physics: A physics-constrained and data-driven paradigm for scientific discovery"
-        *Dr. Romit Maulik is an Assistant Professor in the College of Information Sciences and Technology at Pennsylvania State University (Penn State). He is also a co-hire in the Institute for Computational and Data Sciences at Penn State and a Joint Appointment Faculty at Argonne National Laboratory. He obtained his PhD in Mechanical and Aerospace Engineering at Oklahoma State University (in 2019) and was the Margaret Butler Postdoctoral Fellow (from 2019-2021) before becoming an Assistant Computational Scientist at Argonne National Laboratory (from 2021-2023). His group studies high-performance multifidelity scientific machine learning algorithm development with applications to various multiphysical nonlinear dynamical systems such as those that arise in fluid dynamics, weather and climate modeling, nuclear fusion, and beyond. He is an Early Career Awardee from the Army Research Office.*
+    ??? abstract cell "Invited Keynote: Automated deep ensemble with uncertainty quantification using DeepHyper"
+        *Dr. Romit Maulik is an Assistant Professor in the College of
+        Information Sciences and Technology at Pennsylvania State University
+        (Penn State). He is also a co-hire in the Institute for Computational
+        and Data Sciences at Penn State and a Joint Appointment Faculty at
+        Argonne National Laboratory. He obtained his PhD in Mechanical and
+        Aerospace Engineering at Oklahoma State University (in 2019) and was the
+        Margaret Butler Postdoctoral Fellow (from 2019-2021) before becoming an
+        Assistant Computational Scientist at Argonne National Laboratory (from
+        2021-2023). His group studies high-performance multifidelity scientific
+        machine learning algorithm development with applications to various
+        multiphysical nonlinear dynamical systems such as those that arise in
+        fluid dynamics, weather and climate modeling, nuclear fusion, and
+        beyond. He is an Early Career Awardee from the Army Research Office.*
 
-        Machine learning stands poised to revolutionize the process of scientific discovery across various disciplines. In this talk, we will introduce a state-of-the-art scientific machine learning paradigm - differentiable physics (DiffPhys). DiffPhys can be considered a system identification paradigm that can be applied to determine neural network approximations of governing laws given data. It can also be used to improve first-principles-based simulations of physical phenomena by learning corrections to governing laws (for instance for closure modeling in multiscale applications). Notably, optimizing these neural networks necessitates a differentiable programming paradigm where gradients of a loss function can be propagated through a numerical solver. In this talk, we will introduce DiffPhys algorithms that (1) can learn models for dynamical systems from sparse data, (2) efficiently compute sensitivities for systems exhibiting deterministic chaos, (3) leverage graph neural networks for geometry-invariant learning, and (4) provide physically meaningful interpretations for neural network behavior thereby engendering scientific discovery. We will demonstrate the capabilities of DiffPhys on canonical and realistic scientific computing problems and close with a discussion of the future possibilities of this approach.
+        Deep neural networks are powerful predictors for a variety of tasks.
+        However, they do not capture uncertainty directly. Using neural network
+        ensembles to quantify uncertainty is competitive with approaches based
+        on Bayesian neural networks while benefiting from better computational
+        scalability. However, building ensembles of neural networks is a
+        challenging task because, in addition to choosing the right neural
+        architecture or hyperparameters for each member of the ensemble, there
+        is an added cost of training each model. To address this issue, we
+        propose AutoDEUQ, an automated approach for generating an ensemble of
+        deep neural networks. Our approach leverages joint neural architecture
+        and hyperparameter search to generate ensembles. This ensemble and the
+        law of total variance can be used to decompose the predictive variance
+        of deep ensembles into aleatoric (data) and epistemic (model)
+        uncertainties.
 
+        AutoDEUQ is built into DeepHyper, a scalable python-based library for
+        automated neural architecture and hyperparameter search and can readily
+        be deployed in serial and parallel platforms for deep ensembles based
+        uncertainty quantification. An introductory tutorial to using DeepHyper
+        and its ensembles based UQ capabilities is available here:  
+        https://deephyper.readthedocs.io/en/latest/examples/examples_uq/plot_nas_deep_ensemble_uq_regression_pytorch.html#sphx-glr-examples-examples-uq-plot-nas-deep-ensemble-uq-regression-pytorch-py
         </div>
         </div>
         <div class="row">
