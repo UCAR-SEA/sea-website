@@ -1782,9 +1782,58 @@
         </div>
         <div class="row">
             <div class="cell"><b>10:20 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Dom Heinzeller</div>
             <div class="cell-content">
-    ??? info cell "TBA"
+    ??? abstract cell "The role of spack-stack in the operational implementation of the NAVY's next-generation weather forecasting model"
+        *Dom Heinzeller graduated from Heidelberg University, Germany, with a
+        PhD in Theoretical Astrophysics. Following a postdoctoral fellowship on
+        the physical and chemical evolution of protoplanetary disks at Kyoto
+        University, Japan, he moved into the field of Numerical Weather
+        prediction in a number of organizations: The Forecasting Research Group
+        of the National Weather Service of New Zealand in Wellington, New
+        Zealand; the Institute for Meteorology and Climate Research of the
+        Karlsruhe Institute of Technology in Garmisch-Partenkirchen, Germany;
+        NOAA's Global Systems Laboratory in Boulder, CO; the Joint Center for
+        Satellite Data Assimilation in Boulder, CO; the United States Naval
+        Research Lab through a contract with UCAR CPAESS in Boulder, CO. He is
+        the original author of the Common Community Physics Package (CCPP) used
+        in the UFS, in NEPTUNE, in DTC's Single Column Model, and soon in CESM,
+        and he is one of the founders of the the spack-stack collaboration.*
+
+        In 2025, the United States Naval Research Lab (NRL) is transitioning its
+        next-generation numerical weather prediction (NWP) system NEPTUNE (Navy
+        Environmental Prediction sysTem Using a Nonhydrostatic Engine) to their
+        operational partner, Fleet Numerical Meteorology and Oceanography Center
+        (FNMOC). The transitioning of innovations from research to operations
+        (R2O) and the feedback from operations to research (O2R) is one of the
+        major challenges in the NWP world, to the extent that it is sometimes
+        referred to as the "valley of death". One of the contributors to this
+        challenge is that the environment in which the NWP systems operate can
+        differ greatly. The development and testing often take place on
+        different high-performance computing (HPC) systems, with varying
+        environments of software (also referred to as software stacks), and with
+        different workflows than in operations.
+
+        For the first operational implementation of NEPTUNE in 2025, NRL and
+        FNMOC are adopting a novel approach to address some of these challenges:
+        First, FNMOC will be running on highly secured, fenced-off partitions on
+        the same HPC systems that NRL uses for its development. Second, NRL will
+        provide a software environment based on spack-stack. The spack-stack
+        project is a joint effort of several major federal agencies and UCAR
+        labs. It leverages the spack package manager developed by Lawrence
+        Livermore National Laboratory and supported by a large community.
+        Spack-stack utilizes modern software development practices like
+        continuous integration (CI) and a fast release cycle. Through the use of
+        spack source mirrors and binary caches, FNMOC will be able to deploy
+        bit-for-bit identical software environments in their secured
+        environments in a matter of minutes.
+
+        In this presentation, we will revisit the challenges in the R2O2R cycle
+        in NWP, provide an overview of the joint spack-stack effort, and cover
+        the deployment of NEPTUNE in operations.
+
+        [Distribution Statement Approved for public release. Distribution is
+        unlimited.]
         </div>
         </div>
         <div class="row">
@@ -2039,62 +2088,6 @@
         </div>
         <div class="row">
             <div class="cell"><b>2:00 PM</b></div>
-            <div class="cell">Dom Heinzeller</div>
-            <div class="cell-content">
-    ??? abstract cell "The role of spack-stack in the operational implementation of the NAVY's next-generation weather forecasting model"
-        *Dom Heinzeller graduated from Heidelberg University, Germany, with a
-        PhD in Theoretical Astrophysics. Following a postdoctoral fellowship on
-        the physical and chemical evolution of protoplanetary disks at Kyoto
-        University, Japan, he moved into the field of Numerical Weather
-        prediction in a number of organizations: The Forecasting Research Group
-        of the National Weather Service of New Zealand in Wellington, New
-        Zealand; the Institute for Meteorology and Climate Research of the
-        Karlsruhe Institute of Technology in Garmisch-Partenkirchen, Germany;
-        NOAA's Global Systems Laboratory in Boulder, CO; the Joint Center for
-        Satellite Data Assimilation in Boulder, CO; the United States Naval
-        Research Lab through a contract with UCAR CPAESS in Boulder, CO. He is
-        the original author of the Common Community Physics Package (CCPP) used
-        in the UFS, in NEPTUNE, in DTC's Single Column Model, and soon in CESM,
-        and he is one of the founders of the the spack-stack collaboration.*
-
-        In 2025, the United States Naval Research Lab (NRL) is transitioning its
-        next-generation numerical weather prediction (NWP) system NEPTUNE (Navy
-        Environmental Prediction sysTem Using a Nonhydrostatic Engine) to their
-        operational partner, Fleet Numerical Meteorology and Oceanography Center
-        (FNMOC). The transitioning of innovations from research to operations
-        (R2O) and the feedback from operations to research (O2R) is one of the
-        major challenges in the NWP world, to the extent that it is sometimes
-        referred to as the "valley of death". One of the contributors to this
-        challenge is that the environment in which the NWP systems operate can
-        differ greatly. The development and testing often take place on
-        different high-performance computing (HPC) systems, with varying
-        environments of software (also referred to as software stacks), and with
-        different workflows than in operations.
-
-        For the first operational implementation of NEPTUNE in 2025, NRL and
-        FNMOC are adopting a novel approach to address some of these challenges:
-        First, FNMOC will be running on highly secured, fenced-off partitions on
-        the same HPC systems that NRL uses for its development. Second, NRL will
-        provide a software environment based on spack-stack. The spack-stack
-        project is a joint effort of several major federal agencies and UCAR
-        labs. It leverages the spack package manager developed by Lawrence
-        Livermore National Laboratory and supported by a large community.
-        Spack-stack utilizes modern software development practices like
-        continuous integration (CI) and a fast release cycle. Through the use of
-        spack source mirrors and binary caches, FNMOC will be able to deploy
-        bit-for-bit identical software environments in their secured
-        environments in a matter of minutes.
-
-        In this presentation, we will revisit the challenges in the R2O2R cycle
-        in NWP, provide an overview of the joint spack-stack effort, and cover
-        the deployment of NEPTUNE in operations.
-
-        [Distribution Statement Approved for public release. Distribution is
-        unlimited.]
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>2:20 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? success cell "Notebook Proceedings Office Hours"
@@ -2102,7 +2095,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>3:20 PM</b></div>
+            <div class="cell"><b>3:00 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? warning cell "End of the Conference"
