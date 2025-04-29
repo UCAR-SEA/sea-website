@@ -61,6 +61,8 @@
             <div class="cell">Jacob Carley</div>
             <div class="cell-content">
     ??? abstract cell "Invited Keynote: Bringing Agility to the Operational Production Suite"
+        **[[Slides](https://drive.google.com/file/d/1gDAL4Sg_CMf3G9ado7g7Y8D1A7REz1tS/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=760s)]**
+
         *Jacob Carley earned his PhD in 2012 from Purdue University studying
         hybrid ensemble-3DVar methods for the assimilation of radar data under
         the support of an NSF Graduate Research Fellowship. Following his PhD he
@@ -105,6 +107,8 @@
             <div class="cell">Gabriele Bozzola</div>
             <div class="cell-content">
     ??? abstract cell "Beyond Fortran and C++: Exploring Julia for Climate Modeling"
+        **[[Slides](https://drive.google.com/file/d/1e2QaxNKY2EpvhBwCqT0G0bxyqA5C50cG/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=6697s)]**  
+
         *Gabriele Bozzola is a Senior Software Engineer at CliMA, where we use Julia to build a
         new GPU, ML-native climate model.*
 
@@ -123,6 +127,9 @@
             <div class="cell">Hilario Torres</div>
             <div class="cell-content">
     ??? abstract cell "Dynamic Runtime Scheduling in MPI Applications Via Directed Acyclic Graphs"
+        **[[Slides](https://drive.google.com/file/d/1c4JyYjXUb1hdL62N6j6WSAN-mLedxk9Z/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=7953s)]**
+
         *Dr. Hilario (Lalo) Torres recently joined the Applications Scalability
         and Performance (ASAP) group at the National Center for Atmospheric
         Research (NCAR) as a software engineer. Prior to joining NCAR he was
@@ -170,6 +177,9 @@
             <div class="cell">Nat Efrat-Henrici</div>
             <div class="cell-content">
     ??? abstract cell "Advancing Climate Modeling with Collaborative Software Development in Julia"
+        **[[Slides](https://drive.google.com/file/d/1bajIMgomirP5tJeB63UFAiJq9IoSaWCc/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=9131s)]**
+
         *Nathanael (Nat) Efrat-Henrici is a Software Engineer working at Caltech
         as part of the Climate Modeling Alliance (CliMA). He works primarily on
         the atmosphere model and data assimilation infrastructure. Nat obtained
@@ -206,6 +216,9 @@
             <div class="cell">Jorge Bravo</div>
             <div class="cell-content">
     ??? abstract cell "Free and open-source tools to develop a web-map visualizer"
+        **[[Slides](https://drive.google.com/file/d/1dMUy5vnI21QEtHHhLXAGsz5D-zFVU1Iu/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=10030s)]**
+
         *Jorge Humberto Bravo Mendez, with a background in atmospheric sciences
         and a master’s degree in hydrometeorology, is currently a PhD candidate
         at Stevens Institute of Technology (Hoboken, NJ). His research focuses
@@ -232,6 +245,9 @@
             <div class="cell">Brian Vanderwende</div>
             <div class="cell-content">
     ??? abstract cell "Improving the PBS Pro Experience for NCAR HPC Users"
+        **[[Slides](https://drive.google.com/file/d/1GDW0LAp6zXPtPySNl0rhOChdAK-fmkfV/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=10718s)]**
+
         *Brian Vanderwende is a HPC User Support Consultant in the Computational
         Information Systems Laboratory at NSF NCAR in Boulder, CO. He began his
         career as a PhD student in atmospheric science and leverages that
@@ -279,6 +295,9 @@
             <div class="cell">Agnieszka Żaba</div>
             <div class="cell-content">
     ??? abstract cell "Continuous Integration with research notebooks: on maintaining reproducibility in atmospheric modeling"
+        **[[Slides](https://drive.google.com/file/d/1Gf215UR210X6DQjqLQ-upcUAK-60idcf/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=16375s)]**
+
         *Agnieszka is a PhD student in the Environmental Physics Group
         (zfs.agh.edu.pl/en) at the Faculty of Physics and Applied Computer
         Science, AGH University of Krakow. My research interests lie at the
@@ -341,6 +360,9 @@
             <div class="cell">Brett Neuman</div>
             <div class="cell-content">
     ??? abstract cell "GitHub Actions Workflows using Self-Hosted Runners for HPC"
+        **[[Slides](https://drive.google.com/file/d/1wDHHwr8dQ4fvSxierxZ1wLhX7rqXKpOk/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=17493s)]**
+
         *Brett is a consultant for the Consulting Services Group (CSG) in the
         Computational and Information Systems Laboratory (CISL) at NCAR.  Brett
         supports the High Performance Computing (HPC) research efforts in
@@ -374,6 +396,9 @@
             <div class="cell">Kyle Chard</div>
             <div class="cell-content">
     ??? abstract cell "Transforming Scientific Discovery with AI/ML and Globus"
+        **[[Slides](https://drive.google.com/file/d/1sjVSHz6B4Frnnmq-2gW0KCkTQHkm_HIM/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=18748s)]**
+
         *Kyle Chard is a Research Associate Professor in the Department of
         Computer Science at the University of Chicago. He also holds a joint
         appointment at Argonne National Laboratory. He received his Ph.D. in
@@ -399,6 +424,9 @@
             <div class="cell">Maxine Hartnett</div>
             <div class="cell-content">
     ??? abstract cell "Event Driven Architecture in the cloud for the IMAP Science Data Center"
+        **[[Slides](https://drive.google.com/file/d/15h-2h6SmvKcv_6w1KJpJxP4BmoWGZqNa/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=19882s)]**
+
         *Maxine is a software engineer at LASP in Boulder, Colorado. She is
         currently the science data center lead for two instruments on IMAP and
         has contributed to a variety of science data systems for heliophysics
@@ -438,6 +466,9 @@
             <div class="cell">Isaac Schluesche</div>
             <div class="cell-content">
     ??? abstract cell "Using Julia for Next-Generation Atmospheric Analysis Software"
+        **[[Slides](https://drive.google.com/file/d/10XA-VbfeTjmvFXMRN654GNCXtdn1Yi9P/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=22942s)]**
+
         **Coauthors: Dr. Michael M Bell**
 
         *Isaac is a second year master's student at Colorado State University
@@ -505,6 +536,9 @@
             <div class="cell">Jen DeHart</div>
             <div class="cell-content">
     ??? abstract cell "Improved Accessibility and Community Knowledge of Lidar and Radar Data Analysis"
+        **[[Slides](https://drive.google.com/file/d/1CxH_qufKStz3i8kkY9I5SCbYJ3Os2nK9/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=23779s)]**
+
         **Coauthors: Ana Espinoza**
         
         *Jen is a Research Scientist II at Colorado State University. In her
@@ -577,6 +611,9 @@
             <div class="cell">Amit Ruhela</div>
             <div class="cell-content">
     ??? abstract cell "An introduction to TACC HPCPerfStats"
+        **[[Slides](https://drive.google.com/file/d/1jkuOaAC0HDLEUqGetKl-yL798205z97Q/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=24978s)]**
+
         **Coauthors: John Cazes**
 
         *Dr. Amit Ruhela works as a Manager in the HPC group at TACC, Austin. He
@@ -615,6 +652,9 @@
             <div class="cell">Namita Shah</div>
             <div class="cell-content">
     ??? abstract cell "From Carpentries to Curriculum: Benefits and Drawbacks of Adapting Open Educational Materials to Meet Local Needs"
+        **[[Slides](https://drive.google.com/file/d/11n3x8DYtUdoyd6uqO-Hx8AaS610hli4F/view?usp=drive_link)] -
+        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=26333s)]**
+
         *Namita Shah is an undergraduate senior at Arizona State University,
         majoring in Computer Science with a minor in Data Science. Since 2023,
         she has been working as a Research Software Engineer(RSE) at the Digital
@@ -710,6 +750,8 @@
             <div class="cell">Romit Maulik</div>
             <div class="cell-content">
     ??? abstract cell "Invited Keynote: Automated deep ensemble with uncertainty quantification using DeepHyper"
+        **[[Slides](https://drive.google.com/file/d/1FAWuYB43uLdDocRfA01aGCaT75OqkOju/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=1244s)]**
+        
         *Dr. Romit Maulik is an Assistant Professor in the College of
         Information Sciences and Technology at Pennsylvania State University
         (Penn State). He is also a co-hire in the Institute for Computational
@@ -759,6 +801,8 @@
             <div class="cell">Ana Manica</div>
             <div class="cell-content">
     ??? abstract cell "Software in Space Science: Developing Open Source Metadata Management"
+        **[[Slides](https://drive.google.com/file/d/1Yv0yOLJmqpWTl32M28CxIFySuCkEIy7k/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=7576s)]**
+
         *Ana Manica is a current undergrad at the University of Colorado Boulder
         pursuing a dual degree in Computer Science and Astrophysics.*
 
@@ -785,6 +829,8 @@
             <div class="cell">Jiachen Liu</div>
             <div class="cell-content">
     ??? abstract cell "Implementation of the Hyperdual-Step Method in CMAQ for Numerically Exact Sensitivity Analysis"
+        **[[Slides](https://drive.google.com/file/d/1jgZWTq0sUvfLB-LsGNaq0CC1AcRYOjfg/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=8358s)]**
+
         *Jiachen Liu is a Ph.D. candidate at Drexel University. He is interested
         in developing and applying numerical techniques to analyze sensitivities
         of complex chemical transport models*
@@ -823,6 +869,8 @@
             <div class="cell">Prentice Bisbal</div>
             <div class="cell-content">
     ??? abstract cell "The first step to making your code more accessible: Make it easier to build and install!"
+        **[[Slides](https://drive.google.com/file/d/1UXJjfc_DWsCCmmziLpDMzriyfWfX1jiO/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=9653s)]**
+
         *Prentice Bisbal is an HPC Systems Engineer III in the Computational and
         Information Systems Lab (CISL) at NSF NCAR. He has over 20 years of
         experience as a Linux system administrator specializing in high
@@ -857,6 +905,8 @@
             <div class="cell">David Pettifor</div>
             <div class="cell-content">
     ??? abstract cell "Designing a spectrum visualization platform with flexibility in mind"
+        **[[Slides](https://drive.google.com/file/d/1Nw5PDP7GrJBh98v-zWZXSj2Xk8W3on3_/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=11240s)]**
+
         **Coauthor: Melissa Harden**
 
         *David Pettifor, Research Software Engineer Manager, has been working
@@ -916,6 +966,8 @@
             <div class="cell">Tori Marbois</div>
             <div class="cell-content">
     ??? abstract cell "Modernizing Legacy Systems: Updating the MAVEN Science Data Center for Improved Performance and Maintainability"
+        **[[Slides](https://drive.google.com/file/d/1seNo5TvnKDa4PhlY03UqcJ2Gobif9Txh/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=12481s)]**
+
         *Tori Marbois (she/her) works at LASP as a Data Systems Engineer and
         recently joined the MAVEN Science Data Center (SDC) team to support
         ongoing operations and modernization efforts. She has a degree in
@@ -974,6 +1026,8 @@
             <div class="cell">Katherine Rasmussen</div>
             <div class="cell-content">
     ??? note cell "Julienne + Assert == Correctness-Checking for Functional Fortran"
+        **[[Slides](https://drive.google.com/file/d/1FuMk8l81jnIk6jf1oEATpMg-Gq_XYd25/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=17401s)]**
+
         **Coauthors: Damian Rouson, Dan Bonachea**
 
         *Katherine Rasmussen is a Computer Systems Engineer who applies
@@ -1055,6 +1109,8 @@
             <div class="cell">Guoqing Ge</div>
             <div class="cell-content">
     ??? abstract cell "Promoting open science: a better tool for version controlling mega binary data files - git-mega"
+        **[[Slides](https://drive.google.com/file/d/1H9TRQHYoYpy4Fqtu_EvoWFjxjccBHX32/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=24511s)]**
+
         *Dr. Ge is a research scientist at CIRES/NOAA GSL and works on improving
         the NOAA operational forecasts through the data assimilation
         developments.*
@@ -1106,6 +1162,8 @@
             <div class="cell">Saurav Dey Shuvo</div>
             <div class="cell-content">
     ??? abstract cell "Automating ASOS Data Processing: A Python-Based Solution for Efficient Meteorological Analysis"
+        **[[Slides](https://drive.google.com/file/d/1mi3I090fITJIxnYHNh4BBZfPachywCLv/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=25566s)]**
+
         *Saurav's research focuses on the use of Numerical Weather Prediction
         (NWP) as well as Satellite Data. Currently, he is doing Ph.D. at The
         Ohio State University, under the supervision of Professor Dr. David H.
@@ -1162,6 +1220,8 @@
             <div class="cell">Samuel Akinjole</div>
             <div class="cell-content">
     ??? abstract cell "Development of GEOS-Chem-hyd: Enabling Calculation of Numerically Exact Second-Order Sensitivities"
+        **[[Slides](https://drive.google.com/file/d/1Tu3Q8bcrKMmGapRJ3YSxsu96khipSK96/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=26595s)]**
+
         *Samuel Akinjole is a Ph.D. candidate in Environmental Engineering with
         a minor in Applied Data Science at Drexel University. He holds a
         bachelor's degree in Chemical Engineering, graduating with a First-Class
@@ -1220,6 +1280,8 @@
             <div class="cell">Damian Rouson</div>
             <div class="cell-content">
     ??? abstract cell "Cloud microphysics training and aerosol inference with the Fiats deep learning library"
+        **[[Slides](https://drive.google.com/file/d/17hRfifaNN-Lz9ZptOC9aoxbTS769CmXE/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=1963s)]**
+
         *Damian Rouson is a Senior Scientist and the Group Lead for the Computer
         Languages and Systems Software (CLaSS) Group at Berkeley Lab. He is a
         mechanical engineer with experience in simulating turbulent flows in
@@ -1295,6 +1357,8 @@
             <div class="cell">Daniel Abdi</div>
             <div class="cell-content">
     ??? abstract cell "Developing a Data-Driven Emulator for the High-Resolution Rapid Refresh (HRRR) Model"
+        **[[Slides](https://drive.google.com/file/d/1t_X9_XdHPYQr0ezcnA_3MMjO13C2TEsa/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=3331s)]**
+
         *Daniel is a research scientist at CIRA currently working on developing
         data-driven models for medium-range weather forecasting for both global
         and regional applications. My previous background include accelerating
@@ -1344,6 +1408,8 @@
             <div class="cell">David Hahn</div>
             <div class="cell-content">
     ??? abstract cell "µWMS: Cloud-Based Microservice Web Map Service"
+        **[[Slides](https://drive.google.com/file/d/14fWHTCeBl-X3aNqrwm68YCFyj_DE5g8K/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=4394s)]**
+
         *David Hahn is a software engineer at UCAR, primarily in NCAR/RAL, but
         also working for UCP/COSMIC and UCP/JCSDA over the years.  David has a
         passion for working in DevOps roles and cloud native deployments that
@@ -1381,6 +1447,8 @@
             <div class="cell">Joshna Kurra</div>
             <div class="cell-content">
     ??? abstract cell "Toward Generating Experiment-Specific Notebooks in FABRIC"
+        **[[Slides](https://drive.google.com/file/d/15KWO23ZrA3ujan5EKrcmpahqJaJLpYdZ/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=5622s)]**
+
         **Coauthors: Mami Hayashida, Joshna Kurra, Zongming Fei, James
         Griffioen**
 
@@ -1451,6 +1519,8 @@
             <div class="cell">Brad Klotz</div>
             <div class="cell-content">
     ??? abstract cell "An Interconnected Workflow Design for Simulating Airborne Phased Array Radar (APAR) Data"
+        **[[Slides](https://drive.google.com/file/d/1re7YtS0C7ycmXW84qNwDY9zQZlDtaept/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=8527s)]**
+
         *Brad Klotz is a Project Scientist within the Remote Sensing Facility of
         NSF NCAR's Earth Observing Laboratory. During his four and a half years
         at NSF NCAR, Brad has worked primarily on the Airborne Phased Array
@@ -1520,6 +1590,8 @@
             <div class="cell">Dazhong Xia</div>
             <div class="cell-content">
     ??? abstract cell "A small tool for medium data: browser-based data exploration and export done quick"
+        **[[Slides](https://drive.google.com/file/d/1q97loYyuiP8v6jnm9-d90gk5jXxZE7C9/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=9771s)]**
+
         *Dazhong is a member of Catalyst Cooperative, a worker-owned cooperative
         that wrangles data about the US energy system. He has over a decade of
         software experience that spans data engineering, devops, and full-stack
@@ -1553,6 +1625,8 @@
             <div class="cell">Zach Schira</div>
             <div class="cell-content">
     ??? abstract cell "Building, Maintaining, and Tracking Machine Learning Models in a Production Environment"
+        **[[Slides](https://drive.google.com/file/d/1N4Z3dEhOn8geWdbEqFVS1GmbT41vbMjD/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=10921s)]**
+
         *Zach Schira is a data engineer at Catalyst Cooperative where he has
         helped to build out infrastructure enabling the team to tackle large,
         complex machine learning problems. Recently,  he lead the infrastructure
@@ -1591,6 +1665,8 @@
             <div class="cell">Edward Hartnett</div>
             <div class="cell-content">
     ??? abstract cell "Using AI in Earth Science Programming"
+        **[[Slides](https://drive.google.com/file/d/1y5AqTQDFFiokRvO07hRWEotd8sVOIc4U/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=11981s)]**
+
         *Edward Hartnett is an author of NetCDF, a freely available software
         library for scientific data, used by NASA, NOAA, the ESA, and climate
         and meteorology scientists around the world. He contributed to the
@@ -1644,6 +1720,8 @@
             <div class="cell">Daralynn Rhode</div>
             <div class="cell-content">
     ??? abstract cell "IMAP Data Access API: Functionality, Improvements, and Usages For Better Data Management"
+        **[[Slides](https://drive.google.com/file/d/1zpOAVAVuJflmf5C2R8KgEMk8gdASlumB/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=13463s)]**
+
         *Daralynn is a junior studying Computer Science and Astronomy at CU
         Boulder. She currently works as a student developer at the Laboratory
         for Atmospheric and Space Physics (LASP), contributing to the Science
@@ -1743,6 +1821,8 @@
             <div class="cell">Ligia Bernardet</div>
             <div class="cell-content">
     ??? abstract cell "Invited Keynote: Earth System Model Development Activities at the NOAA Global Systems Laboratory - A software engineering perspective"
+        **[[Slides](https://drive.google.com/file/d/1Ts5m5w5TF3LsBb7hNFUTVaUWAaM5epsV/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=2281s)]**
+
         *Ligia Bernardet is a meteorologist with a PhD in atmospheric sciences
         from Colorado State University. She is the chief of the Earth Prediction
         Advancement Division within the NOAA Global Systems Laboratory in
@@ -1785,6 +1865,8 @@
             <div class="cell">Dom Heinzeller</div>
             <div class="cell-content">
     ??? abstract cell "The role of spack-stack in the operational implementation of the NAVY's next-generation weather forecasting model"
+        **[[Slides](https://drive.google.com/file/d/1IT6SzLXl5ppcwZhGRtZ5fMD1_LLUFX5A/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=8415s)]**
+
         *Dom Heinzeller graduated from Heidelberg University, Germany, with a
         PhD in Theoretical Astrophysics. Following a postdoctoral fellowship on
         the physical and chemical evolution of protoplanetary disks at Kyoto
@@ -1841,6 +1923,8 @@
             <div class="cell">Carol Ruchti</div>
             <div class="cell-content">
     ??? abstract cell "Modernizing Product Generation for the NSF NCAR EOL Field Catalog"
+        **[[Slides](https://drive.google.com/file/d/1l_BZFyq8dXP0mtJFPTJQOvm1MPYS2VRe/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=9776s)]**
+
         *Carol Ruchti is an associate scientist at NCAR/EOL. She has worked with
         the EOL for the past 7 years as a manager for EOL Field Catalog. During
         her time at NCAR, she has supported in field campaigns across the globe,
@@ -1880,6 +1964,8 @@
             <div class="cell">Daniel Madren</div>
             <div class="cell-content">
     ??? abstract cell "From Chaos to Clarity: Structuring Research Software Engineering Projects for Success"
+        **[[Slides](https://drive.google.com/file/d/1FhgH2dK8oTUA7Qd8vVQ_IAAOYAf08ebL/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=10856s)]**
+
         *Daniel joined the Purdue Research Computing team in April 2024 as the
         Program Manager for the newly established RSE Center. In this role, he
         oversees the development of project management processes, including
@@ -1925,6 +2011,8 @@
             <div class="cell">Phil Du</div>
             <div class="cell-content">
     ??? abstract cell "A Practical Framework for Small Teams to Develop Sustainable Research Software"
+        **[[Slides](https://drive.google.com/file/d/13pTt9Y9E9XytgaYSLvaW7F4itsi_L9mE/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=12270s)]**
+
         *Phil is a current graduate student in Computing and Software at
         McMaster University.*
 
@@ -1968,6 +2056,8 @@
             <div class="cell">Maria Patrou</div>
             <div class="cell-content">
     ??? abstract cell "Modernization and Standardization of Software tools in Spectroscopy"
+        **[[Slides](https://drive.google.com/file/d/1jnGY6dvzRj0LAqjLEU5bYOSP0ltTEVUp/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=13565s)]**
+
         **Coauthors: Kyle Ma, Andrei Savici*
 
         *Dr. Maria Patrou joined Oak Ridge National Laboratory (ORNL) in 2023.
@@ -2018,6 +2108,8 @@
             <div class="cell">Julia Sloan</div>
             <div class="cell-content">
     ??? abstract cell "Leveraging Modern Computing and Calibration-driven Development for Climate Modeling at CliMA"
+        **[[Slides](https://drive.google.com/file/d/1_C1rEe8HeEjgWOJ9iX4Ilu8ul4B4vKvd/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=19192s)]**
+
         *Julia is a research software engineer working in the Climate Modeling
         Alliance (CliMA) at Caltech. She leads the group’s coupling team in
         developing ClimaCoupler.jl, and also contributes software support for
@@ -2056,6 +2148,8 @@
             <div class="cell">Erik Kluzek</div>
             <div class="cell-content">
     ??? abstract cell "Helping Scientists Embrace their Inner Research Software Engineer (RSE) and Working Together with the Community Earth System Model (CESM) RSE's to improve CESM Science; From a Land Component Model (CTSM) Perspective"
+        **[[Slides](https://drive.google.com/file/d/1tWercFlWkF6DgL7iktaEUVTgDLegzeii/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=20391s)]**
+
         *Erik Kluzek has been working as a Research Software Engineer for four
         decades. Working alongside scientists for that time and with an
         education coming from the science side. At one point he decided that
