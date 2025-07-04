@@ -41,6 +41,7 @@ nav:
     - 2025: 
       - Conference: iss/2025.md
       - Program: iss/2025-program.md
+      - Proceedings: iss/2025-proceedings.md
     - 2024: 
       - Conference: iss/2024.md
   - Open Discussions: discussions/index.md
