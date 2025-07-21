@@ -1,5 +1,10 @@
-# 2025 Improving Scientific Software Conference Proceedings
+<style>
+.md-typeset div.grid.cards {
+    grid-template-columns: 1fr;
+}
+</style>
 
+# 2025 Improving Scientific Software Conference Proceedings
 <div class="grid cards" markdown>
 
 -   **Continuous Integration with research notebooks: on maintaining reproducibility in atmospheric modeling**
