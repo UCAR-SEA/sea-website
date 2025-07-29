@@ -164,6 +164,7 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
+      manual: true
   - minify:
       minify_html: true
   - open-in-new-tab
