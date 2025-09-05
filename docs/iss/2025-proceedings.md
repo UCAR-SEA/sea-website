@@ -69,7 +69,7 @@ year!
 
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.17023783-blue)](https://doi.org/10.5281/zenodo.17023783)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-A-Practical-Framework-for-Small-Teams-to-Develop-Sustainable-Research-Software/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-A-Practical-Framework-for-Small-Teams-to-Develop-Sustainable-Research-Software)
   
@@ -112,7 +112,7 @@ year!
 
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.16808772-blue)](https://doi.org/10.5281/zenodo.16808772)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-Improving-PBS-for-NCAR-HPC-Users/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-Improving-PBS-for-NCAR-HPC-Users)
   
@@ -156,7 +156,7 @@ year!
 
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.16921062-blue)](https://doi.org/10.5281/zenodo.16921062)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-Toward-Generating-Experiment-Specific-Notebooks-in-Fabric/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-Toward-Generating-Experiment-Specific-Notebooks-in-Fabric)
   
@@ -232,7 +232,7 @@ year!
     
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.16986282-blue)](https://doi.org/10.5281/zenodo.16986282)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-IMAP-architecture/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-IMAP-architecture)
   
@@ -266,7 +266,7 @@ year!
 
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.15660204-blue)](https://doi.org/10.5281/zenodo.15660204)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-Improved-Accessibility-and-Community-Knowledge-of-Lidar-and-Radar-Data-Analysis/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-Improved-Accessibility-and-Community-Knowledge-of-Lidar-and-Radar-Data-Analysis)
   
@@ -335,7 +335,7 @@ year!
 
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.16893881-blue)](https://doi.org/10.5281/zenodo.16893881)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-Continuous-integration-with-research-notebooks/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-Continuous-integration-with-research-notebooks)
   
