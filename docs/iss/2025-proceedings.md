@@ -166,7 +166,7 @@ year!
     ![Static Badge](https://img.shields.io/badge/LLM-29D680)
 
 
--   #### [Helping Scientists Embrace their Inner Research Software Engineer (RSE) and Working Together with the Community Earth System Model (CESM) RSEs to improve CESM Science](https://ucar-sea.github.io/SEA-ISS-2025-Embrace-Inner-RSE/)
+<!---   #### [Helping Scientists Embrace their Inner Research Software Engineer (RSE) and Working Together with the Community Earth System Model (CESM) RSEs to improve CESM Science](https://ucar-sea.github.io/SEA-ISS-2025-Embrace-Inner-RSE/)
 
     ---
 
@@ -204,7 +204,7 @@ year!
     ![Static Badge](https://img.shields.io/badge/CTSM-29D680)
     ![Static Badge](https://img.shields.io/badge/Earth%20system%20model-29D680)
     ![Static Badge](https://img.shields.io/badge/land%20model-29D680)
-
+-->
 -   #### [Event driven architecture for the IMAP science data center](https://ucar-sea.github.io/SEA-ISS-2025-IMAP-architecture/)
 
     ---
@@ -304,7 +304,7 @@ year!
 
     ---
 
-    [![Static Badge](https://img.shields.io/badge/DOI-10.12345/8ijhF7p-blue)](https://doi.org/10.12345/8ijhF7p)
+    [![Static Badge](https://img.shields.io/badge/DOI-10.5281/zenodo.17070014-blue)](https://doi.org/10.5281/zenodo.17070014)
     [![Static Badge](https://img.shields.io/badge/View_Notebook-F37626?logo=jupyter&logoColor=f5f5f5)](https://ucar-sea.github.io/SEA-ISS-2025-Cloud-microphysics-training/)
     [![Static Badge](https://img.shields.io/badge/GitHub_Repo-181717?logo=github)](https://github.com/UCAR-SEA/SEA-ISS-2025-Cloud-microphysics-training)
   
