@@ -41,6 +41,7 @@ nav:
     - 2025: 
       - Conference: iss/2025.md
       - Program: iss/2025-program.md
+      - Proceedings: iss/2025-proceedings.md
     - 2024: 
       - Conference: iss/2024.md
   - Open Discussions: discussions/index.md
@@ -163,6 +164,7 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
+      manual: true
   - minify:
       minify_html: true
   - open-in-new-tab
