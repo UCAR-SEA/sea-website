@@ -22,4 +22,4 @@ behalf of both the submitters and the editorial team; we thank both for their
 efforts and enthusiasm which have helped to make this process a success.
 
 The ISS Conference Committee is in the initial planning stages for the 2026
-Conference. Stay tuned for a additional details later this year.
+Conference. Stay tuned for additional details later this year.
