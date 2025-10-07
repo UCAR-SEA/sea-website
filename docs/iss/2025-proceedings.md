@@ -30,6 +30,13 @@ year!
 
 ---
 
+In addition to the gallery below, a static version of the proceedings has been
+published as an NCAR Technical Note with support from the NSF NCAR Library.
+
+[![Static Badge](https://img.shields.io/badge/DOI-10.5065/4w2k--ay60-blue)](https://doi.org/10.5065/4w2k-ay60)
+
+---
+
 <div class="grid cards" markdown>
 
 -   #### [A Practical Framework for Small Teams to Develop Sustainable Research Software](https://ucar-sea.github.io/SEA-ISS-2025-A-Practical-Framework-for-Small-Teams-to-Develop-Sustainable-Research-Software/)
