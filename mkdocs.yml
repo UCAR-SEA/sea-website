@@ -44,7 +44,10 @@ nav:
       - Proceedings: iss/2025-proceedings.md
     - 2024: 
       - Conference: iss/2024.md
-  - Open Discussions: discussions/index.md
+  - Events:
+    - events/index.md
+    - Open Discussions: events/discussions.md
+    - Seminars: events/seminars.md
   - Community:
     - community/index.md
     - Slack: https://ucarsea.slack.com

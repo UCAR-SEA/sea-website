@@ -11,7 +11,7 @@ like to host an Open Discussion event for your particular topic of interest,
 please reach out to the [SEA Steering
 Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open Discussion).
 
-## Next Discussion
+## Latest Discussion
 
 **Subject: Language Interoperability Panel Discussion**  
 **Time: 26 February 2025 at 3 PM Mountain Time**
