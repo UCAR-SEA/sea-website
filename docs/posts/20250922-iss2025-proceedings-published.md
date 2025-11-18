@@ -13,7 +13,7 @@ categories:
 The 2025 Improving Scientific Software Proceedings Committee is excited to
 present the cumulative efforts of the many authors who wrote and submitted a
 paper to our Conference Proceedings - which are now accessible via the [ISS 2025
-Proceedings Gallery](iss/2025-proceedings).
+Proceedings Gallery](iss/2025/proceedings/).
 
 This year, we decided to experiment with using Jupyter Notebooks as the paper
 format instead of plain-text papers, allowing for greater expressiveness and the
