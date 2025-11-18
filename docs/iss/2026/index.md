@@ -38,14 +38,12 @@ develop connections across divisions and institutions, and advance our
 community.
 
 The scientific software ecosystem is experiencing changes unlike any in
-recent times. Large language models are revolutionizing the software design
+recent times. Large language models are revolutionizing the software development
 process, but understanding how to use them effectively and ethically remains a
-major difficulty. Software support is more uncertain than ever, given the
-disruptions we've seen to previously reliable funding streams, necessitating
-more collaboration between public and private sectors than ever before. As
-always, these challenges bring with them corresponding opportunities, and in
-pursuing such opportunities, we can seek to *maintain the joy of software
-development*.
+major difficulty. And software sustainability is less certain than ever, given
+the disruptions we've seen to previously reliable funding streams. As always,
+these challenges bring with them corresponding opportunities, and in pursuing
+such opportunities, we can seek to *maintain the joy of software development*.
 
 ### Audience
 
@@ -104,7 +102,7 @@ Boulder, CO 80305
 We welcome any abstracts related to improvements in scientific software,
 particularly those focused on the following topics:
 
-- Use of AI in software design
+- Use of AI in software development
 - Collaborative efforts spanning groups within institutions
 - Writing code that is easy for new contributors to understand
 - Better practices for writing and maintaining documentation
