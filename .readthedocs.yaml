@@ -15,14 +15,6 @@ build:
       - env | sort | uniq
       - conda --version && conda list
 
-      # DEPLOY_TARGET is set in our readthedocs admin interface, and should
-      # be one of the supported targets: [ primary, arc_iframe ]
-      - make ${DEPLOY_TARGET}-stylelinks
-
-      # the above may generate a dirty git cache for some committed symbolic links - ignore. ref:
-      # https://docs.readthedocs.io/en/stable/build-customization.html#avoid-having-a-dirty-git-index
-      - git update-index --assume-unchanged theme.yml
-
 conda:
   environment: conda.yaml
 
