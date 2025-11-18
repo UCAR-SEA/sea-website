@@ -40,11 +40,11 @@ community.
 The scientific software ecosystem is experiencing changes unlike any in
 recent times. Large language models are revolutionizing the software design
 process, but understanding how to use them effectively and ethically remains a
-major difficulty. Software support is more uncertain than ever given the
+major difficulty. Software support is more uncertain than ever, given the
 disruptions we've seen to previously reliable funding streams, necessitating
 more collaboration between public and private sectors than ever before. As
 always, these challenges bring with them corresponding opportunities, and in
-pursuing such opportunities we can seek to maintain *the joy of software
+pursuing such opportunities, we can seek to *maintain the joy of software
 development*.
 
 ### Audience
@@ -53,15 +53,15 @@ The conference is for staff and students at research institutions, universities,
 and in industry who are interested in learning and discussing the latest
 developments and practices in scientific software. Those working in the
 geosciences will likely find it most relevant.  However, anyone who finds the
-agenda beneficial to them is welcome to attend even if they do not fit the
+agenda beneficial to them is welcome to attend, even if they do not fit the
 category previously stated.
 
 ### Sponsors
 
 The 2026 Improving Scientific Software Conference is organized by the UCAR
-Software Engineering Assembly (SEA) and is funded by UCAR and NSF NCAR.
+Software Engineering Assembly (SEA) and funded by UCAR and NSF NCAR.
 
-If your organization would like to sponser the 2026 ISS Conference,
+If your organization would like to sponsor the 2026 ISS Conference,
 please reach out to the [ISS committee](mailto:iss_committee@ucar.edu) to
 discuss funding opportunities and the associated benefits to your organization.
 
@@ -108,7 +108,7 @@ particularly those focused on the following topics:
 - Collaborative efforts spanning groups within institutions
 - Writing code that is easy for new contributors to understand
 - Better practices for writing and maintaining documentation
-- Ways our community prioritize software maintainenance and improvement
+- Effective approaches to prioritize and enhance community software maintenance
 - Strategies for demonstrating legacy software value in a changing landscape
 - What can software engineers, research software engineers, and scientists learn
   from each other?
