@@ -116,7 +116,7 @@ who might be interested.
 
 <br><figure markdown="span">
     [Submit an ISS Abstract](https://forms.gle/KCUWehTEfngLMXGL8){ .md-button }
-    <figcaption>**Abstracts are due by 5PM MT on Friday, January 30, 2026.**</figcaption>
+    <figcaption>**Abstracts are due by 5PM MT on Friday, January 23, 2026.**</figcaption>
 </figure>
 
 ### Student Submission Support
