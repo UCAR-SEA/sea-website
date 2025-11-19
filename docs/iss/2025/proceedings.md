@@ -5,7 +5,7 @@
 </style>
 
 <figure markdown="span">
-    <img src="../../assets/iss2025.png" alt="drawing" width="80%"/>
+    <img src="../../../assets/iss2025.png" alt="drawing" width="80%"/>
     <figcaption>**From Legacy to Leading-Edge: Transforming Software Design in
     Science to Meet Tomorrow’s Challenges**</figcaption>
 </figure>

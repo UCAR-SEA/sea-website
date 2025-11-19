@@ -38,12 +38,14 @@ nav:
     - index.md
   - ISS Conference:
     - iss/index.md
+    - 2026:
+      - Conference: iss/2026/index.md
     - 2025: 
-      - Conference: iss/2025.md
-      - Program: iss/2025-program.md
-      - Proceedings: iss/2025-proceedings.md
+      - Conference: iss/2025/index.md
+      - Program: iss/2025/program.md
+      - Proceedings: iss/2025/proceedings.md
     - 2024: 
-      - Conference: iss/2024.md
+      - Conference: iss/2024/index.md
   - Events:
     - events/index.md
     - Open Discussions: events/discussions.md
@@ -180,7 +182,7 @@ plugins:
   - redirects:
       redirect_maps:
         'conference/index.md': 'iss/index.md'
-        'conference/2024.md': 'iss/2024.md'
+        'conference/2024.md': 'iss/2024/index.md'
 
 # ------------------------------------
 # -- configuration - extras
