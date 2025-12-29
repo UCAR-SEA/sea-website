@@ -2,13 +2,15 @@
 
 /* enlarge logo */
 .md-header__button.md-logo {
-    margin: 0;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
 }
 
 .md-logo img {
     width: px !important;
-    height: 115px !important;
+    height: 95px !important;
 }
 
 
@@ -28,18 +30,22 @@
 
   /* Default properties & color shades */
   --md-default-bg-color:         #f1f4f7;
-  --md-typeset-a-color:          rgb(28,101,143); /* PMS 2152 (NCAR Blue) */
+  --md-typeset-a-color:          #00357A; /* PMS 7710 (UCAR Dark Blue) */
 
   /* the above (--md-typeset-a-color) doesn't seem to work in material>9.5, so duplicate spec here too: */
   .md-typeset a {
-      color:                     rgb(28,101,143); /* PMS 2152 (NCAR Blue) */
+      color:                     #00357A; /* PMS 7710 (UCAR Dark Blue) */
+  }
+
+  .md-typeset a:hover {
+      color:                     #00A2B4; /* PMS 7710 (UCAR Aqua) */
   }
 
   /* Primary color shades */
-  --md-primary-fg-color:         rgb(28,101,143); /* PMS 2152 (NCAR Blue) */
+  --md-primary-fg-color:         #00357A; /* PMS 7710 (UCAR Dark Blue) */
 
   /* Accent color shades */
-  --md-accent-fg-color:          rgb(0,121,124);       /* PMS 3557 (UCAR Green) */
+  --md-accent-fg-color:          #00A2B4; /* PMS 7710 (UCAR Aqua) */
 
   /* Code color shades */
   --md-code-bg-color:            rgb(210,227,235,0.3);
@@ -47,7 +53,7 @@
   --md-code-hl-number-color:     rgb(11,33,57);
   --md-code-hl-comment-color:    #8F0B0B;        /* ref: https://creativebooster.net/blogs/colors/shades-of-maroon-color */
   --md-code-hl-variable-color:   rgb(1,33,105);  /* PMS 280 (Deep Blue) */
-  --md-code-hl-string-color:     rgb(0,121,124); /* PMS 3557 (UCAR Green) */
+  --md-code-hl-string-color:     rgb(0,121,124); /* PMS 3557 (Old Darker UCAR Green) */
 
 
   /* Custom colorind for admonition boxes */
