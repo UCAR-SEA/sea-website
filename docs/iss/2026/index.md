@@ -54,14 +54,44 @@ geosciences will likely find it most relevant.  However, anyone who finds the
 agenda beneficial to them is welcome to attend, even if they do not fit the
 category previously stated.
 
-### Sponsors
+### Sponsoring ISS 2026
 
 The 2026 Improving Scientific Software Conference is organized by the UCAR
-Software Engineering Assembly (SEA) and funded by UCAR and NSF NCAR.
+Software Engineering Assembly (SEA) and funded by UCAR and NSF NCAR. We also
+welcome external sponsors to provide support to ISS in exchange for increased
+visibility and opportunities to engage with our audience. We anticipate 75-125
+attendees that include NSF NCAR staff and students at research institutions,
+universities, and industry who are interested in learning and discussing the
+latest developments and practices in scientific software.
 
-If your organization would like to sponsor the 2026 ISS Conference,
-please reach out to the [ISS committee](mailto:iss_committee@ucar.edu) to
-discuss funding opportunities and the associated benefits to your organization.
+The following support levels are available:
+
+=== "Software Innovators - $2,500"
+    - 2 free registrations for the ISS Conference
+    - 5-minute vendor presentation during lunch
+    - Display of logo on signage during all networking events at the conference
+    - Recognition of sponsor support in social media posts
+    - Display of logo on this page
+    - Space for promotional items distribution at the conference
+=== "Dynamic Developers - $1,000"
+    - 1 free registration for the ISS Conference
+    - Display of logo on signage during all networking events at the conference
+    - Recognition of sponsor support in social media posts
+    - Display of logo on this page
+=== "Community Collaborators - $500"
+    - Display of logo on signage during all networking events at the conference
+    - Recognition of sponsor support in social media posts
+    - Display of logo on this page
+
+This information is also available in [PDF
+format](../../assets/iss2026_sponsorship.pdf) for your convenience. Should you
+have any questions, need assistance, or wish to discuss, please contact [Sarah
+Swanson](mailto:sswanson@ucar.edu), Executive Director of the Friends of the
+National Center, or [Jesse Nusbaumer](mailto: nusbaume@ucar.edu), ISS 2026
+Chair.
+
+To proceed with a sponsorship, please fill out [this
+form](https://universitycorporationforatmospheri.my.site.com/forms/s/).
 
 ## Registration and Logistics
 
