@@ -60,9 +60,9 @@ The 2026 Improving Scientific Software Conference is organized by the UCAR
 Software Engineering Assembly (SEA) and funded by UCAR and NSF NCAR. We also
 welcome external sponsors to provide support to ISS in exchange for increased
 visibility and opportunities to engage with our audience. We anticipate 75-125
-attendees that include NSF NCAR staff and students at research institutions,
-universities, and industry who are interested in learning and discussing the
-latest developments and practices in scientific software.
+attendees that include NSF NCAR staff and students and professionals at research
+institutions, universities, and industry that are interested in learning and
+discussing the latest developments and practices in scientific software.
 
 The following support levels are available:
 
