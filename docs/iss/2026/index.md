@@ -99,21 +99,26 @@ We expect registration to open in early 2026. Stay tuned for details.
 
 ### Venue
 
-<img src="../../assets/mesalab.png" width=600px>
+!!! note "Change in Venue"
+    As of January 21, 2026 the ISS Committee has elected to shift the conference
+    venue from the NSF NCAR Mesa Lab to the Center Green Campus. A change in
+    construction schedule allowed for this pivot, which provides easier
+    logistics for attendees.
+
+<img src="../../assets/CG1.jpg" width=600px>
 
 <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4136.178307601026!2d-105.27760562401065!3d39.9783178715134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec551c4d9c71%3A0x6170c343f33c8ada!2sNSF%20NCAR%20Mesa%20Laboratory!5e1!3m2!1sen!2sus!4v1763420467207!5m2!1sen!2sus"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8257.903603950961!2d-105.24822382310059!3d40.03196077150409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bee7374b17ef3%3A0xc4f7d4cd1d6b5ef!2sNCAR%20%26%20UCAR%20Center%20Green%20Campus%20(CG)!5e1!3m2!1sen!2sus!4v1769028749911!5m2!1sen!2sus"
 width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-This year, the Improving Scientific Software Conference will be held at NSF
-NCAR's historic [Mesa
-Laboratory](https://www.archives.ucar.edu/exhibits/mesalab), which is nestled
-above the town of Boulder near the majestic Flatirons. 
+This year's ISS Conference will be held at UCAR's Center Green Campus in
+Boulder, CO, providing easy walking-distance access from the local conference
+hotel.
 
-NSF NCAR Mesa Laboratory  
-1850 Table Mesa Dr  
-Boulder, CO 80305
+UCAR Center Green Campus  
+3090 Center Green Dr.  
+Boulder, CO 80301
 
 ## Submitting an Abstract
 
@@ -146,7 +151,7 @@ who might be interested.
 
 <br><figure markdown="span">
     [Submit an ISS Abstract](https://forms.gle/KCUWehTEfngLMXGL8){ .md-button }
-    <figcaption>**Abstracts are due by 5PM MT on Friday, January 23, 2026.**</figcaption>
+    <figcaption>**Abstracts are due by 5PM MT on Friday, January 30, 2026.**</figcaption>
 </figure>
 
 ### Student Submission Support
