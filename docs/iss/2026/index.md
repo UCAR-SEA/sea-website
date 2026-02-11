@@ -150,8 +150,7 @@ We also strongly encourage abstracts from student and early-career participants
 who might be interested.
 
 <br><figure markdown="span">
-    [Submit an ISS Abstract](https://forms.gle/KCUWehTEfngLMXGL8){ .md-button }
-    <figcaption>**Abstracts are due by 5PM MT on Friday, January 30, 2026.**</figcaption>
+    <figcaption>**Abstract submission has now closed.**</figcaption>
 </figure>
 
 ### Student Submission Support
