@@ -23,7 +23,7 @@
 <div class="table">
     <div class="row">
         <div class="cell"><b>When:</b></div>
-        <div class="cell">6-10 April, 2026</div>
+        <div class="cell">6-9 April, 2026</div>
     </div>
     <div class="row">
         <div class="cell"><b>Where:</b></div>
@@ -95,7 +95,26 @@ form](https://universitycorporationforatmospheri.my.site.com/forms/s/).
 
 ## Registration and Logistics
 
-We expect registration to open in early 2026. Stay tuned for details.
+Registration is now open for both in-person and virtual attendance to ISS 2026.
+Both registration types provide access for all four days of the conference. We
+do not offer a single-day registration option.
+
+<br><figure markdown="span">
+
+| Type      | Registration Deadline  | Price |
+| --------- | ---------------------- | ----- |
+| In-person | 11:59 PM MT - March 20 | $300  |
+| Virtual   | 11:59 PM MT - April 3  | $50   |
+
+[Registration Form](https://www.eventsquid.com/event.cfm?id=31086){ .md-button }
+</figure>
+
+### Lodging
+
+As in past years, we will be offering access to a block of hotel rooms at a
+preferred conference rate at the walking-distance [Residence Inn
+Boulder](https://www.marriott.com/en-us/hotels/vbocg-residence-inn-boulder/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0).
+Check back for more details soon!
 
 ### Venue
 
