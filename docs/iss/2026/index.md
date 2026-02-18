@@ -111,10 +111,20 @@ do not offer a single-day registration option.
 
 ### Lodging
 
-As in past years, we will be offering access to a block of hotel rooms at a
+As in past years, we are offering access to a block of hotel rooms at a
 preferred conference rate at the walking-distance [Residence Inn
 Boulder](https://www.marriott.com/en-us/hotels/vbocg-residence-inn-boulder/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0).
-Check back for more details soon!
+The block rate is $109 per night and is available from Sunday, April 5 through
+Saturday, April 11, so you can extend your stay beyond the end of the conference
+if you wish to spend time exploring Boulder.
+
+<br><figure markdown="span">
+    [Block-rate Booking](https://app.marriott.com/reslink?id=1771441329105&key=GRP&app=resvlink){ .md-button }
+    <figcaption>**Last day to Book - Sunday, March 8, 2026!**</figcaption>
+</figure>
+
+Many other options exist for lodging in the Boulder area as well. Feel free to
+reach out in the [UCAR SEA Slack Workspace](https://ucarsea.slack.com) to ask for ideas.
 
 ### Venue
 
