@@ -201,16 +201,25 @@ questions about student submission assistance, please reach out to the
 
 ### Proceedings
 
-We will accept traditional paper submissions this year for publication alongside
-a new option to upload slides and supporting materials such as computational
-notebooks (with or without a corresponding paper) to a conference collection on
-Zenodo.  Paper submissions will be due April 24th, 2026 and will undergo a
-subsequent review process. Slides and computational notebooks should be
-submitted to Zenodo by the end of the conference.
+We will accept traditional paper submissions this year alongside a new option
+to upload slides and/or supporting materials such as computational notebooks
+to a conference collection on Zenodo.  Paper submissions will be due April
+24th, 2026.  Slides and computational notebooks should be submitted to Zenodo
+by the end of the conference.
+
+For paper submissions, we ask that authors leverage one of the
+[IEEE manuscript templates for conference proceedings](https://www.ieee.org/conferences/publishing/templates)
+and follow [their guidance on topics such as recycled material and the use of generative AI](https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/).
+Papers will undergo a light, single-blind review process to ensure the content
+is technically sound, clearly written, provides appropriate documentation and
+references, and adheres to submission guidelines.
+
+Slides and computational notebooks should be submitted to Zenodo by the end of
+the conference.  Instructions for Zenodo submissions will be coming soon. 
 
 If you have any questions, please email the [ISS Proceedings
-committee](mailto:iss_proceedings@ucar.edu). We plan to host office hours during
-the conference if you have questions before the submission deadline.
+committee](mailto:iss_proceedings@ucar.edu). We also plan to host office hours
+during the conference if you have questions before the submission deadline.
 
 ## Code of Conduct
 
