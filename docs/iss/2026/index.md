@@ -120,7 +120,7 @@ if you wish to spend time exploring Boulder.
 
 <br><figure markdown="span">
     [Block-rate Booking](https://app.marriott.com/reslink?id=1771441329105&key=GRP&app=resvlink){ .md-button }
-    <figcaption>**Last day to Book - Sunday, March 8, 2026!**</figcaption>
+    <figcaption>**Last day to Book - Sunday, March 22, 2026!**</figcaption>
 </figure>
 
 Many other options exist for lodging in the Boulder area as well. Feel free to
