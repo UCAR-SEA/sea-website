@@ -11,7 +11,7 @@ like to host an Open Discussion event for your particular topic of interest,
 please reach out to the [SEA Steering
 Committee](mailto:sea_committee@ucar.edu?subject=Interest in leading an SEA Open Discussion).
 
-## Upcoming Discussion
+## Latest Discussion
 
 **Subject: Confessions of a Vibe Coder**  
 **Time: 10 AM MT on March 11th, 2026**  
@@ -28,14 +28,11 @@ process. Ben will describe his experiences using Claude and other LLMs, and then
 open up the floor to discussion. We hope you’ll join us and bring your own LLM
 coding anecdotes, observations, and questions.
 
-To register for this open discussion and receive virtual meeting information,
-please [fill out this form](https://forms.gle/DvEKz9rD5158DxeP7) before the
-event.
-
 ## Past Discussions
 
 | Topic                     | Date        | Notes |
 | -----                     | ----        | ----- |
+| Vibe Coding with Claude   | 11 Mar 2026 | [Link](https://docs.google.com/document/d/14JhCesbYJI6eNoCaw_KjMOK9mDBs5g0ZNJqxEUcnZWo/edit?usp=sharing) - [Recording](https://youtu.be/pVMeBmlFrDI?si=0ptJjBK2Zq42C03Z) |
 | Fortran Unit Testing      | 12 Feb 2026 | [Link](https://docs.google.com/document/d/1ZqB4E1Zu7Gkv8_6VkLLpnAfrYbcOqw8d4XpWdKA7nJ0/edit?usp=sharing) - [Recording](https://youtu.be/EOXG_T_T-d4?si=ZAEgjjHx4EO5FeN0) |
 | Language Interoperability | 26 Feb 2025 | [Link](https://docs.google.com/document/d/16RlyWD051SJKIP7CwN5bQXiNml8Y7SB2_pGPluJ71i4/edit?usp=sharing)    |
 | Strategic Plans           | 14 Nov 2024 | [Link](https://docs.google.com/document/d/1e2kAyUePe5YQcWpw5jX2NoKI8QCIs0cg4UrW8-KcV34/edit?usp=drive_link) |
