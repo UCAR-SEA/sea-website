@@ -60,8 +60,7 @@
             <div class="cell">Keynote (TBD)</div>
             <div class="cell-content">
     ??? abstract cell "TBD"
-
-        *TBD
+        *TBD*
         </div>
         </div>
         <div class="row">
@@ -77,181 +76,71 @@
             <div class="cell-content">
     ??? abstract cell "MPAS-Viewer to explore MPAS Data on Its Native Unstructured Grid"
 
-
         *Jorge Humberto Bravo Mendez, with a background in atmospheric sciences and a master’s degree in hydrometeorology, is currently a PhD candidate at Stevens Institute of Technology (Hoboken, NJ). His research focuses on numerical modeling using MPAS over New York City Metro.*
 
-        CONTINUE HERE!!!!!!!!!!
+        The Model for Prediction Across Scales Atmosphere (MPAS-A), an advanced atmospheric model designed to accurately represent weather systems at both regional and global scales. It makes use of a special unstructured mesh that resembles a honeycomb, allowing variable resolution across the globe. This allows MPAS-A to simulate the atmosphere in high resolution over specific regions, capturing small-scale weather phenomena such as thunderstorms, while maintaining lower resolution elsewhere to efficiently model large-scale atmospheric dynamics.
 
-        The Climate Modeling Alliance (CliMA), a collaboration between Caltech, MIT,
-        and JPL, is developing a new climate model using Julia. This talk provides a
-        firsthand account of the experience, highlighting both the advantages and
-        challenges of this choice. We will examine Julia's performance, ease of use
-        for scientists, and its ability to accelerate development cycles. The
-        presentation will also address limitations and opportunities for
-        improvement, offering a balanced assessment of Julia's suitability for
-        various aspects of climate model development and deployment.
-            </div>
+        While the unstructured honeycomb mesh offers flexibility and precision in modeling, it has a notable drawback. Although the data obtained from the MPAS-A model are stored in NetCDF format and can be considered a type of raster, their processing relies on correctly identifying vertices, edges, and centroids. As a result, they lack straightforward and efficient plotting methods, making rapid visual assessment more challenging.
+
+        Although there are software tools (e.g. ParaView) that can handle and visualize unstructured meshes, they often come with a steep learning curve, which can become a barrier when quick progress is needed. Similarly, while certain programming languages and libraries support visualization, they come with their limitations. For instance, NCAR Command Language (NCL) has been discontinued. Although Python offers powerful libraries for working with unstructured data, they did not fully meet our needs during the evaluation and visualization work with data obtained from MPAS-A.
+
+        Python is currently one of the most popular scripting languages for manipulating scientific data, such as NetCDF, and offers straightforward tools for data visualization. In this work, we introduce a new tool that was custom-built to display MPAS-A data rapidly and efficiently. This is an alternative to default functions that automatically generate triangulated meshes from unstructured data. Our approach also avoids the use of slow for-loops to create individual polygons. Instead, we plot MPAS-A data directly on its native grid, treating each data value as a cell. This approach not only enables interactive visualizations, such as animations or widgets for exploring variables over time, but also significantly reduces rendering time, making it well-suited for applications where rapid data display is essential.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>10:40 AM</b></div>
-            <div class="cell">Hilario Torres</div>
+            <div class="cell">Rubaiat Islam</div>
             <div class="cell-content">
-    ??? abstract cell "Dynamic Runtime Scheduling in MPI Applications Via Directed Acyclic Graphs"
-        **[[Slides](https://drive.google.com/file/d/1c4JyYjXUb1hdL62N6j6WSAN-mLedxk9Z/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=7953s)]**
+    ??? abstract cell "MPASdiag: Data Processing, Visualization and Analysis Toolkit for MPAS from Native Unstructured Mesh"
 
-        *Dr. Hilario (Lalo) Torres recently joined the Applications Scalability
-        and Performance (ASAP) group at the National Center for Atmospheric
-        Research (NCAR) as a software engineer. Prior to joining NCAR he was
-        postdoctoral research fellow at NASA Ames Research Center. While at NASA
-        he designed and developed a task based dynamic runtime scheduling system
-        to interface with NASA multi-physics high performance computing (HPC)
-        applications. He received his PhD in mechanical engineering from
-        Stanford University in 2021 where his dissertation focused on writing
-        performance portable multi-physics solvers for heterogeneous HPC
-        systems. His current research interests are at the intersection of
-        computational physics and HPC*
+        *Rubaiat Islam (he/him) is a Scientist II at the NSF National Center for Atmospheric Research (NCAR) Mesoscale & Microscale Meteorology Laboratory. Besides this role, he is leading the development and maintenance of MPASdiag, and serving as a core member of the Earth System Data Science (ESDS) initiative at NSF NCAR. In his free time, Rubaiat enjoys hiking, photography, and exploring new technologies.*
 
-        The current state-of-the-practice for Single-Program, Multiple-Data
-        (SPMD) applications utilizes a bulk-synchronous paradigm (BSP)
-        implemented with non-blocking Message Passing Interface (MPI)
-        communication calls. In this paradigm, the order of execution of the
-        computational kernels is hard coded at compile time in order to overlap
-        communication and computation in a synchronized fashion. In simple
-        applications this approach is relatively easy to implement and can
-        provide sufficient parallel scalability. However, it is difficult to
-        specify a performant schedule at compile time for applications that
-        simultaneously run multiple interdependent algorithms on a diverse set
-        of data structures. This presentation covers a library that we have
-        developed, Task Graph Scheduler (TGS), to solve this problem by
-        dynamically scheduling computational kernels at runtime using directed
-        acyclic graphs to track the data dependencies between kernels. This
-        system was specifically designed to leverage existing computational
-        infrastructure as much as possible, supporting the extension of legacy
-        applications. TGS has been incorporated into the eddy high-order
-        multi-physics solver developed at NASA. Details regarding the
-        implementation, our experiences using this system, and performance will
-        be discussed.
+        Model for Prediction Across Scales (MPAS) takes advantage of unstructured meshes and variable-resolution grids to provide accurate and efficient simulations, however, datasets from native unstructured meshes can be challenging to analyze and visualize using traditional tools designed for structured grids. In this talk, we present MPASdiag, an open-source Python package developed to facilitate the processing, analysis and visualization of MPAS model output from native unstructured meshes. Besides a powerful data processing engine powered by xarray and uxarray, MPASdiag provides an advanced visualization framework built on top of Matplotlib and Cartopy. MPASdiag visualization capabilities currently include the generation of 2-D surface plots, vertical cross sections, zonal and meridional averages, Hovmöller diagrams, and time series plots. The visualization framework is designed to be highly customizable, allowing users to tailor plots to their specific needs.
 
-        *This research was supported by an appointment to the NASA Postdoctoral
-        Program at the NASA Ames Research Center, administered by Oak Ridge
-        Associated Universities under contract with NASA. Resources supporting
-        this work were provided by the NASA Transformational Tools and
-        Technologies project Revolutionary Computational Aerosciences program
-        and by the NASA High-End Computing (HEC) Program through the NASA
-        Advanced Supercomputing (NAS) Division at Ames Research Center.
-            </div>
+        To demonstrate the capabilities of MPASdiag, we will showcase several case studies including the visualization of 2-D and 3-D atmospheric variables from high-resolution MPAS simulations, batch processing of cycling MPAS forecast data to demonstrate the efficiency of command line interface, and the scalability of parallel processing engine to handle kilometer-scale MPAS data analysis from native unstructured meshes.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:00 AM</b></div>
-            <div class="cell">Nat Efrat-Henrici</div>
+            <div class="cell">Kyle Shores</div>
             <div class="cell-content">
-    ??? abstract cell "Advancing Climate Modeling with Collaborative Software Development in Julia"
-        **[[Slides](https://drive.google.com/file/d/1bajIMgomirP5tJeB63UFAiJq9IoSaWCc/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=9131s)]**
+    ??? abstract cell "Simulating atmospheric chemistry with web assembly"
 
-        *Nathanael (Nat) Efrat-Henrici is a Software Engineer working at Caltech
-        as part of the Climate Modeling Alliance (CliMA). He works primarily on
-        the atmosphere model and data assimilation infrastructure. Nat obtained
-        his B.S. in Computer Science from Harvey Mudd College in 2022.*
+        *Kyle has a background in both computer science and atmospheric sciences. He's interested in delivering useful scientific software that is user-friendly, well-tested, and just works. He enjoys cross-language development, working with students, and lots of coffee.*
 
-        The Climate Modeling Alliance (CliMA) is developing a novel earth system
-        model in Julia with a built-in data assimilation framework. This talk
-        explores lessons learned in empowering research scientists by rethinking
-        the development of scientific software.
-
-        I will discuss the evolving collaboration between scientists and
-        software engineers, highlighting how we lower barriers to computational
-        research. Central to this approach is our implementation of continuous
-        integration and deployment with robust reproducibility testing, which
-        accelerates iterative development.
-
-        A key theme of this talk is the importance of abstracting technical
-        complexities while maintaining flexibility and power for advanced
-        research. I will showcase how we have streamlined everyday tasks such as
-        diagnostic output visualization and routine workflow automation. At the
-        same time, we have enabled researchers to easily orchestrate complex,
-        reproducible simulations that scale efficiently across high-performance
-        computing clusters using portable code and data containers.
-        Our model is underpinned by data assimilation methods that simplify the
-        process of model calibration. This allows scientists to integrate
-        diverse real-world observations to account for small-scale, unmodeled
-        processes without requiring deep expertise in machine learning. These
-        insights offer a nuanced perspective on accelerating computational
-        research through thoughtful software design.
-            </div>
+        Are you interested in delivering scientific software to users without installation headaches or complicated setup? This talk will introduce WebAssembly, a technology that enables near-native performance for compiled languages directly in web browsers. We’ll demonstrate how, for the first time, NCAR atmospheric chemistry simulations can run nearly instantaneously in the browser using the MUSICA software library’s APIs. Whether you develop scientific tools or want to make complex models more accessible, you’ll learn what WebAssembly is, how it works, and how existing scientific code can be compiled to run in the browser. Join us to see how WebAssembly can simplify software delivery, engage more users, and help explain atmospheric chemistry concepts interactively.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:20 AM</b></div>
-            <div class="cell">Jorge Bravo</div>
+            <div class="cell">Guoqing Ge</div>
             <div class="cell-content">
-    ??? abstract cell "Free and open-source tools to develop a web-map visualizer"
-        **[[Slides](https://drive.google.com/file/d/1dMUy5vnI21QEtHHhLXAGsz5D-zFVU1Iu/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=10030s)]**
+    ??? abstract cell "HiFiYAML - A High-Fidelity YAML Parser That Preserves Formatting"
 
-        *Jorge Humberto Bravo Mendez, with a background in atmospheric sciences
-        and a master’s degree in hydrometeorology, is currently a PhD candidate
-        at Stevens Institute of Technology (Hoboken, NJ). His research focuses
-        on numerical modeling and remote sensing.*
+        *I am a research scientist working on improving NOAA weather analyses and forecasts through Modeling, Data Assimilation and Artificial Intelligence.*
 
-        In this talk, I will discuss how to use various free and open-source
-        tools to visualize geospatial data. While I will showcase a few
-        applications, my primary focus will be on satellite data.
+        YAML is widely used in geophysical applications for configuration management and it provides a flexible and expressive data structure for defining detailed options. Usually YAML files are relatively small (typically a few hundred lines or fewer), users can easily edit them with standard text editors, provided that they carefully follow YAML’s strict indentation rules.
 
-        When working with data from numerical or satellite models, typically in
-        formats such as GRIB, NetCDF, GeoTIFF, etc., visualization becomes
-        essential. While the initial phase involves visualizing the data using
-        software (e.g., Unidata-IDV, NCview, QGIS) or programming languages
-        (e.g., MATLAB, NCL, Python, R), a website is often required in the next
-        phase to effectively present the results to the public.
+        In some cases, however, YAML files can grow to tens of thousands of lines, such as the final YAML files used by the Joint Effort for Data assimilation Integration (JEDI) software in an operation-like environment where hundreds of types of observations are assimilated. At this scale, YAML files become difficult to read, review, and edit, greatly increasing the likelihood of user errors. These errors can reduce scientific productivity and slow research progress.
 
-        By leveraging Python, HTML, JavaScript, CSS, Google Earth Engine, and
-        GitLab, it is possible to develop a fully functional website for
-        displaying geospatial data.
-            </div>
+        PyYAML is a YAML parser and emitter for Python. It allows users to load YAML files into Python data structures (e.g., dictionaries, lists, and scalars) and modify their contents programmatically. However, PyYAML is not round-trip safe: loading a YAML file into Python objects and then dumping them back to a new YAML file does not preserve the original formatting. Comments are lost, anchors may be renamed, and key ordering can change. As a result, long YAML files generated or modified by PyYAML are difficult to read, review, diff, or debug.
+
+        HiFiYAML (High-Fidelity YAML parser; https://pypi.org/project/hifiyaml/
+        ) provides an alternative YAML parser. HiFiYAML preserves the original YAML structure and formatting, including comments, anchors, aliases, and key order. This enables users to programmatically modify very large YAML files easily with confidence that the original formatting will be retained. By reducing errors and improving readability and usability, HiFiYAML can significantly accelerate scientific workflows. The design and usage of HiFiYAML will be discussed at the meeting.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:40 AM</b></div>
-            <div class="cell">Brian Vanderwende</div>
+            <div class="cell">Haiying Xu</div>
             <div class="cell-content">
-    ??? abstract cell "Improving the PBS Pro Experience for NCAR HPC Users"
-        **[[Slides](https://drive.google.com/file/d/1GDW0LAp6zXPtPySNl0rhOChdAK-fmkfV/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=10718s)]**
+    ??? abstract cell "Exploring Memory Tracking and Debugging for Large Scientific Simulations"
 
-        *Brian Vanderwende is a HPC User Support Consultant in the Computational
-        Information Systems Laboratory at NSF NCAR in Boulder, CO. He began his
-        career as a PhD student in atmospheric science and leverages that
-        experience to inform his work improving the user experience for
-        researchers. He currently focuses primarily on software stack curation,
-        front-end tool development, and user education.*
+        *Haiying Xu is the senior software engineer in the Applied Computational Science Section (ACS) at the National Center for Atmospheric Research. She is the technical lead on the scientific computing Input/Output performance for the ACS, focused on open source, reproducible, and scalable solutions for the geosciences community.*
 
-        For most HPC users, the jobs scheduling software is an integral
-        component of the system, allowing access to the vast compute resources
-        that distinguish a cluster from a workstation. A few workload managers
-        are common in traditional scientific HPC (e.g., Slurm and PBS) with
-        newer tools like Kubernetes also becoming more common. For better or
-        worse, HPC users and administrators are often forced to adapt to a new
-        scheduler upon procurement of the latest system, at which point they
-        come to appreciate the strengths and limitations of the new tool.
-
-        At NSF NCAR, our two main clusters - Derecho and Casper - both run PBS
-        Pro, though we have used Slurm in the recent past as well. Compared to
-        some of its competitors, PBS Pro's user interface has notable
-        deficiencies: users cannot query historical jobs beyond a few days,
-        administrators cannot query relative job execution priorities, and some
-        queries impose a serious performance impact on the PBS server. To
-        mitigate these weak points, we have developed a number of tools
-        including a cached qstat (job query tool), qhist (a historical record
-        tool), and pbs_prio (a priority query tool).
-
-        In this talk, we introduce these tools for those unfamiliar, and also
-        discuss recent efforts to modernize them. Such efforts include adding
-        requested features, increasing robustness, incorporating more modern
-        Python programming practices, improving documentation, converting
-        scripts into actual Python packages, and adding regression testing. We
-        will also describe how these improvements to our tools will inform
-        future priorities as we continue to support our PBS Pro users.
-            </div>
+        Large Earth science simulations are increasing their spatial resolution from hundreds of kilometers to a kilometer scale, making memory capacity and memory performance critical constraints. In many large-scale applications, excessive memory usage can result in the need to undersubscribe nodes, thereby increasing the overall job resource requirements.
+        In this work, we explore the use of several tools to diagnose memory leaks and excessive memory usage in large simulation workflows. While they provide detailed allocation traces, they are often difficult to apply to full production runs and can introduce substantial overhead. As a result, they may fail to capture memory behavior at realistic scales.
+        To address this limitation, we investigate a complementary approach based on recording virtual memory usage, including peak virtual memory and memory growth over time across all MPI ranks. These lightweight techniques allow us to analyze memory behavior throughout the entire workflow with minimal perturbation. Together, these tools provide practical insight into where and how memory is consumed.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>12:00 PM</b></div>
@@ -262,167 +151,57 @@
         </div>
         <div class="row">
             <div class="cell"><b>1:00 PM</b></div>
-            <div class="cell">Agnieszka Żaba</div>
+            <div class="cell">Negin Sobhani</div>
             <div class="cell-content">
-    ??? abstract cell "Continuous Integration with research notebooks: on maintaining reproducibility in atmospheric modeling"
-        **[[Slides](https://drive.google.com/file/d/1Gf215UR210X6DQjqLQ-upcUAK-60idcf/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=16375s)]**
+    ??? abstract cell "The AI Transformation of Earth System Modeling: Opportunities, Challenges, and What Comes Next"
 
-        *Agnieszka is a PhD student in the Environmental Physics Group
-        (zfs.agh.edu.pl/en) at the Faculty of Physics and Applied Computer
-        Science, AGH University of Krakow. My research interests lie at the
-        intersection between cloud microphysics and climate-science applications
-        of water isotopes. I am a member of the github.com/open-atmos community,
-        and the maintainer of PySDM project.*
+        *Negin Sobhani is an HPC Consultant at the National Center for Atmospheric Research (NCAR), where she supports researchers in optimizing computational workflows for Earth system modeling and prediction. Her expertise spans high-performance computing, distributed training strategies, and AI/ML applications in geosciences. She works closely with the scientific community to improve GPU utilization, scalability, and performance of large-scale machine learning workflows on HPC systems.*
 
-        The maintenance of research-result reproducibility can support rather
-        than be a challenge of ongoing project development. The integration of
-        research notebooks with automated software testing workflows is an
-        essential prerequisite for this. We present reusable tools and solutions
-        engineered in the development and maintenance of the PySDM
-        (open-atmos.github.io/PySDM) and PyMPDATA
-        (open-atmos.github.io/PyMPDATA) atmospheric modeling projects. Both
-        packages are developed entirely in Python, using just-in-time
-        compilation tools (Numba & NVRTC) to enable a single-language HPC tech
-        stack that covers simulation, analysis, and visualization codes. We will
-        discuss the perspectives of both user and developer on reproducibility.
+        The integration of Artificial Intelligence (AI) and Machine Learning (ML) into Earth System Science (ESS) has the potential to substantially transform the way we conduct science, from modeling Earth system processes to data analysis and discovery, to decision-making and support. AI/ML techniques such as online bias correction, parameter estimation, ML-based parameterizations, model component emulators, and uncertainty quantification enhance models and allow for more efficient, accurate, and scalable simulation of complex processes that are traditionally challenging and computationally expensive for Earth System Models (ESMs) to capture.
 
-        From the user's perspective, maintenance of notebooks that reproduce
-        paper results using up-to-date project codebase serves the purpose of
-        documenting and exemplifying project features and applications. It
-        enables exploratory usage with little-to-no effort needed to set up a
-        working environment. However, this is contingent on a design embracing
-        modularity and inversion of control - it is not uncommon in atmospheric
-        modeling for papers to use different simulation flow control or
-        different parameterizations. We present the inversion of control
-        solutions from PySDM that enable the choice of formulae and constants
-        from user code, without trade-offs in: (i) performance, (ii) ability to
-        switch between CPU and GPU backends, and (iii) dimensional analysis of
-        physics-relevant routines for testing unit correctness. The maintenance
-        of notebooks within code repositories also poses challenges in terms of
-        handling embedded visuals. The jupyter-utils project
-        (pypi.io/p/open-atmos-jupyter-utils) helps with embedding
-        GitHub-renderable and Jupyter-book-compatible vector graphics and
-        animations.
+        In recent years, fully data-driven AI/ML emulators have emerged that emulate the atmosphere (and other Earth components) as a whole, offering the capability to generate global medium-range weather forecasts in minutes on a single GPU—a significant improvement over the computational time required by previous Numerical Weather Prediction (NWP) models. Hybrid modeling approaches integrate physics-based models with data-driven AI/ML components, leveraging the strengths of both paradigms to improve predictive accuracy, enhance model interpretability, and reduce computational costs while maintaining physical laws and improving representation of subgrid-scale processes. Additionally, AI/ML methods are advancing Data Assimilation (DA) techniques, inverse problems, and ensemble forecasting. Beyond modeling, Large Language Models (LLMs) are redefining scientific workflows by enabling researchers to interact with complex datasets through natural language queries and to extract features from multidimensional data, such as identifying ocean eddies in satellite imagery or detecting precursors to extreme events.
 
-        From the developer's perspective, research notebooks within the code
-        repository are a source of test scenarios and constraints for the
-        assertions that constitute a robust regression-test suite.
-        We present the notebook_vars() function from the jupyter-utils package,
-        designed to be used in concert with the fixture logic of the pytest
-        framework. It enables the execution of the notebook code once in a test
-        session, allowing us of  the final notebook state in multiple automated
-        tests. This occurs without modifications to the notebooks themselves. In
-        notebooks pertaining to specific research studies, a direct link from
-        test code up to subject literature is provided. Overall, we achieve an
-        improvement in code readability and refactoring capability.
-
-        The presented solutions, along with the availability of platforms such
-        as Google Colab, mybinder.org or institutional Jupyter hubs, ensure
-        single-click reproducibility of research-paper results, and a structure
-        for retaining this through future releases of the code base. In addition
-        to the benefits for software users and developers, this satisfies the
-        scientific-method and research-journal reproducibility requirements.
-            </div>
+        In this talk, we will examine how AI/ML is reshaping Earth system modeling and explore the implications for cyber-infrastructure as data-driven and physics-based approaches converge. We discuss the technical advances enabling this transformation: differentiable programming frameworks, tools for coupling neural networks with Fortran-based codes, and architectures that encode physical priors. We also consider the challenges ahead—ensuring conservation properties, maintaining stability across timescales, generalizing to extreme events outside training distributions, and developing evaluation frameworks that assess physical fidelity alongside forecast skill.  To fully realize the potentials of these technologies in ESM, it is important that the supporting infrastructure, including GPU-enabled HPC, AI-ready data pipelines, accessible inference workflows, and workforce training, evolve together with the scientific methods themselves.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>1:20 PM</b></div>
-            <div class="cell">Brett Neuman</div>
+            <div class="cell">Shawn Polson</div>
             <div class="cell-content">
-    ??? abstract cell "GitHub Actions Workflows using Self-Hosted Runners for HPC"
-        **[[Slides](https://drive.google.com/file/d/1wDHHwr8dQ4fvSxierxZ1wLhX7rqXKpOk/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=17493s)]**
+    ??? abstract cell "Creating AI Agents for PyHC with Claude Code and Codex"
 
-        *Brett is a consultant for the Consulting Services Group (CSG) in the
-        Computational and Information Systems Laboratory (CISL) at NCAR.  Brett
-        supports the High Performance Computing (HPC) research efforts in
-        distributed computing workflows, GPU porting, and testing for new
-        architectures.  His previous research focused on FPGA, accelerator, and
-        mixed precision architectures within Los Alamos National Laboratory’s
-        (LANL) HPC Design group.*
+        *Shawn Polson is a software engineer who got his Masters in Computer Science from CU Boulder in 2020. He has worked at LASP since 2015. He is the Tech Lead of the Python in Heliophysics Community (PyHC) and works on the SUDA SDC for NASA's Europa Clipper. He also serves on LASP's AI Steering Committee.*
 
-        Github Actions provides tools to implement automated workflows for code
-        but primarily relies on virtual runner environments for their execution.
-        Code designed for High-Performance Computing often requires specific
-        architectures, software stacks, and scheduler information that do not
-        map to the standard virtual runners.  To improve code verification and
-        testing automation, we show how combining GitHub Actions workflows with
-        self-hosted runners can be used for code designed to run on HPC systems.
-        The self-hosted runner listens for matching workflow flags and sends
-        them to the job scheduler using parameters defined within the GitHub
-        Actions workflows.
+        This talk explores the practical application of agentic AI within the Python in Heliophysics Community (PyHC), specifically focusing on Anthropic's new command-line tool, "Claude Code." Claude Code—and competing tools like Codex CLI and Gemini CLI—operate directly in the terminal, allowing for the creation of agents that can navigate code repositories, execute commands, and autonomously manage complex workflows. We will show how easy it is to set up these agents and what PyHC's Tech Lead has been doing with them lately.
 
-        While a powerful tool, self-hosted runners present a number of security
-        concerns due to the potential for code injection via unverified commits.
-        We test and demonstrate a number of mitigations developers can employ to
-        reduce these risks.  We also provide a case study on how to implement a
-        self-hosted runner on a HPC system and how to create workflows that will
-        use the job scheduler to target different architectural requirements for
-        CPUs, GPUs, and memory.
-            </div>
+        The talk highlights three functional prototypes developed to assist the PyHC ecosystem: (1) the "PyHC Standards Evaluator," an agent that automates the grading of packages against PyHC's development standards; (2) the "HSSI Metadata Extractor," which parses repositories to extract the metadata necessary to submit them to the Heliophysics Software Search Interface (HSSI) website; and (3) "PyHC-Chat," an agent designed to understand PyHC and its nearly 100 packages, answering questions about the community and codebases while helping users install packages, write code with them, and even draft executable papers.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>1:40 PM</b></div>
-            <div class="cell">Kyle Chard</div>
+            <div class="cell">Sandra Gesing</div>
             <div class="cell-content">
-    ??? abstract cell "Transforming Scientific Discovery with AI/ML and Globus"
-        **[[Slides](https://drive.google.com/file/d/1sjVSHz6B4Frnnmq-2gW0KCkTQHkm_HIM/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=18748s)]**
+    ??? abstract cell "RSEs in the Age of AI: Professional Roles, Responsibilities, and Change"
 
-        *Kyle Chard is a Research Associate Professor in the Department of
-        Computer Science at the University of Chicago. He also holds a joint
-        appointment at Argonne National Laboratory. He received his Ph.D. in
-        Computer Science from Victoria University of Wellington, New Zealand in
-        2011.He co-leads the Globus Labs research group, which focuses on a
-        broad range of research problems in data-intensive computing and research
-        data management.*
+        *Sandra Gesing is the Executive Director of the United States Research Software Engineer Association (US-RSE) and a senior researcher at the San Diego Supercomputer Center in distributed computing and science gateways. Her work focuses on research software sustainability, workforce development, and the design of community-driven cyberinfrastructure that supports reproducible and trustworthy science. She is deeply involved in national and international initiatives at the intersection of research software, data, and artificial intelligence, including efforts to broaden access to advanced computing and AI resources.*
 
-        Scientific instruments produce enormous volumes of data that may exceed
-        local processing capacity. Online analysis combined with AI/ML methods
-        presents one way of dealing with such massive data streams:
-        intelligently collecting only interesting subsets or directing
-        instruments to relevant areas of experimental space. Globus offers a
-        secure, scalable infrastructure for data transfer, management, sharing
-        and connecting instruments, and high-performance computing and storage
-        systems. This talk will explore how Globus is helping researchers
-        automate data collection, run distributed computing pipelines, and
-        enable efficient data analysis, AI model training, and simulations.
-            </div>
+        Generative AI is fast becoming embedded in the daily work of Research Software Engineers (RSEs). AI-assisted coding tools, automated workflow generation, and model-driven analysis promise efficiency gains, while also raising questions about how professional roles may shift. Public narratives often frame AI either as a productivity miracle or as a force that will replace technical expertise altogether. Both views underestimate the complexity of research software work and the professional judgment it requires.
+        This talk argues that the coming years will be defined by a hybrid mode of practice in which RSEs work alongside AI systems rather than being displaced by them. As AI-generated components enter research pipelines, new responsibilities emerge around validation, reproducibility, provenance, and transparency. Automated outputs must be interpreted, tested, and integrated within scientific and institutional contexts. These tasks require not only technical skill, but also an understanding of research culture, risk, and accountability.
+        In this evolving landscape, the professional value of RSEs increasingly lies in stewardship rather than volume of code written. RSEs help ensure that AI-augmented research remains reliable, trustworthy, and reusable by shaping workflows, supporting users, and contributing to shared norms around responsible AI use. Over the next five years, changes in tools will continue, but the need for skilled professionals who can guide, govern, and sustain research software will grow.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>2:00 PM</b></div>
-            <div class="cell">Maxine Hartnett</div>
+            <div class="cell">Anissa Zacharias</div>
             <div class="cell-content">
-    ??? abstract cell "Event Driven Architecture in the cloud for the IMAP Science Data Center"
-        **[[Slides](https://drive.google.com/file/d/15h-2h6SmvKcv_6w1KJpJxP4BmoWGZqNa/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=19882s)]**
+    ??? abstract cell "You don’t need to use AI to be a good software engineer."
 
-        *Maxine is a software engineer at LASP in Boulder, Colorado. She is
-        currently the science data center lead for two instruments on IMAP and
-        has contributed to a variety of science data systems for heliophysics
-        and Earth science space missions.*
+        *Anissa is a software engineer in the Computational and Information Systems Lab (CISL) at NSF NCAR. Her background is in computational mathematics and science and her current work focuses on creating computational and visualization tools for earth systems science on the GeoCAT team.*
 
-        As cloud based processing becomes more common in the scientific sphere,
-        a huge variety of new tools and techniques are emerging for mission data
-        pipelines. Upcoming missions are getting a new opportunity to explore
-        these techniques from the ground-up. IMAP, a heliophysics mission
-        launching in 2025, is able to develop an entire pipeline with a
-        cloud-first attitude. The IMAP science data center, based out of LASP,
-        uses tools such as AWS, infrastructure as code, and docker to create a
-        flexible, reliable, and efficient event-based processing pipeline.
+        With claims like “large language models are revolutionizing software development” everywhere, it might feel developers need to integrate LLM products into their workflows or risk falling behind. As we navigate questions about how to use AI responsibly, the case for rejection is often overlooked.
 
-        The IMAP mission has 10 instruments, all of which are interdependent,
-        which cover a broad scope of scientific data. By creating an event-based
-        system in the cloud, the SDC can extend and modify processing based on
-        changing requirements, while also ensuring that processing occurs
-        quickly and reliably. This science data system takes advantage of the
-        cloud's new ecosystem to create a pipeline that runs only what is
-        needed, when it's needed, using small, distinct pieces of code that are
-        easy to maintain and modify by the entire team. As the cloud becomes
-        more wildely used, it is time to rethink the way we create processing
-        pipelines so we can take advantage of the powerful opportunities
-        provided by AWS and other cloud providers.
-            </div>
+        This talk will focus on the inherent limitations of LLM products by examining the foundational computational concepts behind modern AI and present a case for rejecting these tools in scientific software development.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>2:20 PM</b></div>
@@ -433,280 +212,72 @@
         </div>
         <div class="row">
             <div class="cell"><b>2:50 PM</b></div>
-            <div class="cell">Isaac Schluesche</div>
+            <div class="cell">Melis Fidansoy</div>
             <div class="cell-content">
-    ??? abstract cell "Using Julia for Next-Generation Atmospheric Analysis Software"
-        **[[Slides](https://drive.google.com/file/d/10XA-VbfeTjmvFXMRN654GNCXtdn1Yi9P/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=22942s)]**
+    ??? abstract cell "Landslide Risk Assessment using Vision-Language Models: A California Case Study"
 
-        **Coauthors: Dr. Michael M Bell**
+        *I am a second-year PhD candidate focused on large-scale, software-centric geohazard risk analysis. Additionally, I am working on designing and implementing scalable scientific software for AI-driven environmental hazard analysis and infrastructure resilience and risk assessment for large-scale road networks. My work emphasizes reproducible, performance-aware pipelines that integrate spatiotemporal modeling, high-performance computing, and large-scale geospatial data processing. Moreover, it includes landslide susceptibility modeling, interactive web-based decision support systems, distributed workflow automation, and an open-source, map-based framework that applies vision–language models for spatial reasoning and inference under partial environmental data availability. At ISS 2026, I look forward to engaging with the community on sustainable scientific software practices, modular system design, and the role of interpretable AI tools in environmental decision-support systems.*
 
-        *Isaac is a second year master's student at Colorado State University
-        working on developing machine learning algorithms to remove
-        non-meteorological data from radar sweeps using Julia.*
+        Landslides are a geohazard that affects infrastructure systems, public safety, and climate resilience, particularly in regions such as California, where wet-drought cycles are experienced. They pose threats to transportation infrastructure, including highways and local road networks, where slope failures can cause roadway closures, structural damage, and prolonged service disruptions that delay emergency response and economic activity.
 
-        Python and Matlab have been widely adopted as languages of choice in
-        geoscience education due to their high-level interface and easy to use
-        syntax, but their interpreted nature generally makes them slower than
-        low-level languages without extensive optimizations or porting
-        performance-critical portions to C. In the atmospheric sciences, this
-        trade off has commonly resulted in computationally intensive codebases
-        such as numerical weather prediction (NWP) and data assimilation being
-        written partially or wholly in low-level languages (e.g., C, Fortran)
-        for efficiency, which can be more difficult to actively develop and
-        modify than higher-level languages.  Julia is a relatively new language
-        designed for scientific computing that combines a high-level and
-        intuitive syntax similar to Python and Matlab with the inherent
-        performance of lower-level languages in part through “just-in-time”
-        compilation, making it natively as fast as C or Fortran in several
-        benchmarks. Julia is based on a “multiple-dispatch” design philosophy
-        that is well suited to many scientific applications. This talk will
-        detail efforts being made at Colorado State University to implement
-        performant and readable code using Julia across a wide variety of
-        meteorological applications ranging from radar processing to idealized
-        numerical weather prediction (NWP) experiments.
+        This talk will introduce an open-source, map-based framework that integrates geospatial datasets, including rainfall, normalized difference vegetation index (NDVI), slope, geology, and historical landslide inventories, into a region-focused landslide risk assessment. For a case study, statewide data from California are processed and visualized to produce high-resolution maps that capture the spatiotemporal environmental conditions associated with landslide occurrence. These maps are used as inputs to vision–language models (VLMs) for spatial reasoning. The framework uses open-source VLMs to perform landslide risk inference under partial data availability. In this setting, NDVI, rainfall, slope, and geology maps from specific time periods are provided as inputs, and VLMs are prompted to identify regions with high landslide susceptibility and to predict high-risk landslide hotspots beyond the input time span.
 
-        Radar quality control (QC) involves removing non-meteorological
-        echoes such as the earth’s surface or biological targets and is
-        important for obtaining useful information from radar data. In
-        the past, data was QCed by radar meteorologists parsing the data
-        by hand or using relatively simple rules-based thresholding
-        methods. Recently, a Machine Learning (ML) technique was created
-        in Python that outperformed the existing methods. A new version
-        of the automated removal algorithm, named RONIN.jl
-        (Random-forest Optimized Nonmeteorological IdentificatioN) has
-        been developed entirely in Julia that further increases the
-        accuracy of the QC, while operating at speeds orders of
-        magnitude quicker than the original Python code - highlighting
-        the utility of Julia for ML applications.
-
-        A NWP model aimed at investigating atmospheric dynamics,
-        coined Scythe.jl, has also been created in Julia and
-        will be presented. Scythe is based on the spectral
-        transform method and uses a mixture of cubic B-spline,
-        Fourier, and Chebyshev basis functions to represent
-        physical variables and their spatial derivatives in a
-        variety of coordinate systems, with multi-processing
-        capabilities using both the Julia Distributed package
-        and multi-threading.. The spectral gridding engine of
-        Scythe.jl, dubbed Springsteel.jl, is also being utilized
-        as the basis for a variational data analysis and
-        assimilation tool called Daisho.jl. The combination of
-        these Julia packages will ultimately provide an
-        end-to-end analysis, assimilation, and simulation
-        toolkit that interfaces seamlessly with the Lidar Radar
-        Open Software Environment (LROSE) for next-generation
-        processing of remote sensing data from the Airborne
-        Phased Array Radar (APAR) for improved understanding and
-        prediction of high-impact weather.
-            </div>
+        The framework performance is evaluated by comparing predicted high-risk regions against documented landslide events. Research results suggest that VLMs can capture meaningful patterns associated with subsequent landslide activity and demonstrate the promise of vision–language modeling as a flexible, interpretable tool for geohazard analysis. In addition to the landslide hazard presented here, the software framework also enables broader use in environmental risk assessment and decision support.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>3:10 PM</b></div>
-            <div class="cell">Jen DeHart</div>
+            <div class="cell">Lee Liming</div>
             <div class="cell-content">
-    ??? abstract cell "Improved Accessibility and Community Knowledge of Lidar and Radar Data Analysis"
-        **[[Slides](https://drive.google.com/file/d/1CxH_qufKStz3i8kkY9I5SCbYJ3Os2nK9/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=23779s)]**
+    ??? abstract cell "Globus Auth: Federated Identity and Access Management for Scientific AI Systems"
 
-        **Coauthors: Ana Espinoza**
+        *Lee Liming is the Director of Professional Services (Globus) at the University of Chicago. In 20+ years with the Globus team, Lee has contributed to national research initiatives including computing (NSF’s TeraGrid, XSEDE, ACCESS, DOE’s American Science Cloud), bioinformatics (NIH’s BIRN and CFDE, ARPA-H’s APECx), and climate (DOE’s ESGF2-US).*
 
-        *Jen is a Research Scientist II at Colorado State University. In her
-        research, Jen uses a combination of polarimetric radar observations and
-        mesoscale models to understand the processes responsible for heavy
-        tropical rainfall in a variety of weather systems. Jen is also the CSU
-        PI of the NSF-funded LROSE project, which develops open-source software
-        tools for working with radar and lidar data.*
+        Globus Auth is the cornerstone authentication and authorization service for the Globus data management ecosystem, designed and operated by the University of Chicago to address the evolving needs of the global research community. Over the past decade, our team has continually enhanced Globus Auth, prioritizing features that facilitate multi-institutional scientific collaborations with the robust assurance controls necessary for secure scientific environments.
 
-        To improve accessibility and community knowledge of applications in the
-        Lidar Radar Open Software Environment (LROSE), a team from the National
-        Science Foundation (NSF) National Center for Atmospheric Research,
-        Colorado State University, and NSF Unidata has developed a lidar and
-        radar meteorology science gateway deployed on the NSF Jetstream2 cloud.
-        Utilizing the “Zero to JupyterHub with Kubernetes” workflow, the science
-        gateway integrates LROSE with other lidar and radar meteorology software
-        packages. This integration allows users to execute applications directly
-        from the JupyterLab terminal, streamlining the creation of datasets for
-        further analysis and visualization within Jupyter notebooks. By
-        combining traditional command-line operations with modern Python-based
-        tools for data analysis and visualization, this gateway provides a
-        robust end-to-end solution that caters to both educational and research
-        needs. The gateway has already facilitated LROSE instructional workshops
-        and classroom exercises. Our work demonstrates the significant potential
-        of merging established scientific computing techniques with advanced
-        Python environments, opening new avenues for computational science
-        education and research.
+        In response to the rapid rise of artificial intelligence, large language models (LLMs), and autonomous agent workflows, we have expanded Globus Auth to support secure API access, non-human agents, and self-service configuration. This ensures that AI-driven scientific discovery software can maintain the strict security requirements demanded by modern research, while still being flexible and scalable for collaborative computational science.
 
-        The LROSE team has acquired successive allocations on the NSF Jetstream2
-        cloud at Indiana University through ACCESS. To develop the LROSE Science
-        Gateway, we employed the “Zero to JupyterHub with Kubernetes” workflow
-        ported to the NSF Jetstream2 cloud, enabling rapid and scalable
-        deployment to accommodate a variable number of users. Authentication is
-        managed through either GitHub OAuth or temporary credentials, depending
-        on the situation. Since LROSE is a collection of C/C++ applications, we
-        configured Docker containers based on the Jupyter Docker Stack to
-        integrate the LROSE software, available via the JupyterLab terminal.
-        These containers also include Conda package manager environments
-        equipped with Python packages like Py-ART, CSU RadarTools, and Metpy for
-        further data analysis. A shared drive accessible to all participants
-        contains instructional datasets for lidar and radar data analysis.
-
-        Tutorials take the form of Jupyter notebooks for use by individuals, in
-        classroom exercises, or at instructional workshops. Some tutorials are
-        complete with pre-loaded examples to quickly visualize workflows and
-        results. Other tutorials guide students how to run the applications
-        independently. All tutorials are hosted on the LROSE Science Gateway
-        GitHub repository, which is open to contributions from colleagues and
-        community members.
-
-        Future plans include an "intermediate" level workshop on SAMURAI, one of
-        the multi-Doppler wind applications of the LROSE suite. Additionally,
-        work is currently underway to run GUI applications in the same
-        browser-based JupyterLab environment.  GUI applications for radar and
-        lidar data visualization utilize the QT framework and present unique
-        technical challenges.   The techniques to accomplish GUI access have
-        immediate applications for other GUI programs, such as NFS Unidata's IDV
-        and their version of the AWIPS CAVE data visualization tools. Lastly, as
-        demand for the resources found on the gateway increases, it becomes
-        increasingly important to efficiently manage the Jetstream2 resources
-        allocated by the ACCESS program. LROSE, NSF Unidata, San Diego
-        Supercomputing Center (SDSC), and Indiana University staff are working
-        together to deploy and evaluate Kubernetes cluster auto-scaling. With
-        autoscaling, resources will no longer sit idle while awaiting new logins
-        and will instead be provisioned on-demand.
-            </div>
+        The talk will focus on Globus Auth’s role in the newly-launched Genesis Mission: a national effort to drive scientific discovery, national security, and energy innovation through AI and high-performance computing. Specifically, we will show how modern, AI-driven discovery applications are already using Globus Auth to gain secure access to data and computational resources provided by national facilities.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>3:30 PM</b></div>
-            <div class="cell">Amit Ruhela</div>
+            <div class="cell">Damian Rouson</div>
             <div class="cell-content">
-    ??? abstract cell "An introduction to TACC HPCPerfStats"
-        **[[Slides](https://drive.google.com/file/d/1jkuOaAC0HDLEUqGetKl-yL798205z97Q/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=24978s)]**
+    ??? abstract cell "Data reduction and surrogate-model training for cloud microphysics with Fiats"
 
-        **Coauthors: John Cazes**
+        *Damian Rouson is a Senior Scientist and the Group Lead for the Computer Languages and Systems Software (CLaSS) Group at Berkeley Lab.  He leads several opens-source software projects, including the Fiats deep learning library, the Julienne correctness-checking framework, the Formal mimetic abstraction language, and the Caffeine parallel runtime library.  He holds a B.S. from Howard University and a M.S. and Ph.D. from Stanford University, all in mechanical engineering.*
 
-        *Dr. Amit Ruhela works as a Manager in the HPC group at TACC, Austin. He
-        earned a Ph.D. in Computer Science from IIT Delhi and postdoc experience
-        from The Ohio State University. Dr. Ruhela conducts research and
-        engineering in Communication interconnects, Parallel Computing, Big
-        Data, and Machine Learning domains. He is primarily focused on feature
-        and performance optimizations in MPI communication through novel and
-        innovative designs and serves as PI of Rockport Networks Center of
-        Excellence at TACC.*
+        This talk cover data analyis and nueral-network training using two demonstration applications in the Fiats deep learning library. [1]  One application computes histograms of intput and output data from a cloud microphysics model in the Intermediate Complexity Atmospheric Research (ICAR) model. [2] The second application trains a nueral-network surrogate for an atmospheric cloud microphysics model requires processing large
 
-        HPCPerfSTATS is a comprehensive infrastructure designed for the
-        low-overhead collection and analysis of system-wide performance data,
-        integrating information from diverse sources. It provides a web-based
-        interface that enables users to explore job-specific and system-level
-        reports, perform automated analyses, and identify jobs requiring human
-        intervention.
-
-        The HPCPerfSTATS monitor operates periodically during job execution,
-        collecting extensive system statistics and hardware performance counter
-        data. This includes CPU usage, socket-level memory utilization, swapping
-        and paging statistics, system load and process metrics, block device and
-        system counters, interconnect fabric traffic, filesystem usage (e.g.,
-        NFS, Lustre, Panasas), and detailed CPU and Uncore performance metrics
-        (e.g., Memory Controller, Cache, NUMA Coherence Agents, Power Control
-        Unit).
-
-        The accompanying web interface facilitates intuitive navigation of
-        cluster-wide job data, visualization of flagged jobs, and plotting of
-        key job characteristics, offering a powerful toolset for performance
-        monitoring and optimization.
-            </div>
+        Training a microphysics surrogate requires processing large data sets in which the vast majority of the data correspond to quiescent conditions.  When the predicted model output variables include time derivatives of the potential temperature, specific humidity, and the cloud, rain, and snow water content, greater than 99.9% of the values lie near zero. Moreover, the probability distribution of these variables fall nine decades, mostly monotonically, over the range of predicted values. Filtering the uninteresting, near-zero derivative values thus progressively leaves a filtered data set that still considerably over-samples values near zero; whereas, not filtering greatly increases training costs and over-samples the least interesting output values. This talk will explore the utility of a sampling strategy that trains on progressively larger samples of the training data.  The samples are chosen to flatten the phase-space in the manner of an information-entropy-maximizing distribution.  The talk will examine the extent to which this strategy accelerates convergence.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>3:50 PM</b></div>
-            <div class="cell">Namita Shah</div>
+            <div class="cell">Negin Sobhani</div>
             <div class="cell-content">
-    ??? abstract cell "From Carpentries to Curriculum: Benefits and Drawbacks of Adapting Open Educational Materials to Meet Local Needs"
-        **[[Slides](https://drive.google.com/file/d/11n3x8DYtUdoyd6uqO-Hx8AaS610hli4F/view?usp=drive_link)] -
-        [[Recording](https://www.youtube.com/watch?v=ErMtewdCY4s&t=26333s)]**
+    ??? abstract cell "The AI Transformation of Earth System Modeling: Opportunities, Challenges, and What Comes Next"
 
-        *Namita Shah is an undergraduate senior at Arizona State University,
-        majoring in Computer Science with a minor in Data Science. Since 2023,
-        she has been working as a Research Software Engineer(RSE) at the Digital
-        Innovation Group under the mentorship of Nicole Brewer and Dr. Julia
-        Damerow. She has also gained experience as an RSE at Princeton over the
-        last summer. Currently, Namita is developing curriculum in collaboration
-        with Nicole to build a "Foundations of Research Software Engineering"
-        course aimed at equipping graduate research students with essential
-        skills in software development. With a passion for both research and
-        education, Namita is committed to RSE endeavors and its role in academic
-        settings!*
+        *Negin Sobhani is an HPC Consultant at the National Center for Atmospheric Research (NCAR), where she supports researchers in optimizing computational workflows for Earth system modeling and prediction. Her expertise spans high-performance computing, distributed training strategies, and AI/ML applications in geosciences. She works closely with the scientific community to improve GPU utilization, scalability, and performance of large-scale machine learning workflows on HPC systems.*
 
-        Scientific software development thrives on knowledge-sharing, and
-        tutorials have long been a cornerstone of that process whether for
-        training, documentation, or curriculum development. One approach to
-        accelerate development of such materials is to pull content from
-        existing open source or creative commons tutorials, without starting
-        from scratch. Another possible benefit of adapting existing tutorials,
-        such as The Carpentries, is to incorporate the pedagogical expertise
-        already embedded within these resources. Yet, while there is a wealth of
-        existing tutorial content both in open source and in research computing,
-        remixing and adapting tutorial content is surprisingly challenging. As
-        the landscape of scientific computing evolves, the ability to
-        efficiently repurpose and structure existing materials is critical to
-        keeping pace with emerging technologies and best practices. Drawing from
-        our experience developing a notebook-based, semester-long course for
-        graduate researchers, we will discuss practical strategies for
-        curriculum design, the adaptation of existing resources while also
-        considering the broader social challenges of recruitment and time
-        management. This talk explores how educators and research software
-        engineers (RSEs) can effectively tailor existing materials to create
-        structured, impactful learning experiences.
+        The integration of Artificial Intelligence (AI) and Machine Learning (ML) into Earth System Science (ESS) has the potential to substantially transform the way we conduct science, from modeling Earth system processes to data analysis and discovery, to decision-making and support. AI/ML techniques such as online bias correction, parameter estimation, ML-based parameterizations, model component emulators, and uncertainty quantification enhance models and allow for more efficient, accurate, and scalable simulation of complex processes that are traditionally challenging and computationally expensive for Earth System Models (ESMs) to capture.
 
-        The demand for RSEs continues to grow as scientific research becomes
-        increasingly computational. Yet, RSEs come from diverse backgrounds
-        including STEM, the social sciences and humanities, and computing, often
-        acquiring essential software engineering skills informally or on the
-        job. This hodgepodge of experience presents challenges not only for
-        individuals looking to round out their interdisciplinary skill set but
-        also for teams striving for maintainable, reproducible, and efficient
-        software development in research-oriented settings. Recognizing this gap
-        from our own RSE experiences at interdisciplinary labs, we set out to
-        develop a semester-long curriculum designed to equip non-CS graduate
-        students with the software engineering skills necessary for research
-        environments. Our approach involved leveraging existing Software
-        Carpentries modules and structuring them into a “Foundations of Research
-        Software Engineering” lab course. Throughout this process, we
-        encountered certain challenges in adapting these resources - how to
-        effectively pull relevant parts of the lesson, how to make changes
-        without losing pedagogical integrity, and how to balance core concepts
-        with real-world applications. In this talk, we share our experience
-        navigating tutorial adaptation and our takeaways from that experience,
-        highlighting both the benefits and drawbacks of this process, as well as
-        the social elements required to execute the human side of curriculum
-        development such as recruiting students and time management in planning.
-        We will also introduce the concept of Open Source Education (OSE) and
-        review the legality of remixing open source or creative commons
-        tutorials.
+        In recent years, fully data-driven AI/ML emulators have emerged that emulate the atmosphere (and other Earth components) as a whole, offering the capability to generate global medium-range weather forecasts in minutes on a single GPU—a significant improvement over the computational time required by previous Numerical Weather Prediction (NWP) models. Hybrid modeling approaches integrate physics-based models with data-driven AI/ML components, leveraging the strengths of both paradigms to improve predictive accuracy, enhance model interpretability, and reduce computational costs while maintaining physical laws and improving representation of subgrid-scale processes. Additionally, AI/ML methods are advancing Data Assimilation (DA) techniques, inverse problems, and ensemble forecasting. Beyond modeling, Large Language Models (LLMs) are redefining scientific workflows by enabling researchers to interact with complex datasets through natural language queries and to extract features from multidimensional data, such as identifying ocean eddies in satellite imagery or detecting precursors to extreme events.
 
-        These takeaways can be applied to other use cases where educators,
-        researchers, and developers may feel overwhelmed by the vast amount of
-        existing material and struggle to tailor it to their specific needs.
-            </div>
+        In this talk, we will examine how AI/ML is reshaping Earth system modeling and explore the implications for cyber-infrastructure as data-driven and physics-based approaches converge. We discuss the technical advances enabling this transformation: differentiable programming frameworks, tools for coupling neural networks with Fortran-based codes, and architectures that encode physical priors. We also consider the challenges ahead—ensuring conservation properties, maintaining stability across timescales, generalizing to extreme events outside training distributions, and developing evaluation frameworks that assess physical fidelity alongside forecast skill.  To fully realize the potentials of these technologies in ESM, it is important that the supporting infrastructure, including GPU-enabled HPC, AI-ready data pipelines, accessible inference workflows, and workforce training, evolve together with the scientific methods themselves.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>4:10 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-        ??? success cell "Notebook Proceedings Office Hours"
-            During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
-          </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>5:00 PM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
-    ??? warning cell "End of Day 1"
+    ??? info cell "Proceedings Office Hours"
         </div>
         </div>
     </div>
 
-=== "Tuesday, April 8"
+=== "Tuesday, April 7"
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
@@ -717,46 +288,10 @@
         </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell">Romit Maulik</div>
+            <div class="cell">Keynote (TBD)</div>
             <div class="cell-content">
-    ??? abstract cell "Invited Keynote: Automated deep ensemble with uncertainty quantification using DeepHyper"
-        **[[Slides](https://drive.google.com/file/d/1FAWuYB43uLdDocRfA01aGCaT75OqkOju/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=1244s)]**
-
-        *Dr. Romit Maulik is an Assistant Professor in the College of
-        Information Sciences and Technology at Pennsylvania State University
-        (Penn State). He is also a co-hire in the Institute for Computational
-        and Data Sciences at Penn State and a Joint Appointment Faculty at
-        Argonne National Laboratory. He obtained his PhD in Mechanical and
-        Aerospace Engineering at Oklahoma State University (in 2019) and was the
-        Margaret Butler Postdoctoral Fellow (from 2019-2021) before becoming an
-        Assistant Computational Scientist at Argonne National Laboratory (from
-        2021-2023). His group studies high-performance multifidelity scientific
-        machine learning algorithm development with applications to various
-        multiphysical nonlinear dynamical systems such as those that arise in
-        fluid dynamics, weather and climate modeling, nuclear fusion, and
-        beyond. He is an Early Career Awardee from the Army Research Office.*
-
-        Deep neural networks are powerful predictors for a variety of tasks.
-        However, they do not capture uncertainty directly. Using neural network
-        ensembles to quantify uncertainty is competitive with approaches based
-        on Bayesian neural networks while benefiting from better computational
-        scalability. However, building ensembles of neural networks is a
-        challenging task because, in addition to choosing the right neural
-        architecture or hyperparameters for each member of the ensemble, there
-        is an added cost of training each model. To address this issue, we
-        propose AutoDEUQ, an automated approach for generating an ensemble of
-        deep neural networks. Our approach leverages joint neural architecture
-        and hyperparameter search to generate ensembles. This ensemble and the
-        law of total variance can be used to decompose the predictive variance
-        of deep ensembles into aleatoric (data) and epistemic (model)
-        uncertainties.
-
-        AutoDEUQ is built into DeepHyper, a scalable python-based library for
-        automated neural architecture and hyperparameter search and can readily
-        be deployed in serial and parallel platforms for deep ensembles based
-        uncertainty quantification. An introductory tutorial to using DeepHyper
-        and its ensembles based UQ capabilities is available here:
-        https://deephyper.readthedocs.io/en/latest/examples/examples_uq/plot_nas_deep_ensemble_uq_regression_pytorch.html#sphx-glr-examples-examples-uq-plot-nas-deep-ensemble-uq-regression-pytorch-py
+    ??? abstract cell "TBD"
+        *TBD*
         </div>
         </div>
         <div class="row">
@@ -768,221 +303,75 @@
         </div>
         <div class="row">
             <div class="cell"><b>10:20 AM</b></div>
-            <div class="cell">Ana Manica</div>
+            <div class="cell">Carol Ruchti</div>
             <div class="cell-content">
-    ??? abstract cell "Software in Space Science: Developing Open Source Metadata Management"
-        **[[Slides](https://drive.google.com/file/d/1Yv0yOLJmqpWTl32M28CxIFySuCkEIy7k/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=7576s)]**
+    ??? abstract cell "Using GitHub Projects to manage Software Projects"
 
-        *Ana Manica is a current undergrad at the University of Colorado Boulder
-        pursuing a dual degree in Computer Science and Astrophysics.*
+        *Carol Ruchti is Scientist at NCAR's Earth Observing Laboratory (EOL) where she manages the EOL Field Catalog which is a web based real-time data product tool used for atmospheric field campaigns. Due to her formal education in science, she's always trying to improve her software and continues to learn the best practices of software. Currently, she's try to create organizing software teams by taking more of a project management approach.*
 
-        As more data is collected and utilized by scientists across the globe,
-        the categorization, organization, and display of data has become
-        increasingly important. The Interstellar Mapping and Acceleration Probe
-        mission (IMAP) strives to create elegant metadata management software to
-        be employed not only across this mission, but others as well.
+        As software engineers, managing deadlines and scope across projects can be difficult. This is especially true for software teams working across multiple code repositories where integration across those repositories is required. Still, in simpler cases, creating a project management kanban board can feel intimidating for software teams since it often requires copying issues into another tool. More importantly, it can be hard to decide if spending the time to learn how to use these project management tools is worth the effort.
 
-        This talk will begin with a brief overview of the different forms of
-        metadata and file formats that are required by scientists and space
-        agencies to properly display and understand information collected by
-        spacecraft. I will discuss some of the difficulties and design choices
-        that went into the current solution. Finally, this talk will cover the
-        open source nature of this software with the creation of SAMMI and
-        collaboration with NASA's HERMES mission. As a student developer working
-        at LASP with the IMAP SDC, this talk will expand upon my experiences, my
-        particular work with this mission, and the importance of open source
-        software.
-            </div>
+        With GitHub Projects, creating kanban boards, priority lists, and consolidating issues from multiple GitHub repositories is made easy. For the past few months, software engineers from different facilities in the National Center for Atmospheric Research’s Earth Observing Laboratory have been investigating the many features of GitHub Projects. These teams have been able to organize important issues into an easy-to-understand board, quickly assign issues to team members, and automate repeating tasks and task lists for upcoming projects. These features from GitHub Projects saved countless hours in meetings and helped create a framework to quickly reference work that has been completed over any specified time period, and allowed managers to efficiently monitor the status of all software projects without requiring direct input from software engineers.Thus, using GitHub Projects has provided project management principles to software teams in an easily digestible way, which simply makes software teams more efficient and organized in the future.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>10:40 AM</b></div>
-            <div class="cell">Jiachen Liu</div>
+            <div class="cell">Julie Prestopnik</div>
             <div class="cell-content">
-    ??? abstract cell "Implementation of the Hyperdual-Step Method in CMAQ for Numerically Exact Sensitivity Analysis"
-        **[[Slides](https://drive.google.com/file/d/1jgZWTq0sUvfLB-LsGNaq0CC1AcRYOjfg/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=8358s)]**
+    ??? abstract cell "Bridging Documentation, Maintenance, and Collaboration in Community Scientific Software"
 
-        *Jiachen Liu is a Ph.D. candidate at Drexel University. He is interested
-        in developing and applying numerical techniques to analyze sensitivities
-        of complex chemical transport models*
+        *Julie Prestopnik is a software engineer at the National Science Foundation National Center for Atmospheric Research (NSF NCAR) with more than two decades of experience developing and supporting community atmospheric science software. She leads software installation, documentation, and cybersecurity efforts for METplus and co-leads the community pillar for FastEddy, with a focus on improving documentation, workflows, and contributor experience. Julie is particularly interested in making complex systems easier to sustain through clear communication and collaborative practices.*
 
-        Sensitivity analysis in chemical transport models quantifies the
-        response of output variables to changes in input parameters, providing
-        valuable information for model development, data assimilation, and air
-        pollution control strategy design. Traditional sensitivity analysis
-        methods, such as the finite-difference method, the direct decoupled
-        method (DDM), the complex variable method, and the adjoint method, have
-        limitations. Some suffer from numerical errors when applied to nonlinear
-        models (e.g., finite difference and complex step methods), while others
-        (e.g., DDM and adjoint methods) require significant effort to maintain
-        when the base model is updated.
+        Documentation and maintenance are critical infrastructure for community scientific software, yet they are often treated as secondary to code development. At the same time, community software is rarely built or sustained by a single static team, and practices are frequently implicit rather than documented. Sustainable community software depends on making documentation, maintenance, and collaboration explicit, repeatable, and visible. Drawing on over a decade of experience with the METplus verification software, recent restructuring work for the FastEddy Large-Eddy Simulation model, and emerging engagement with the NSF NCAR Community Software Facility (CSF), this talk presents practical lessons learned from working across projects and groups within NSF NCAR.
 
-        To address these challenges, we present CMAQ-hyd, an augmented version
-        of the Community Multiscale Air Quality model (CMAQ), implementing the
-        hyperdual-step method for computing numerically exact first- and
-        second-order sensitivities of species concentrations with respect to
-        emissions and initial conditions. Compared to CMAQ-DDM and CMAQ-adjoint,
-        CMAQ-hyd is easier to update and maintain while remaining free of
-        subtractive cancellation and truncation errors. Furthermore, it achieves
-        these improvements while being computationally efficient, reducing the
-        resource burden compared to traditional finite-difference methods for
-        the same sensitivity calculations.
+        The presentation will describe how METplus integrates documentation and maintenance directly into its development workflow using a Docs-as-Code approach, automated documentation builds, and structured development cycles. These practices support regular releases, transparent prioritization of bugfixes and security work, and ongoing compatibility maintenance across compilers, platforms, and HPC systems. Developer-facing documentation, such as the METplus Release Guide, has proven especially valuable for making complex processes reproducible and reducing reliance on institutional memory.
 
-        We will also showcase the implementation of the hyperdual-step method in
-        other potential applications using an automated file conversion process.
-        This method can be seamlessly integrated into various models where
-        accurate first- and second-order sensitivity calculations are essential
-        for research and analysis.
-            </div>
+        The talk will also reflect on how some of these practices have been transferred from METplus to FastEddy and how they are informing discussions around co-design and code audits within the CSF. By documenting procedures explicitly and automating routine checks, teams can strengthen collaboration, improve continuity of work, and support the long-term sustainability of community scientific software.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:00 AM</b></div>
-            <div class="cell">Prentice Bisbal</div>
+            <div class="cell">Primus Kabuo</div>
             <div class="cell-content">
-    ??? abstract cell "The first step to making your code more accessible: Make it easier to build and install!"
-        **[[Slides](https://drive.google.com/file/d/1UXJjfc_DWsCCmmziLpDMzriyfWfX1jiO/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=9653s)]**
+    ??? abstract cell "Documentation as Infrastructure: A Practical Framework for Sustainable Scientific Software"
 
-        *Prentice Bisbal is an HPC Systems Engineer III in the Computational and
-        Information Systems Lab (CISL) at NSF NCAR. He has over 20 years of
-        experience as a Linux system administrator specializing in high
-        performance computing. Throughout most of his career he has been
-        responsible for managing scientific software and has probably gone
-        through the configure/build/install process for open-source software
-        more times than he can remember.*
+        *I'm a Senior Research Software Engineer at Purdue's RCAC, where I build tools, workflows, and systems that make research software more sustainable and usable. My background spans software engineering, startup leadership, and product-focused system design. At RCAC, I work on unified HPC operations portals, LLM-driven tooling, and practical frameworks that improve onboarding and long-term maintainability of research software. I'm especially interested in creating systems that help researchers and users work more efficiently and collaboratively.*
 
-        One of the goals of publicly-funded software development is to make the
-        results of that software development accessible to the public for use by
-        the public. This means that the code must be downloadable and buildable
-        by the public. Unfortunately, scientific software is usually much harder
-        to download and compile than general-purpose software, presenting
-        difficulties for even the most experienced scientific computing software
-        managers.
-
-        In this talk, the author will explain why making your code easier to
-        build and install can lead to a virtuous circle that increases the
-        overall success of your project. This talk will include some of the
-        difficulties the author has experienced installing scientific software
-        and contrast this with the build process(es) used by more general
-        purpose software. Suggestions on how to improve the build process will
-        be provided.
-
-        Finally, current trends in open-source software distribution, such as
-        distributing code through GitHub and distributing executables in
-        containers and the weaknesses of those approaches, will be discussed.
-            </div>
+        Scientific software often fails not because of algorithms, performance, or infrastructure, but because teams cannot sustain the knowledge required to maintain it. As research groups grow and rotate, documentation becomes fragmented, outdated, or entirely absent—creating onboarding friction, duplicated effort, and long-term maintenance risk. At Purdue University’s Rosen Center for Advanced Computing (RCAC), I have worked across multiple research software and training projects to design and implement a centralized documentation strategy that treats documentation as shared infrastructure rather than a side task.
+        This talk presents a practical, lightweight framework for building sustainable documentation systems in scientific software teams. I will share lessons learned from unifying documentation across HPC workflows, training pipelines, and collaborative development environments, including how to establish documentation ownership, structure contributor friendly content, and integrate automation to reduce maintenance overhead. I also discuss where AI assisted tools can responsibly support documentation work without compromising accuracy or reproducibility.
+        Attendees will leave with actionable templates, governance patterns, and workflow recommendations that can be adopted by teams of any size. By reframing documentation as a core component of software sustainability, we can reduce technical debt, improve developer experience, and strengthen the long-term impact of scientific research.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:20 AM</b></div>
-            <div class="cell">David Pettifor</div>
+            <div class="cell">Melis Fidansoy</div>
             <div class="cell-content">
-    ??? abstract cell "Designing a spectrum visualization platform with flexibility in mind"
-        **[[Slides](https://drive.google.com/file/d/1Nw5PDP7GrJBh98v-zWZXSj2Xk8W3on3_/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=11240s)]**
+    ??? abstract cell "From Code to Comprehension: The Role of Design Diagrams in Interdisciplinary Geospatial Software"
 
-        **Coauthor: Melissa Harden**
+        *I am a second-year PhD candidate focused on large-scale, software-centric geohazard risk analysis. Additionally, I am working on designing and implementing scalable scientific software for AI-driven environmental hazard analysis and infrastructure resilience and risk assessment for large-scale road networks. My work emphasizes reproducible, performance-aware pipelines that integrate spatiotemporal modeling, high-performance computing, and large-scale geospatial data processing. Moreover, it includes landslide susceptibility modeling, interactive web-based decision support systems, distributed workflow automation, and an open-source, map-based framework that applies vision–language models for spatial reasoning and inference under partial environmental data availability. At ISS 2026, I look forward to engaging with the community on sustainable scientific software practices, modular system design, and the role of interpretable AI tools in environmental decision-support systems.*
 
-        *David Pettifor, Research Software Engineer Manager, has been working
-        for the Center for Research Computing at the University of Notre Dame
-        for 14 years. His background is in software development, specifically
-        database driven web portals for research support spanning multiple
-        domains. The goal of any project is to foster research, exploration, and
-        understanding of data through intuitive web portal interfaces.
+        Communication between team members is challenging, particularly in multi-disciplinaries teams. A common software engineering practice to bridge this gap is to use visual models to describe the goals and implementation of a software system. The most commonly used programming language is the Unified Modeling Language (UML). In this project, we present our experience with using UML Activity diagrams in a multi-disciplinary scientific computing project.
+        To assess the effectiveness of software design documentation in bridging disciplinary knowledge gaps, we implemented a controlled evaluation approach within our research team. As geospatial research software grows in complexity and longevity, effective collaboration increasingly depends on a shared understanding of system structure rather than isolated code-level expertise. However, domain experts often lack the architectural visibility needed to contribute meaningfully to such systems.
 
-        Melissa Harden, Senior Product Owner, has been with thee Center for
-        Research Computing at the University of Notre Dame for three years. In
-        this role, she focuses on collaborator goals and priorities for their
-        research projects and ensures the delivery of valuable research
-        software.*
+        Our six-member team was divided into two cohorts: four members with formal training in software architecture and design diagrams (the "design team"), and two members with some computer science background but without prior exposure to design diagrams or knowledge of the application's internal structure (the "evaluation cohort").
 
-        Effective visualization is critical for diverse research communities,
-        particularly when dealing with complex datasets. The Center for Research
-        Computing (CRC) at the University of Notre Dame is developing an
-        innovative visualization platform for radio frequency (RF) spectrum data
-        as part of SpectrumX's Flagship Project 1, which aims to advance sensing
-        and understanding of spectrum coexistence
-        (https://www.spectrumx.org/project/spectrum-awareness-for-coexistence/).
-        Our visualization platform is designed to facilitate exploration and
-        analysis of radio frequency data, catering to a broad audience that
-        includes experienced researchers, novice analysts, and policymakers. To
-        achieve our goal of flexibility, we have focused on creating a
-        user-centric interface that allows for multiple methods of data
-        access—including private  uploads and integration with publicly
-        available datasets stored in a spectrum data platform, also in
-        development at the CRC.
+        The design team developed comprehensive documentation including system architecture diagrams, data flow models, component interaction schemas, and an interpretive manual for backend of the application and data preprocessing/curation steps. Subsequently, we conducted a usability assessment where the domain expert cohort—who were familiar with the scientific objectives and data semantics of the application but lacked exposure to software design principles—was tasked with interpreting the documentation independently.
 
-        Key features of the platform include visualization creation wizards
-        tailored to common visualization types in radio frequency research.
-        These wizards guide users through a step-by-step process, ensuring that
-        all necessary inputs for effective visualizations are considered.
-        Additionally, we will integrate Jupyter notebooks as an embedded Python
-        environment to enable users to enhance and customize base visualizations
-        and dataset aggregations, further accommodating both novice and
-        experienced users. Educational resources, including tutorials, will also
-        be available to facilitate user engagement and skill development.
-        Throughout the presentation, we will intersperse reflections on our
-        roles as Research Software Engineer Manager/Technical Lead and Product
-        Owner, highlighting how our agile software development approach has
-        shaped the identification and prioritization of key features and
-        components. The Technical Lead offers direction on technical strategy
-        and implementation, while the Product Owner ensures alignment with
-        overall project objectives and user needs.
-
-        This presentation will not only share our insights into software
-        development best practices but also illustrate our commitment to
-        building a platform that meets the diverse needs of users in the realm
-        of spectrum analysis.
-            </div>
+        This evaluation measured whether domain experts could: (1) comprehend the internal software architecture beyond surface-level functionality, (2) trace data pathways through system components, (3) identify integration points for potential extensions, and (4) articulate how modifications to one component would propagate through the system. We discuss our own experience with researchers without formal software engineering training to engage meaningfully with the technical infrastructure of geospatial applications, thereby facilitating collaborative development and reducing dependency on specialized technical personnel for system understanding and enhancement.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:40 AM</b></div>
-            <div class="cell">Tori Marbois</div>
+            <div class="cell">Brenda Javornik</div>
             <div class="cell-content">
-    ??? abstract cell "Modernizing Legacy Systems: Updating the MAVEN Science Data Center for Improved Performance and Maintainability"
-        **[[Slides](https://drive.google.com/file/d/1seNo5TvnKDa4PhlY03UqcJ2Gobif9Txh/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=12481s)]**
+    ??? abstract cell "The Joy of Functional Programming"
 
-        *Tori Marbois (she/her) works at LASP as a Data Systems Engineer and
-        recently joined the MAVEN Science Data Center (SDC) team to support
-        ongoing operations and modernization efforts. She has a degree in
-        Computational and Applied Mathematics from the Colorado School of Mines
-        and has lived in Colorado since 2017.*
+        *Brenda currently develops software for NCAR Earth Observing Laboratory and has worked in commercial and open-source environments in a variety of domains.   Brenda has learned the value of a functional approach to software development  as the best way to deal with wild-type software.  Brenda is moving away from object-oriented programming and returning to earlier foundational experiences with functional programming.*
 
-        Many organizations face the dilemma of maintaining legacy systems, which
-        can rely on deprecated components, include difficult-to-read code, or
-        under-perform as requirements and standards evolve. Major updates are
-        often deprioritized due to the non-trivial effort required to complete
-        them and in favor of competing demands for resources on new projects.
-        There's also a hesitation to modify functioning systems, fearing
-        disruptions to service. However, taking the time to modernize a system
-        that continues to serve a valuable purpose has many benefits. Last year,
-        the MAVEN Science Data Center (SDC) at the Laboratory for Atmospheric &
-        Space Physics (LASP) began efforts to bring its pipeline to current
-        standards and best practices with the goal of creating an improved
-        workflow that is easier to maintain.
+        Software, especially open source software is changing fast. How to keep up with the momentum?  How to keep your code relevant, adaptable, flexible, and show correctness?  Functional programming is a paradigm from as early as the 1950s,  with the development of LISP.  Based on Church’s lambda calculus, functional programming continued to develop with ML (1970s), and other languages, and is now encouraged  with AWS Lambda functions.
 
-        The MAVEN SDC hosts the data collected by the Mars Atmosphere and
-        Volatile Evolution (MAVEN) mission, which explores the planet’s upper
-        atmosphere, ionosphere, and interactions with the sun and solar wind.
-        The SDC maintains a website where users can find instrument
-        documentation, view quicklook plots, and access the data via RESTful
-        APIs. Additionally, we also deliver data quarterly to NASA's Planetary
-        Data Systems archives for long term stewardship. The underlying
-        architecture and code that supports these responsibilities was created
-        over a decade ago, resulting in a brittle codebase and system that are
-        challenging to test and troubleshoot.
-
-        Our team has improved our workflow by updating the running Python
-        version, replacing a Postgres testing database with a serverless SQLite
-        database, transitioning to open source, refactoring testing frameworks,
-        leveraging GitHub features, and revamping documentation. Further
-        improvement efforts will involve moving the internal storage archive
-        from a deprecated AWS vault to high-performing s3 storage and
-        containerizing the SDC with Docker. These updates have enhanced our
-        CI/CD pipeline and enabled local testing for efficient feature
-        development. The long-term goal is ensuring consistency with other
-        mission SDCs managed by LASP and streamlining the onboarding of new
-        maintainers. This initiative also offers an opportunity to assess new
-        tools and best practices, paving the way for a more robust, accessible
-        and maintainable system. This presentation will share our approach, key
-        insights, and lessons learned on this effort.
-            </div>
+        This talk describes the tenets of functional programming including: avoiding side effects, first class functions, passing context, function composition, curried functions, closures, and continuations.   Also included are practical examples how to cover existing code with a functional veneer.   Let functional programming provide joy as you develop software and joy for those who may inherit your software.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>12:00 PM</b></div>
@@ -993,489 +382,68 @@
         </div>
         <div class="row">
             <div class="cell"><b>1:00 PM</b></div>
-            <div class="cell">Katherine Rasmussen</div>
+            <div class="cell">Jenny Knuth</div>
             <div class="cell-content">
-    ??? note cell "Julienne + Assert == Correctness-Checking for Functional Fortran"
-        **[[Slides](https://drive.google.com/file/d/1FuMk8l81jnIk6jf1oEATpMg-Gq_XYd25/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=17401s)]**
+    ??? abstract cell "Rapid Usability Testing: it's easier than you think"
 
-        **Coauthors: Damian Rouson, Dan Bonachea**
+        *I am a frontend web developer at CU Boulder's Laboratory for Atmospheric and Space Physics (LASP) and a certified instructor for The Carpentries (i.e., Data Carpentries, Software Carpentries, etc.). I believe that incorporating user feedback while developing scientific software is a small investment that can pay off with greatly improved adoption and use.*
 
-        *Katherine Rasmussen is a Computer Systems Engineer who applies
-        Linguistics knowledge to developing, testing, and compiling programming
-        languages for high-performance computing. She has experience in language
-        grammars and abstract syntax trees (ASTs) for Fortran, C, and C++. She
-        works in the Computer Languages and Systems Software (CLaSS) Group at
-        Lawrence Berkeley National Laboratory where she contributes to the
-        Julienne unit-testing and string-handling utility, the LLVM Flang
-        Fortran compiler, and the Caffeine parallel runtime library. She does
-        software archaeology, digging through ancient layers of legacy code for
-        purposes of modernization, porting, building, testing, and
-        parallelization. She also serves as an alternate on the Fortran
-        Standards committee, has experience organizing the Fortran Standards
-        committee meetings and is the co-Publication chair for CARLA2025, the
-        Latin America High Performance Conference.*
+        This tutorial will teach participants the basics of rapid usability assessments—a good way to quickly identify areas for improvement in any user experience. Whether your users interact with your software product via command line or GUI, usability assessments can be a useful tool. These tests can be completed quickly and provide quantitative data like users’ success rates, speed, or satisfaction when completing a task. In this hands-on tutorial, participants will learn to define a task for moderated assessment, recruit and prepare for their study, conduct a usability assessment, and analyze results.
 
-        The agile software development practice of test-driven development (TDD)
-        advocates unit testing as an essential driver of software design and
-        construction. In TDD, tests of individual units of software (e.g.,
-        procedures) serve documentation and verification roles. As
-        documentation, tests specify the behaviors required for code
-        correctness. Executing a suite of tests verifies that the actual
-        behaviors satisfy the documented requirements. As inspired by the
-        Veggies and Garden unit testing frameworks for modern Fortran, the more
-        lightweight Julienne framework uses the Template Method pattern to
-        report serial or parallel test results in the form of a specification
-        (https://go.lbl.gov/julienne).  As such, Julienne’s test output names
-        the test subject (e.g., a class or type-bound procedure), the expected
-        behavior, the test outcome (pass or fail), and provides diagnostic
-        information if a test fails.
-
-        The use of Julienne centers around users defining a test in the form of
-        a non-abstract child type that extends Julienne’s abstract test_t
-        derived type. The user’s child type thus inherits an obligation to
-        define type-bound procedures that name the subject of the test and
-        provide the test results. As a template method, test_t’s type-bound
-        “report” procedure invokes the user’s procedures by referencing the
-        aforementioned deferred bindings and reporting on the collective success
-        or failure across multiple images (processes) in programs that use
-        Fortran’s multi-image parallel programming features.
-
-        Working from the example test suite in the Julienne repository,
-        attendees will learn how to write and run a simple test suite, including
-        how to use Julienne’s string-handling for producing rich diagnostic
-        information from a failing test. Attendees will also see examples of
-        Julienne’s use in other Berkeley Lab software projects such as the Fiats
-        deep learning library and Matcha T-cell motility simulator.
-
-        Attendees will also learn a functional programming pattern developed and
-        used by the Berkeley Lab Fortran presenters.  Functional programming
-        centers around the definition of pure procedures that are free of side
-        effects, including file input and output. To supplement the material on
-        external verification via unit tests, this tutorial will also introduce
-        our Assert utility library and Assert’s use for runtime
-        correctness-checking inside procedures (https://go.lbl.gov/assert).
-        Attendees will learn how Assert addresses a common reason developers
-        cite for not writing pure procedures: a desire to produce diagnostic
-        output when debugging code. We posit that most developers seek output to
-        verify an expectation about data and that such expectations can be
-        stated in assertions that take the form of logical expressions.
-        Attendees will learn how Assert empowers developers to obtain rich,
-        customized diagnostic information through character stop codes when an
-        assertion fails, resulting in error termination. Attendees will also
-        learn how to use Assert in such a way that guarantees zero runtime
-        overhead by automatically eliminating assertions in production builds of
-        user software.
-            </div>
+        There are no prerequisites for this tutorial.
+        </div>
         </div>
         <div class="row">
-            <div class="cell"><b>2:30 PM</b></div>
+            <div class="cell"><b>3:10 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "Break"
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>3:00 PM</b></div>
-            <div class="cell">Guoqing Ge</div>
-            <div class="cell-content">
-    ??? abstract cell "Promoting open science: a better tool for version controlling mega binary data files - git-mega"
-        **[[Slides](https://drive.google.com/file/d/1H9TRQHYoYpy4Fqtu_EvoWFjxjccBHX32/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=24511s)]**
-
-        *Dr. Ge is a research scientist at CIRES/NOAA GSL and works on improving
-        the NOAA operational forecasts through the data assimilation
-        developments.*
-
-        In recent years, the drive towards open science has been gaining
-        momentum, with researchers recognizing the importance of transparent and
-        accessible data sharing. However, version controlling large binary data
-        files has remained a challenging hurdle in achieving comprehensive open
-        science practices. Existing solutions such as Git LFS have provided some
-        relief, but they struggle to handle mega binary data (a few hundred
-        gigabytes to a few terabytes) with problems such as network traffic
-        jams, long waiting times to clone repositories, consuming a large amount
-        of disk space with multiple copies, costing too much money for hosting
-        data. This talk introduces "git-mega," a cutting-edge tool specifically
-        developed to meet the needs of version-controlling mega binary data
-        files.
-
-        By capitalizing on the latest advancements in data storage and
-        retrieval, git-mega efficiently manages large binary files within Git
-        repositories, ensuring they remain lightweight and effortlessly
-        accessible. Leveraging unique algorithms, git-mega minimizes the impact
-        of mega binary files on version control operations, enhancing repository
-        cloning speed and responsiveness.
-
-        Key features of git-mega include intelligent data deduplication,
-        seamless data synchronization with existing storage systems, and
-        comprehensive metadata management. Through its user-friendly interface,
-        researchers can effortlessly integrate git-mega into their existing
-        workflows, eliminating the complexities often associated with handling
-        mega binary data files.
-
-        Moreover, git-mega adheres to the FAIR (Findable, Accessible,
-        Interoperable, and Reusable) principles, fostering a culture of data
-        sharing and collaboration within the scientific community. Researchers
-        can confidently share their binary data files, knowing that git-mega
-        facilitates effortless discovery, accessibility, and reproducibility of
-        scientific findings.
-
-        This talk discusses the architecture, implementation, and performance
-        evaluation of git-mega, comparing it with existing solutions to showcase
-        its superiority in managing mega binary data files. By promoting
-        transparent data sharing and fostering collaboration, git-mega brings
-        researchers one step closer to realizing the full potential of open and
-        reproducible scientific endeavors.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>3:20 PM</b></div>
-            <div class="cell">Saurav Dey Shuvo</div>
-            <div class="cell-content">
-    ??? abstract cell "Automating ASOS Data Processing: A Python-Based Solution for Efficient Meteorological Analysis"
-        **[[Slides](https://drive.google.com/file/d/1mi3I090fITJIxnYHNh4BBZfPachywCLv/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=25566s)]**
-
-        *Saurav's research focuses on the use of Numerical Weather Prediction
-        (NWP) as well as Satellite Data. Currently, he is doing Ph.D. at The
-        Ohio State University, under the supervision of Professor Dr. David H.
-        Bromwich. He is positioned at the famous Byrd Polar and Climate Research
-        Center in Columbus, Ohio. The focus of his work on implementing the
-        PIEKTUK model for simulating the blowing snow events.*
-
-        The Automated Surface Observing System (ASOS) provides essential
-        meteorological data for weather forecasting, climate studies, and
-        atmospheric research. However, working with raw ASOS data presents
-        significant challenges due to its large volume, inconsistent formatting,
-        and the presence of duplicate or missing entries. Before meaningful
-        analysis can be conducted, extensive preprocessing—cleaning, sorting,
-        and organizing—is required. This manual process is not only
-        time-consuming but also prone to errors, making it a major bottleneck in
-        research workflows. To address this issue, we have developed a
-        Python-based algorithm that automates the cleaning and sorting of ASOS
-        data, significantly improving efficiency and accuracy. The algorithm
-        reads raw ASOS files and processes them based on user-defined criteria,
-        allowing flexible and efficient data organization. Specifically, it
-        sorts data according to meteorological variables (e.g., temperature,
-        mean sea-level pressure, visibility, gust, wind speed, wind direction),
-        time, and station location. Additionally, it detects and removes
-        duplicate entries, ensuring data integrity and consistency. The
-        structured output is then saved in separate folders based on the chosen
-        sorting criteria, providing an organized dataset ready for analysis. One
-        of the key strengths of this tool is its adaptability to various
-        research needs. Users can customize the sorting and filtering process to
-        focus on specific parameters relevant to their study. Whether analyzing
-        long-term climatological trends, investigating extreme weather events,
-        or validating numerical weather prediction (NWP) models, researchers can
-        quickly extract and organize the data they need without the burden of
-        manual preprocessing. Furthermore, by automating these tedious tasks,
-        the algorithm reduces human errors and enhances the reproducibility of
-        research findings. The algorithm was designed with usability in mind,
-        making it accessible to students and researchers with varying levels of
-        programming experience. It requires minimal setup and provides clear
-        output structures, making ASOS data more accessible to a broader
-        scientific community. Additionally, its efficiency in handling large
-        datasets ensures that researchers can process weeks or even months of
-        ASOS observations in a fraction of the time required for manual data
-        handling. This research will discuss the implementation details of the
-        algorithm, including its structure, optimization strategies, and
-        performance when processing large ASOS datasets. As scientific software
-        development continues to evolve, automation will play a crucial role in
-        improving data-driven decision-making. This contribution aims to foster
-        discussions on best practices in scientific software development and
-        encourage collaborations to further enhance meteorological data
-        processing tools.
-            </div>
-        </div>
-        <div class="row">
             <div class="cell"><b>3:40 PM</b></div>
-            <div class="cell">Samuel Akinjole</div>
+            <div class="cell">Scot Breitenfeld</div>
             <div class="cell-content">
-    ??? abstract cell "Development of GEOS-Chem-hyd: Enabling Calculation of Numerically Exact Second-Order Sensitivities"
-        **[[Slides](https://drive.google.com/file/d/1Tu3Q8bcrKMmGapRJ3YSxsu96khipSK96/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=FwJNPHx86GY&t=26595s)]**
+    ??? abstract cell "Securing the HDF5 Supply Chain via Safe-OSE"
 
-        *Samuel Akinjole is a Ph.D. candidate in Environmental Engineering with
-        a minor in Applied Data Science at Drexel University. He holds a
-        bachelor's degree in Chemical Engineering, graduating with a First-Class
-        honors from the University of Lagos, Nigeria. With an exemplary academic
-        track record and expertise in high-performance computing, he has
-        spearheaded the development of GEOS-Chem-hyd, enabling the calculation
-        of second-order sensitivities in a global atmospheric model. Samuel is
-        skilled in Python, Fortran, and Machine learning, with experience
-        optimizing large-scale geospatial simulations. He has presented his work
-        at prominent conferences, including the 11th International GEOS-Chem
-        Meeting in St. Louis and the International HPC Summer School held in
-        Kobe, Japan. His innovative projects span topics such as atmospheric
-        modeling, data assimilation and machine learning.*
+        *Scot Breitenfeld is with The HDF Group and specializes in HPC applications using HDF5. He has implemented, troubleshot, and tuned HDF5 for a broad spectrum of HPC applications and third-party HDF5-based libraries across various machine architectures and parallel file systems.*
 
-        The development of GEOS-Chem-hyd introduces a transformative approach to
-        sensitivity analysis in global atmospheric chemistry modeling through
-        the use of hyperdual numbers. Hyperdual methods enable the precise
-        computation of derivatives, including the Jacobian and Hessian, which
-        are essential for higher-order sensitivity analysis. This project
-        implements a novel tangent linear method for evaluating both first- and
-        second-order sensitivities with machine precision in GEOS-Chem, building
-        on prior successes in CMAQ-hyd (Liu et al., 2024).
+        HDF5 is a foundational data format used across high-performance computing, artificial intelligence, machine learning, and long-term data storage. Its widespread adoption makes HDF5 not only a crucial infrastructure but also a target for security threats.
 
-        This presentation will discuss the technical and scientific innovations
-        underlying GEOS-Chem-hyd, the challenges encountered during development,
-        and the innovative solutions employed. Attendees will gain insights into
-        integrating advanced mathematical tools, such as hyperdual methods, into
-        legacy models like GEOS-Chem. We will also discuss strategies for
-        maintaining accessibility and relevance in a rapidly evolving
-        computational landscape. By improving sensitivity analyses through
-        precise second-order derivatives, this work provides new insights into
-        non-linear atmospheric processes and enhances the broader field of
-        geoscientific modeling.
-            </div>
+        This presentation introduces NSF-Safe-OSE, an initiative to enhance the safety, security, and privacy (SSP) of the HDF5 ecosystem. We believe that achieving lasting security in scientific software requires more than just technical fixes; it necessitates a socio-technical infrastructure that provides clear guidelines, transparent processes, and pathways that empower diverse contributors to implement changes safely and confidently.
+
+        We will share insights from our comprehensive audit, demonstrating how to transform threat modeling into actionable outcomes, which include a living risk register and enforceable policies. Our approach segments risks across various layers—from the file format and core library to the plugin ecosystem and the toolchain. Importantly, we will address emerging policy challenges faced by many scientific projects, such as securing dynamic plugin loading, managing Software Bill of Materials and provenance requirements, and reviewing contributions generated by AI.
+
+        Beyond HDF5, this presentation offers reusable strategies for the broader scientific software community. We will illustrate how security engineering practices, including risk triage and verification, can be customized to address the unique constraints of scientific software—such as strict performance requirements, legacy compatibility, and reproducibility.
+
+        We conclude by inviting the community to collaborate on high-impact initiatives, such as co-developing threat scenarios for cloud-based and regulated data, validating risk priorities, and partnering on trusted distribution models.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>4:00 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? success cell "Notebook Proceedings Office Hours"
-        During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>5:00 PM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
-    ??? warning cell "End of Day 2"
+    ??? info cell "Proceedings Office Hours"
         </div>
         </div>
     </div>
-=== "Wednesday, April 9"
+
+=== "Wednesday, April 8"
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell">Damian Rouson</div>
+            <div class="cell"></div>
             <div class="cell-content">
-    ??? abstract cell "Cloud microphysics training and aerosol inference with the Fiats deep learning library"
-        **[[Slides](https://drive.google.com/file/d/17hRfifaNN-Lz9ZptOC9aoxbTS769CmXE/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=1963s)]**
-
-        *Damian Rouson is a Senior Scientist and the Group Lead for the Computer
-        Languages and Systems Software (CLaSS) Group at Berkeley Lab. He is a
-        mechanical engineer with experience in simulating turbulent flows in
-        multiphase, quantum, and magnetohydrodynamic media. At Berkeley Lab, he
-        researches language-based parallel programming and deep learning,
-        teaches tutorials in parallel Fortran and UPC++, and leads open-source
-        software projects including the Fiats deep learning library, the
-        Caffeine parallel runtime library, and the Julienne unit-testing
-        framework.*
-
-        *He co-authored the textbook Scientific Software Design: The
-        Object-Oriented Way (Cambridge University Press, 2011) and has taught
-        courses and tutorials on object-oriented design patterns, parallel
-        programming, and agile software development. He is an alternate member
-        of the Fortran standard committee. He has held staff and faculty
-        positions at the City University of New York, the University of
-        Maryland, the University of Cyprus, the University of Bergen, and
-        Stanford University. He has held staff and management positions at the
-        U.S. Naval Research Laboratory and Sandia National Laboratories. He
-        received a  2020-'21 Better Scientific Software Fellowship from the
-        Exascale Computing Project and a 2025 Developer of the Year Award from
-        Berkeley Lab’s Intellectual Property Office. He has been a
-        (co-)principal investigator on research grants and research software
-        engineering contracts funded by the Department of Energy, the National
-        Institute of Standards and Technology, the National Science Foundation,
-        the Office of Naval Research, the Nuclear Regulatory Commission, and the
-        National Aeronautics and Space Administration.*
-
-        This talk will present two atmospheric sciences demonstration
-        applications in the Fiats software repository
-        (https://go.lbl.gov/fiats). Fiats, an acronym that expands to
-        “Functional inference and training for surrogates” or “Fortran inference
-        and training for science,” is a deep learning utility that targets
-        high-performance computing applications in Fortran 2023.  The first
-        application trains a cloud microphysics neural-network surrogate model
-        that has been integrated into the Berkeley Lab fork of the Intermediate
-        Complexity Atmospheric Research (ICAR) model (https://go.lbl.gov/icar).
-        The second application performs parallel inference with an aerosol
-        dynamics surrogate pretrained using data from the Energy Exascale Earth
-        System Model (E3SM – https://e3sm.org/).
-
-        Fiats provides novel support for functional programming styles by
-        providing inference and training procedures declared to be “pure,” a
-        language requirement for invoking a procedure inside Fortran’s
-        loop-parallel construct: “do concurrent.”  Because pure procedures
-        clarify data dependencies, at least four compilers are currently capable
-        of automatically parallelizing “do concurrent” on central processing
-        units (CPUs) or graphics processing units (GPUs). The talk will present
-        strong scaling results on a single node of Berkeley Lab’s Perlmutter
-        supercomputer, showing near-ideal scaling up to 16 cores with additional
-        speedup up to the hardware limit of 128 cores based on results obtained
-        by compiling with a fork of the LLVM Flang Fortran compiler.
-
-        Fiats provides a derived type that encapsulates neural-network
-        parameters and provides generic bindings for invoking inference
-        functions and training subroutines of various precisions.  A novel
-        feature of the Fiats design is that all procedures involved in inference
-        and training are non-overridable, which eliminates the need for dynamic
-        dispatch at call sites.  In addition to simplifying the structure of the
-        resulting executable program and potentially improving performance, we
-        expect this feature to enable the automatic offload of inference and
-        training to GPUs.
-
-        The talk will conclude by presenting  the use of “do concurrent” in a
-        parallel training algorithm, highlighting the considerable
-        simplifications afforded by the evolution of “do concurrent” from its
-        introduction in Fortran 2008 to its enhancement in Fortran 2018 and
-        further enhancement in Fortran 2023.
-            </div>
+    ??? info cell "Opening Remarks"
+        </div>
         </div>
         <div class="row">
-            <div class="cell"><b>8:50 AM</b></div>
-            <div class="cell">Daniel Abdi</div>
+            <div class="cell"><b>8:40 AM</b></div>
+            <div class="cell">Keynote (TBD)</div>
             <div class="cell-content">
-    ??? abstract cell "Developing a Data-Driven Emulator for the High-Resolution Rapid Refresh (HRRR) Model"
-        **[[Slides](https://drive.google.com/file/d/1t_X9_XdHPYQr0ezcnA_3MMjO13C2TEsa/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=3331s)]**
-
-        *Daniel is a research scientist at CIRA currently working on developing
-        data-driven models for medium-range weather forecasting for both global
-        and regional applications. My previous background include accelerating
-        several traditional NWP models on GPUs, contributing to R2O products of
-        NOAA including GFS and RRFS, and developing AI agents for several games
-        including chess and Go.*
-
-        The High-Resolution Rapid Refresh (HRRR) model is pivotal in operational
-        weather forecasting, providing detailed and timely predictions across
-        the contiguous United States (CONUS). To complement and enhance this
-        process, our project focuses on developing a data-driven emulator for
-        the HRRR model. Using state-of-the-art machine learning techniques, we
-        aim to deliver computationally efficient alternatives that maintain or
-        exceed the accuracy of traditional numerical models. This work leverages
-        a large HRRR dataset, preprocessed into Zarr format with chunking
-        optimized for efficient training and inference.
-
-        Our approach explores two primary machine learning architectures:
-        ResNet-based models (ResHRRR) and graph-based models (GraphHRRR).
-        ResHRRR leverages convolutional neural networks and incorporates
-        enhancements such as squeeze-and-excitation blocks and Feature-wise
-        Linear Modulation (FiLM) to improve accuracy. GraphHRRR builds on
-        previous work in global weather modeling, adapting it to rectangular
-        CONUS domains with Delaunay triangulation and modified boundary
-        handling. We first tested these models on subdomains (e.g., western U.S.
-        and central U.S.) and achieved promising results in predicting key
-        variables like wind speed and temperature. Notably, the GraphHRRR model
-        outperformed ResHRRR in capturing high-resolution spatial details,
-        particularly for composite reflectivity. Forecasts on the whole CONUS
-        domain but at a reduced resolution of 6km instead of the native 3km
-        resolution exhibited similar performance characteristics as the small
-        subdomains.
-
-        Initial results demonstrate the potential of these emulators in
-        achieving fast and reliable forecasts with lead times up to 9 hours.
-        Enhanced sharpness in predictions was achieved by integrating denoising
-        diffusion models, which significantly improve the quality of forecasts
-        for variables like reflectivity. Future work will optimize memory usage,
-        and explore novel probabilistic methods such as GenCast and CorrDiff. By
-        combining advanced data-driven approaches with traditional numerical
-        weather prediction, this project aims to pave the way for more efficient
-        and scalable operational forecasting systems.
-            </div>
+    ??? abstract cell "TBD"
+        *TBD*
         </div>
-        <div class="row">
-            <div class="cell"><b>9:10 AM</b></div>
-            <div class="cell">David Hahn</div>
-            <div class="cell-content">
-    ??? abstract cell "µWMS: Cloud-Based Microservice Web Map Service"
-        **[[Slides](https://drive.google.com/file/d/14fWHTCeBl-X3aNqrwm68YCFyj_DE5g8K/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=4394s)]**
-
-        *David Hahn is a software engineer at UCAR, primarily in NCAR/RAL, but
-        also working for UCP/COSMIC and UCP/JCSDA over the years.  David has a
-        passion for working in DevOps roles and cloud native deployments that
-        take advantage of scalability, cost savings, and a reduction in system
-        maintenance.*
-
-        The Web Map Service (WMS) plays a crucial role in integrating
-        geographical datasets into cohesive visual displays within systems
-        developed at NCAR and UCP. However, managing these systems presents a
-        variety of challenges throughout the project lifecycle, including
-        capacity planning, web server configuration, encryption certificate
-        management, OS maintenance, and hardware acquisition and upkeep.
-
-        In recent years, our work has highlighted the advantages of leveraging
-        cloud hosting through Platform as a Service (PaaS) solutions. This
-        approach simplifies capacity planning, eliminates the need for OS and
-        web server configuration, and allows for a flexible pay-as-you-go model
-        for computing and storage.
-
-        Despite its importance, migrating the WMS to a serverless environment
-        has proven challenging. To address this, RAL is spearheading a small
-        initiative aimed at demonstrating the feasibility of deploying WMS using
-        a microservice architecture in the cloud. This project utilizes AWS
-        services, including API Gateway, Lambda, S3, and DynamoDB to create a
-        scalable solution.
-
-        The primary objective of this talk is to present a proof of concept,
-        including results from load testing to evaluate scalability. Attendees
-        will gain insights into our findings and updates from this innovative
-        project, showcasing the potential of cloud-based WMS implementations.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>9:30 AM</b></div>
-            <div class="cell">Joshna Kurra</div>
-            <div class="cell-content">
-    ??? abstract cell "Toward Generating Experiment-Specific Notebooks in FABRIC"
-        **[[Slides](https://drive.google.com/file/d/15KWO23ZrA3ujan5EKrcmpahqJaJLpYdZ/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=5622s)]**
-
-        **Coauthors: Mami Hayashida, Joshna Kurra, Zongming Fei, James
-        Griffioen**
-
-        Joshna is a recent graduate with a Bachelor’s degree from the
-        University of Kentucky. She is currently in her first semester of
-        graduate school, studying Data Science. She began working with FABRIC in
-        January 2024. Initially, she assisted in creating and updating teaching
-        materials—experiments designed for professors to use in their classes to
-        teach concepts in networking—maintained by FABRIC. Currently, she is
-        working on the Jupyter Notebook Generation project presented in the
-        abstract. Her research interests include Generative AI, data mining and
-        data analysis.*
-
-        Jupyter notebooks are now widely used by the research community to set
-        up, launch, run, analyze, and document scientific experiments. Jupyter
-        notebooks also allow scientific software and experiments to be easily
-        shared by researchers and has resulted in extensive shared notebook
-        repositories.  The massive number of example notebooks available not
-        only has made it easier for researchers to write notebooks, but also
-        represents a wealth of data that can be used by Generative AI systems to
-        automatically generate experiment-specific notebooks. This paper
-        describes the use of RAG-based AI techniques to automatically generate
-        jupyter notebooks in the context of the NSF FABRIC testbed.
-
-        FABRIC is a next generation network testbed that consists of over 30
-        sites across the U.S., Asia, and Europe, including many supercomputing
-        facilities and other specialized testbeds.  Each FABRIC node (“router”)
-        is an advanced compute cluster with GPUs, FPGAs, programmable NICs, and
-        large amounts of storage. In this sense, FABRIC can be regarded as a
-        federation of HPC-style resources that can be programmed – including the
-        network.
-
-        In order to program the FABRIC testbed, including reserving and managing
-        resources, researchers must use FABlib, a python API. While there is an
-        extensive collection of example JupyterHub notebooks and documentation
-        demonstrating this usage, the learning curve for first-time users can be
-        steep, a challenge often seen in other HPC environments. Moreover, as
-        the capabilities and scope of FABRIC expands, finding the necessary
-        information from notebook usage examples and combining different
-        elements becomes increasingly more complex and difficult. To address
-        this problem, we have implemented an AI-based tool, leveraging the power
-        of LLMs and Retrieval Augmented Generation(RAG), that generates a draft
-        Python notebook  based on the user's request. Automating the routine
-        steps that researchers would have to take when getting started with
-        FABRIC, we can give them a chance to be more focused on their
-        experiments.
-
-        In our talk, we will present the architecture of the application, design
-        decisions we have made, and the user-side experience. We will also
-        discuss such details as the different LLM models tested, RAG techniques
-        explored, prompt engineering, and finally, the challenges we have faced
-        as we are continuing to improve its performance. Since RAG is a
-        technique that is recently being adapted in various fields to try and
-        create specialized chatbots, we hope this talk will be a helpful guide
-        to the audience if they decide to take upon such a project in their own
-        research area.
-            </div>
         </div>
         <div class="row">
             <div class="cell"><b>9:50 AM</b></div>
@@ -1486,240 +454,117 @@
         </div>
         <div class="row">
             <div class="cell"><b>10:20 AM</b></div>
-            <div class="cell">Brad Klotz</div>
+            <div class="cell">Maciej Manna</div>
             <div class="cell-content">
-    ??? abstract cell "An Interconnected Workflow Design for Simulating Airborne Phased Array Radar (APAR) Data"
-        **[[Slides](https://drive.google.com/file/d/1re7YtS0C7ycmXW84qNwDY9zQZlDtaept/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=8527s)]**
+    ??? abstract cell "Always Measure: Analyzing Performance of Point-Particle DNS under Two-Way Momentum Coupling"
 
-        *Brad Klotz is a Project Scientist within the Remote Sensing Facility of
-        NSF NCAR's Earth Observing Laboratory. During his four and a half years
-        at NSF NCAR, Brad has worked primarily on the Airborne Phased Array
-        Radar (APAR) program, supporting APAR simulation software development,
-        data generation, algorithm development, and overall science team
-        logistics and coordination. Throughout his career, Brad has devoted much
-        of his time and energy on supporting airborne remote sensing, especially
-        pertaining to severe weather and tropical weather systems.*
+        *Quite recently, I joined the Polish Institute of Meteorology and Water Management (IMGW-PIB) as an employee and PhD candidate. My areas of interest include computational fluid mechanics, atmospheric turbulence, and collision statistics of cloud droplets. I recently returned to research after several years as a software engineer working in the industry and this experience significantly informs my approach to scientific software.*
 
-        The Airborne Phased Array Radar (APAR) program is currently under
-        development through support from NSF and NOAA. This transformational
-        radar will become the first airborne, C-band, phased array weather radar
-        for use within the scientific community. While the hardware and
-        associated aircraft modifications are still in development, it is
-        critical for scientists and engineers to have an understanding of the
-        performance capabilities of the radar as it pertains to scanning, data
-        collection and processing, and scientific applications. There are many
-        available scientific applications for radar data, many of them held
-        within the NSF NCAR supported Lidar Radar Open Software Environment
-        (LROSE). Data quality control, 3-D wind analyses, and discrimination of
-        particle types in LROSE are several examples of tools that are useful
-        for APAR. These applications serve as an end goal for the utilization of
-        the collected data.
+        Computational efficiency matters a lot for scientific software, whether it allows
+        to save valuable CPU-hours on HPC systems, to complete weather predictions
+        within strict operational time windows, or simply to enable moderately complex
+        research codes to run on personal laptops. Although we often rely on intuition
+        to predict whether code will be fast or slow, such intuition is increasingly
+        unreliable. Multiple layers separate the code we write from the instructions
+        executed on modern hardware, and these layers are both complex and opaque.
+        The intricacies of modern CPU architectures and the sophisticated
+        transformations applied by optimizing compilers, among other factors, make it
+        difficult to reason about performance a priori. Consequently, in communities
+        where performance matters, one guiding principle is widely embraced: “Always
+        measure.”
 
-        To provide research quality data in the current stage of APAR
-        development, an APAR scientific simulator was developed. Known as the
-        APAR Observing Simulation, Processing, and Research Environment (AOSPRE,
-        pronounced “A-Osprey”), this tool is able to read in high-resolution
-        numerical weather model data, such as from the Weather Research and
-        Forecasting (WRF) model, and compute radar moments in the context of the
-        APAR scanning parameters and characteristics. This software environment
-        is designed to serve as an interconnecting framework of existing
-        software tools and modules in order to provide a seamless workflow of
-        simulated radar data generation. Currently, AOSPRE is broken into three
-        main software blocks, which includes a pre-processing phase, a radar
-        simulation phase, and a data processing and applications phase.
-        For this presentation, a detailed discussion of the design of each phase
-        in the workflow will be provided. For the pre-processing phase, a user
-        points to a database of high-resolution numerical model output and can
-        design a relevant flight plan in and around the weather of interest.
-        This flight planning tool has recently advanced to a GUI that allows
-        either manual or machine-learning based guidance on the most ideal path.
-        The GUI application was developed in Matlab but can be operated within a
-        container. Information on the flightpath and desired scanning patterns
-        are stored for use in a namelist file that is accessed in phase two of
-        the workflow. The main portion of the AOSPRE codebase controls reading
-        in the weather model output, operating the designated flight, generating
-        the APAR output, and saving the output in CfRadial files. This code is
-        currently written in Fortran and incorporates multiple subroutines and
-        modules that handle different aspects of determining the aircraft
-        location, scanning, and conversion from model to radar coordinates. It
-        also uses an existing moment generator, called the Cloud-resolving Radar
-        SIMulator (CR-SIM), for final computation of the radar moments. This
-        portion of AOSPRE also utilizes parallel computing resources based in
-        OpenMP to improve processing efficiency. The output is then linked to
-        other tools and applications to understand the uncertainty in the
-        measurements or new ways to apply the data. A brief description of some
-        future design updates of the code will also be provided. As a whole, the
-        AOSPRE code follows LROSE as an example for open source software
-        development but with the specific intent to provide support to the APAR
-        program and future interaction with field campaign planning and
-        operations.
-            </div>
+        This presentation first introduces fundamental performance assessment
+        techniques—such as benchmarking and profiling—highlighting both their value
+        and their common pitfalls. Several illustrative examples are presented where
+        measurements contradict intuitive expectations. More importantly, we report a
+        detailed performance analysis of a well-established direct numerical simulation
+        (DNS) code used to study the influence of atmospheric turbulence on cloud
+        droplet behavior. The software comprises two tightly coupled components: a
+        pseudo-spectral fluid solver operating on an Eulerian regular box grid with
+        periodic boundary conditions, and a Lagrangian module tracking individual point
+        particles (droplets) that interact with the carrier flow. The code is optimized for
+        massively parallel execution by employing a two-dimensional domain
+        decomposition (into “pencils” or “columns”) to enable efficient three-
+        dimensional Fast Fourier Transforms.
+
+        The results of execution time measurements, collected using minimally intrusive
+        manual instrumentation, are presented in various scenarios. The resulting data
+        reveal notable discrepancies from an earlier performance study of the same code,
+        primarily due to the use of substantially larger particle counts (to model regime
+        where two-way momentum coupling is relevant). These discrepancies prompted
+        a deeper investigation into how particle distribution across subdomains affects
+        performance. Earlier assumptions of near-homogeneous particle distributions at
+        this scale proved invalid, particularly when gravity introduces anisotropy in the
+        system. In practical terms, this insight led to a simple two-line modification that,
+        counterintuitively, orients gravity perpendicular to the subdomain “pencils.” This
+        change was shown to speed up simulations by up to 30%.
+
+        These findings underscore the necessity of measuring software performance and
+        revisiting prior assumptions whenever numerical methods or physical
+        parameters evolve. They also highlight additional challenges, more specific to
+        research software, that further complicate performance reasoning, including
+        distributed computation and the influence of physical parameters on the
+        modeled system. Therefore, the imperative to “Always measure” is paramount to
+        the development and use of scientific software.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>10:40 AM</b></div>
-            <div class="cell">Dazhong Xia</div>
+            <div class="cell">Deepak Kumar</div>
             <div class="cell-content">
-    ??? abstract cell "A small tool for medium data: browser-based data exploration and export done quick"
-        **[[Slides](https://drive.google.com/file/d/1q97loYyuiP8v6jnm9-d90gk5jXxZE7C9/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=9771s)]**
+    ??? abstract cell "WRF-Based High-Resolution Fire Weather Forecasting: Accuracy, Uncertainty, and Applications"
 
-        *Dazhong is a member of Catalyst Cooperative, a worker-owned cooperative
-        that wrangles data about the US energy system. He has over a decade of
-        software experience that spans data engineering, devops, and full-stack
-        web development.*
+        *Dr. Deepak Kumar is a Research Scientist with the Atmospheric Sciences Group at Texas Tech University, Lubbock, USA, and was recently recognized among the World’s Top 2% Scientists for 2025 by Stanford University in collaboration with Elsevier. His multidisciplinary research spans Artificial Intelligence, Image Processing, Geomatics, and Geological and Engineering Sciences, with core expertise in Geospatial AI, Remote Sensing, and Climate Science. Previously, he contributed to the Atmospheric Sciences Research Center at the State University of New York at Albany, focusing on the Urban–Climate–Energy nexus and evidence-based resilience planning. Before his tenure in the United States, he served as an Assistant Professor at Amity University, Delhi-NCR, India, where he led two government-funded research projects and developed comprehensive expertise across the research lifecycle. He has authored over 80 peer-reviewed publications, co-edited six academic books with major international publishers, holds seven patents, and continues to advance transdisciplinary solutions for climate change, sustainable cities, and energy transitions.*
 
-        Catalyst Cooperative publishes the Public Utility Data Liberation
-        project (PUDL), a collection of data about the US energy system. It is
-        over 200 tables, with thousands of different columns, a scale that can
-        be overwhelming to navigate. We asked our users what they needed for the
-        data to be accessible and usable, and found some common use cases. They
-        wanted to search through the available data, filter and explore
-        different datasets, and then export the data they found as CSV.
-
-        Existing data exploration and metadata search tools didn’t meet those
-        needs. They’re typically designed for internal corporate use, and run
-        into many challenges in an open data context while being over-engineered
-        for our relatively modest data sizes. Additionally, exploration tools
-        had poor support for metadata search, metadata tools had poor
-        exploration support, and no tools had good support for exporting large
-        amounts of data to CSV.
-
-        We built an open-source tool that provides the search, exploration, and
-        export functionality that our users need. It also requires minimal
-        resources, is contained in several hundred lines of code, and can track
-        usage metrics on a per-user basis. In this talk we’ll go over how the
-        tool works and how you can adapt it to the data you publish.
-            </div>
+        Wildfire risk management increasingly relies on high-resolution, operational fire weather forecasts; however, converting numerical model outputs into actionable decision support remains a persistent challenge. This study critically evaluates the Weather Research and Forecasting (WRF) model’s capacity for hourly fire weather prediction, with particular emphasis on forecast accuracy, uncertainty quantification, and software engineering practices pertinent to scientific computing. WRF was configured at convection-permitting resolution to generate short-term forecasts of key fire weather variables like temperature, relative humidity, wind speed, and associated derived fire weather indices. Forecast performance was evaluated against ground-based observations using standardized verification metrics, including bias, root mean square error (RMSE), and correlation. Uncertainty was assessed through error propagation analysis and sensitivity testing. Results indicate strong model skill in reproducing the diurnal cycles and spatial variability of temperature and humidity, whereas wind fields exhibit greater uncertainty during rapidly evolving mesoscale events. Notably, derived fire weather indices demonstrate nonlinear error amplification, underscoring the necessity of robust uncertainty representation within decision-support frameworks. We document reproducible workflows, containerized deployment, and automated verification pipelines that enhance model reliability and operational readiness. The study further demonstrates visualization-driven dissemination of fire risk forecasts, with an emphasis on usability for fire management agencies. This work advances WRF-based fire weather forecasting by integrating rigorous evaluation with contemporary scientific software engineering practices, thereby promoting reproducible, scalable, and trustworthy computational science.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:00 AM</b></div>
-            <div class="cell">Zach Schira</div>
+            <div class="cell">Endalkachew Gelaw</div>
             <div class="cell-content">
-    ??? abstract cell "Building, Maintaining, and Tracking Machine Learning Models in a Production Environment"
-        **[[Slides](https://drive.google.com/file/d/1N4Z3dEhOn8geWdbEqFVS1GmbT41vbMjD/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=10921s)]**
+    ??? abstract cell "Parallel Performance Characterization of WRF-Hydro using HPC Profiling Tools"
 
-        *Zach Schira is a data engineer at Catalyst Cooperative where he has
-        helped to build out infrastructure enabling the team to tackle large,
-        complex machine learning problems. Recently,  he lead the infrastructure
-        development for a project that involved training and deploying a model
-        to extract data from over 300,000 PDF's.*
+        *Endalkachew Gelaw is a PhD student in Civil and Environmental Engineering at South Dakota Mines. Leveraging prior experience in parallelizing distributed hydrological models for HPC architectures, he is undertaking a parallel performance characterization of WRF-Hydro using Intel profiling tools, complementing his primary research in flood inundation and hydrological modeling. He is particularly interested in research at the intersection of software development and hydrological and hydraulic modeling.*
 
-        With the proliferation of “off the shelf” machine learning models,
-        developers can quickly and easily get models prepared and finetuned for
-        a variety of tasks. This means even relatively small teams can end up
-        managing many different models applied to a diverse set of problems.
-        While this new paradigm allows teams to solve interesting and novel
-        problems, a lack of organization can cause these models to become unruly
-        and disorganized without proper forethought into their design and
-        management. For example, if each model is developed with a bespoke
-        system for saving weights, testing performance, and deployment in a
-        production environment, the maintenance burden for managing such a setup
-        can balloon exponentially. Fortunately, there’s a growing suite of open
-        source tools to help teams manage their models in a consistent,
-        effective way.
+        Understanding the performance characteristics of large-scale hydrological models is critical for enabling efficient flood forecasting and environmental modeling on high-performance computing (HPC) systems. WRF-Hydro is a widely used hydrological modeling framework that couples atmospheric and hydrologic processes to simulate flood inundation, streamflow, and watershed dynamics. However, as simulations scale to hundreds of cores and process larger spatial and temporal domains, performance bottlenecks—particularly related to communication, computation, and I/O—can limit scalability and increase time-to-solution.
 
-        This talk will focus on using the library ‘mlflow’ to manage machine
-        learning models. The talk will present a notebook that demonstrates the
-        various uses of mlflow by working through a simple classification
-        problem. This will include training, testing, and comparing models
-        pulled from multiple different machine learning frameworks. After
-        working through this demonstration, the talk will then focus on
-        integrating models managed by mlflow into a production environment. This
-        discussion will also touch on other common tools in an open-data stack,
-        and how mlflow can be used alongside these tools. By end of this talk,
-        the audience should feel comfortable developing machine learning models
-        that can be maintained and used well into the future.
-            </div>
+        To investigate these challenges, I conducted a detailed performance study of WRF-Hydro using the standard test case provided by the model developers, running simulations on up to 100 cores. Results from Intel Application Performance Snapshot (APS) show that increasing the number of cores does not yield significant runtime improvements, indicating that WRF-Hydro is strongly MPI-bound and that inter-process communication is a primary bottleneck. Building on these results, I am using Intel HPC Performance Characterization Analysis to examine computational hotspots, memory usage, and communication patterns in greater detail.
+
+        To capture the full behavior of WRF-Hydro under realistic workloads, I plan to extend the standard 11-day test case to a one-year simulation, allowing for a comprehensive view of performance when processing complete hydrometeorological datasets. In addition, I am designing a new large-scale test case with expanded spatial and temporal domains to explore scalability limits and identify potential bottlenecks under extreme scenarios.
+
+        The next phase of the study will leverage Intel MPI Tuner to optimize MPI configurations and explore strategies to alleviate communication bottlenecks. By combining multiple profiling tools and testing across varying temporal and spatial scales, this work provides a comprehensive understanding of WRF-Hydro’s parallel performance. The presentation will share methodology, profiling results, preliminary findings, and insights into practical strategies for diagnosing and improving the performance of large-scale hydrological models on modern HPC architectures.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:20 AM</b></div>
-            <div class="cell">Edward Hartnett</div>
+            <div class="cell">Jian Sun</div>
             <div class="cell-content">
-    ??? abstract cell "Using AI in Earth Science Programming"
-        **[[Slides](https://drive.google.com/file/d/1y5AqTQDFFiokRvO07hRWEotd8sVOIc4U/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=11981s)]**
+    ??? abstract cell "Status update of the StormSPEED project"
 
-        *Edward Hartnett is an author of NetCDF, a freely available software
-        library for scientific data, used by NASA, NOAA, the ESA, and climate
-        and meteorology scientists around the world. He contributed to the
-        netCDF-4 upgrade, as well as many other features, tests, and
-        documentation.
+        *Jian Sun is currently a high-performance computing (HPC) software engineer from the NSF National Center for Atmospheric Research. His research focuses on the GPU porting and performance optimization of weather and climate models, which are originally implemented in Fortran or C++, and now offloaded to GPUs through various technologies such as CUDA, OpenACC, OpenMP target offload and ISO Fortran.*
 
-        While working at LASP, he wrote software for the ground data processing
-        systems of several NASA missions, including data processing for the
-        Total Irradiance Monitor (TIM) and Spectral Irradiance Monitor (SIM);
-        these instruments were used in several missions, including SORCE, TCTE,
-        and TSIS-1 and 2. He also works on improving parallel IO performance for
-        the scientific modeling community as a co-author of the Parallel IO
-        library (PIO), a C/Fortran library that runs on supercomputers, as part
-        of weather and climate models.
+        The divergent implementations of dynamical core (i.e., dycore) in various Earth System Models (ESMs) present a significant challenge to the climate science community for a consistent and fair comparison of scientific fidelity and computational efficiency. In addition, many dycores are built with rigid, hardware-specific optimizations, often supporting only CPUs or a single GPU vendor. This lack of portability and inherent vendor lock-in significantly restricts the deployment of dycores on modern, heterogeneous architectures composed of diverse CPU and GPU configurations.
 
-        Recently, he has begun working on NOAA’s NCEPLIBS, a collection of
-        libraries that are used in the Unified Forecast Model (UFS), as well as
-        many other weather and climate models and applications. He has also
-        supervised or led several excellent software engineering teams,
-        including the Production Software Team, as part of Ground Data Systems
-        for several NASA missions, including Messenger, Cassini, MAVEN, MMS,
-        SORCE, AIM, and TSIS, and the NCEPLIBS team at NOAA.*
+        To address these systemic interoperability and portability challenges, the StormSPEED project was motivated and we successfully integrated the Energy Exascale Earth System Model (E3SM) non-hydrostatic spectral element dynamical core into the Community Atmosphere Model (CAM) framework. A pivotal aspect of this integration is the utilization of the C++/Kokkos library, which allows a single source codebase to perform efficiently with multiple hardware backends, including standard multi-core CPUs and various GPU architectures.
 
-        NOAA’s Environmental Modeling Center (EMC) maintains many Fortran and C
-        codes developed which are part of the Unified Forecast System (UFS).
-        These codes are of vital importance for the daily forecast and many
-        other NOAA products.
-        To continue to maintain and extend these codes with the most productive
-        and useful tools, we have been examining the use of AI tools in the
-        maintenance of Earth science software. AI tools have the capability to
-        transform the work of software engineers and managers. Available tools
-        include:
-
-        * predictive code completion
-        * generation of text, audio, video, and slides
-        * code inspection and improvement
-        * debugging
-        * test generation
-
-        In full accordance with NOAA’s policies on the use
-        of generative AI, we have been experimenting with
-        these tools in our software development efforts. In
-        this presentation we demonstrate some of these
-        capabilities and relate whether and how they
-        contribute to our productivity and the quality of
-        our code.
-            </div>
+        This presentation will focus on the following three key areas:
+        1. Baseline benchmark: A rigorous performance comparison of distinct dynamical cores within the identical CAM software infrastructure.
+        2. High-resolution scalability: A performance analysis of the E3SM dycore at an ultra-high resolution (i.e., 7km and 3km), demonstrating its capability to run efficient simulations on both CPUs and GPUs.
+        3. Cross-architecture portability: A showcase of the dycore’s deployment on both NVIDIA and AMD GPUs with minimal code modification.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:40 AM</b></div>
-            <div class="cell">Daralynn Rhode</div>
+            <div class="cell">Ren Stengel</div>
             <div class="cell-content">
-    ??? abstract cell "IMAP Data Access API: Functionality, Improvements, and Usages For Better Data Management"
-        **[[Slides](https://drive.google.com/file/d/1zpOAVAVuJflmf5C2R8KgEMk8gdASlumB/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=ZV1tyzzr0Ho&t=13463s)]**
+    ??? abstract cell "Evaluating the feasibility of language interoperability for atmospheric modeling using CAM parameterizations in E3SM"
 
-        *Daralynn is a junior studying Computer Science and Astronomy at CU
-        Boulder. She currently works as a student developer at the Laboratory
-        for Atmospheric and Space Physics (LASP), contributing to the Science
-        Data Center for the Interstellar Mapping and Acceleration Probe (IMAP)
-        mission.*
+        *Ren is a postdoctoral researcher in the Computational & Information Sciences Laboratory at NSF NCAR. She received her PhD from the University of Colorado Boulder in Computer Science where she studied performance portable solid mechanics implementations and computational efficiency. Her current research interests are focused on improving researcher access to computationally efficient scientific code bases and code modernization techniques.*
 
-        As space research missions generate increasingly complex datasets, the
-        IMAP Data Access API aims to simplify how scientists and researchers
-        interact with the data.
-
-        The Interstellar Mapping and Acceleration Probe Mission, launching in
-        2025, utilizes an API to facilitate access of data stored in the cloud.
-        The first part of the talk will cover expanded API features for more
-        functional and user friendly queries, and discuss [upcoming] support for
-        ancillary file uploads, downloads, querying, and storage, allowing for
-        better management of supplementary files alongside traditional data
-        records. The second part will highlight how these features strengthen
-        and simplify the data management of the L1 through L3 data products and
-        streamline data discovery and retrieval for users. By enabling
-        cloud-based access to the full scope of mission data, the API
-        facilitates interaction with complex datasets, ensuring researchers can
-        quickly upload, query, and download the data they need. Lastly the talk
-        will preview upcoming enhancements to further strengthen IMAP’s data
-        management system. As an undergraduate student project, this work
-        contributes to the larger efforts of the IMAP science team, supporting
-        their goal of improving data and open source code accessibility and
-        usability for scientific research.
-            </div>
+        Many atmospheric legacy codes are written in Fortran, which can make them challenging to port and run efficiently on newer high-performance computing systems. Additionally, as Fortran becomes less favored in the software engineering community, many researchers are starting to write physics models in modern languages such as Python, Python/JAX, and Julia. However, sharing progress and physics capabilities between these different language versions is non-trivial and rarely done in practice. We use EAMxx, the atmospheric model hosted in E3SM, to explore the feasibility of linking atmospheric parameterizations written in different languages into one system.
+        EAMxx is written in C++/Kokkos offers direct interoperability support as well as code portability. We first describe the process of adding trivial parameterizations written in C++, Kokkos, Fortran, and Python in production configurations of EAMxx. We also take advantage of the recent work of converting CAM physics to be compliant with the Common Community Physics Package (CCPP); this recent development allows for CAM physics parameterizations to be utilized outside of CAM. We describe the process and effort to port the CCPP-enabled Kessler parameterization from CAM into EAMxx and provide preliminary results of the effort.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>12:00 PM</b></div>
@@ -1730,97 +575,112 @@
         </div>
         <div class="row">
             <div class="cell"><b>1:00 PM</b></div>
-            <div class="cell">Jon Rood</div>
+            <div class="cell">Kate Rasmussen</div>
             <div class="cell-content">
-    ??? note cell "Accelerating Software Development with Spack"
-        *Jon Rood is a computational scientist at NREL. He currently works on
-        performance engineering of next-generation applications for wind energy
-        applications. He has also previously worked on high-performance
-        computing projects for agent-based simulations of ancient societies at
-        Argonne National Laboratory, instrument analysis applications for NASA
-        while at Tech-X Corporation, bioinformatics applications while at
-        Lawrence Berkeley National Laboratory, and weather and climate
-        applications while at ETH Zürich.*
+    ??? abstract cell "Idiomatic Vibe Testing with Julienne"
 
-        Modern scientific software development in high performance computing
-        requires integration of multiple software projects, use of multi-device
-        programming models, and portability requirements across multiple
-        machines. The Spack project has features which make software development
-        in this complex environment simpler and more efficient. However, Spack
-        comes with its own set of complexities and mechanisms which can deter
-        new users from truly embracing the project. Fortunately some of these
-        complexities can be simplified through extensions to Spack, as well as
-        through the experience of using Spack in one's own project.
+        *Katherine Rasmussen is a Computer Systems Engineer who applies Linguistics knowledge to developing, testing, and compiling programming languages for high-performance computing. She has experience in language grammars and abstract syntax trees (ASTs) for Fortran, C, and C++. She works in the Computer Languages and Systems Software (CLaSS) Group at Lawrence Berkeley National Laboratory where she contributes to the Julienne unit-testing and string-handling utility, the LLVM Flang Fortran compiler, and the Caffeine parallel runtime library. She does software archaeology, digging through ancient layers of legacy code for purposes of modernization, porting, building, testing, and parallelization.*
 
-        In this short tutorial we will focus on demonstrating how to effectively
-        use the software development features of Spack. We will also demonstrate
-        how to add capability on top of Spack using extensions to automate
-        configuration of machines used within a software project. We will show
-        how this same development framework can be used for automating software
-        testing and deployment. Participants will unravel how to turn Spack into
-        the most convenient and extensible software development framework for
-        high performance computing applications that exists today.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>3:00 PM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
-    ??? info cell "Networking Event"
+        Historically, the role of natural language in programs was confined primarily to comments that have no direct influence on runtime behavior. With the rise of vibe coding, natural language becomes central to code generation via prompt engineering with a large language model (LLM). One fundamental problem, however, lies in natural language’s inherent ambiguity. By contrast, standardized programming languages greatly reduce ambiguity by formally defining syntax and specifying detailed semantics in a written language standard. To leverage such formality and specifications in vibe coding, a user might consider replacing or augmenting natural language with code. If the prompt includes unit tests, then the tests serve both as instructions for what the LLM-generated code must do and a tool for verifying that the generated code accomplishes the desired task.
+
+        This tutorial unifies the above two themes by enabling users to write unit tests that take the form of natural language using specific idioms defined by the Julienne correctness-checking framework (https://go.lbl.gov/julienne). Julienne further unifies unit testing with runtime verification by supporting the use of the same idioms in assertions.
+
+        This tutorial will introduce the idioms first released in Julienne 2.1.0 in May 2025. For example, the statement “x .approximates. y .within. tolerance” reads naturally as a sentence while instructing Julienne to verify that “|x-y| < tolerance”, report the result, and provide rich diagnostic information if the condition is not met. The tutorial will explain how to use Julienne idioms to write unit tests external to user code or assertions inside user code. Finally, the tutorial will introduce a novel paradigm, idiomatic vibe testing, in which LLM prompts include Julienne unit tests written with Julienne idioms.
+
+        Attendees will also see the use of Julienne idioms in correctness checks for Berkeley Lab software projects, including the recently released Formal package (https://go.lbl.gov/formal), a domain specific language (DSL) embedded in Fortran. Formal software abstractions mimic tensor calculus expressions, thereby codifying the language of mathematics.
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>5:00 PM</b></div>
+            <div class="cell"><b>3:10 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? warning cell "End of Day 3"
+    ??? info cell "Break"
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>3:40 PM</b></div>
+            <div class="cell">Jesse Nusbaumer</div>
+            <div class="cell-content">
+    ??? abstract cell "Challenges in support large legacy codebases"
+
+        *Jesse Nusbaumer is a software engineer at the National Center for Atmospheric Research (NCAR), where he helps maintain the Community Atmosphere Model (CAM), a decades-old, million line Fortran code for simulating the atmosphere, and works on developing its eventual replacement, CAM-SIMA.*
+
+        Many scientific fields have large, legacy software and modeling systems that are supported by a relatively small number of people, which can result in difficult engineering decisions and a potential worsening in software quality/technical debt over time, particularly if users desire the continued addition of new features or capabilities.  As a software engineer maintaining one of these legacy systems, I have run into these exact kinds of issues, as well as seen various attempts at trying to make the software better.
+
+        This talk will be a somewhat-informal talk where I describe in more detail my team's experiences with a large legacy software system, what has (and has not) worked to try and improve the software, and what I would personally do if I could magically make all the decisions.  Ultimately I will try to argue that it is not the technical constraints themselves that are the root problem, as much as the managerial and financial constraints that are placed on these systems and their developers/contributors .
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>4:00 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Proceedings Office Hours"
         </div>
         </div>
     </div>
-=== "Thursday, April 10"
+
+=== "Thursday, April 9"
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Felix Hirwa Nshuti</div>
             <div class="cell-content">
-    ??? info cell "Closing Remarks"
+    ??? abstract cell "TransISA: A Static Assembly Transpiler for Automating x86-to-ARM Migration in Scientific Computing."
+
+        *Felix Hirwa Nshuti is a graduate student at CMU-Africa researching compiler infrastructure and ML systems. A Core Developer at sktime and former engineer at Unify, he specializes in leveraging LLVM and static analysis to solve interoperability challenges in scientific computing. His latest project, TransISA, focuses on static binary translation for legacy assembly migration.*
+
+        As high-performance computing (HPC) shifts toward energy-efficient ARM-based architectures, the scientific community faces a "portability wall": vast archives of legacy scientific kernels hand-optimized in x86 assembly are incompatible with modern hardware. Rewriting these kernels manually is error-prone and costly. This work presents TransISA, a static transpiler designed to automate the translation of x86 assembly source code to semantically equivalent ARMv8-A (AArch64) assembly.
+
+        Unlike dynamic binary translators that operate as black boxes at runtime, TransISA follows a traditional compiler architecture to ensure transparency and maintainability. It employs a modular transpilation pipeline consisting of: (1) a frontend that lifts x86 assembly (NASM syntax) into architecture-agnostic LLVM Intermediate Representation (IR); (2) a middle-end that performs semantic optimizations, including memory-to-register promotion; and (3) a backend utilizing the LLVM code generator to emit optimized ARM assembly.
+
+        By targeting the assembly source rather than the binary, TransISA allows developers to inspect, verify, and further tune the output, making it a sustainable tool for long-term software maintenance. Initial results demonstrate that while naive translation introduces instruction bloat due to explicit register simulation, the application of LLVM optimization passes significantly reduces this overhead. This approach provides a scalable pathway for migrating performance-critical legacy code to emerging architectures without losing the benefits of static analysis.
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell">Ligia Bernardet</div>
+            <div class="cell"><b>8:50 AM</b></div>
+            <div class="cell">Andrew Espira</div>
             <div class="cell-content">
-    ??? abstract cell "Invited Keynote: Earth System Model Development Activities at the NOAA Global Systems Laboratory - A software engineering perspective"
-        **[[Slides](https://drive.google.com/file/d/1Ts5m5w5TF3LsBb7hNFUTVaUWAaM5epsV/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=2281s)]**
+    ??? abstract cell "VGAC: Building a GPU Cluster Observability Platform with Predictive Queue Intelligence"
 
-        *Ligia Bernardet is a meteorologist with a PhD in atmospheric sciences
-        from Colorado State University. She is the chief of the Earth Prediction
-        Advancement Division within the NOAA Global Systems Laboratory in
-        Boulder, CO, a member of the Unified Forecast System (UFS) steering
-        committee, and co-leads the Community Earth System Model (CESM) Software
-        Engineering Working Group. Her experience in code management and user
-        support for community models has given her an appreciation for the
-        importance of software engineering best practices.*
+        *Andrew Espira is a Site Reliability Engineer with 8+ years of experience in distributed systems, observability platforms, and HPC infrastructure. He is completing his MS in Data Science at Saint Peter's University, where his research focuses on ML-powered GPU cluster scheduling.*
 
-        NOAA GSL develops Earth System prediction models on a variety of
-        spatiotemporal scales (large-eddy to seasonal), readiness levels (basic
-        research to near-operational), and approaches (physical and
-        data-driven). Physical models use diverse infrastructures, such as the
-        Unified Forecast System (UFS), the Weather Research and Forecast (WRF)
-        model, and the Model for Prediction Across Scales (MPAS). All models are
-        evaluated for computational and scientific performance and must produce
-        actionable information for users and stakeholders. Excellence in
-        development relies on best practices in software engineering, such as
-        component modularity with clear interfaces and sound code management
-        with robust testing. The need for best practices is heightened by the
-        distributed nature of our development, which includes partners from
-        other NOAA entities, NCAR, and the broader community. This talk will
-        describe the model development activities at NOAA GSL and provide
-        highlights of selected efforts, including the management of physical
-        parameterizations using the Common Community Physics Package (CCPP), the
-        orchestration of scientific workflows with the Unified Workflow Tools
-        package, and the training of machine learning models for weather
-        prediction.
+        Researchers and ML practitioners submitting jobs to shared GPU clusters often face unpredictable wait times, leading to frustration, missed deadlines, and inefficient resource planning. While cluster administrators have access to scheduling metrics, this information rarely reaches users in actionable form. We present VGAC (Virtual GPU Allocation Controller), an open-source observability platform that transforms passive cluster monitoring into proactive scheduling intelligence through calibrated queue delay predictions.
+
+        VGAC consists of three integrated layers: a data collection plane using Kubernetes collectors (kube-state-metrics, dcgm-exporter) and GPU telemetry exporters; a prediction service built on scikit-learn with isotonic calibration, exposed through FastAPI endpoints with sub-10ms latency; and a policy engine that converts calibrated probabilities into scheduling actions. The platform uses ClickHouse for time-series storage, Redis for caching, and Grafana for visualization.
+
+        We deployed VGAC on a production Amazon EKS cluster with heterogeneous GPUs (T4, A10G), collecting 582 job lifecycle records. For binary classification (wait > 120 seconds), calibrated logistic regression achieved AUC-ROC of 0.756 with Expected Calibration Error (ECE) of 0.077—meaning when VGAC predicts a 70% chance of long wait, users can trust that estimate. Queue depth at submission time dominated feature importance (0.801), confirming that minimal observability metrics enable reliable predictions.
+
+        Key design principles emerged: calibration over accuracy (user trust depends on reliable probability estimates, not just correct predictions), minimal features (pending_ratio alone captures most signal), and seamless integration (predictions surface through REST endpoints, Kubernetes admission webhooks, and Grafana dashboards). We discuss ongoing work on SLO-based calibration drift monitoring and policy generation from probabilities.
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>9:10 AM</b></div>
+            <div class="cell">Michael Waxmonsky</div>
+            <div class="cell-content">
+    ??? abstract cell "CMake: An Incremental Approach to Modernizing Large Model Build Systems"
+
+        *Michael is a Software Engineer in the Applied Computational Sciences (ASC) Group within CISL at NSF NCAR.  He has over a decade of software engineering experience with a wide array of experiences from web, mobile, embedded to HPC and scientific computing.  His professional interests range from software architecture and sustainability to optimizing and modernizing computational software.*
+
+        Earth System Models have evolved from boxes of punch cards to millions of lines of code over many decades, and the infrastructure needed to support building our models has grown in both complexity and variety.  This has led to a fragmented landscape when it comes to maintenance and interoperability of new libraries and components, where it can be very time-consuming to integrate new modules into existing models.  And trying to match feature parity with industry-standard tooling is always going to be extremely cost-prohibitive and requires significant re-engineering efforts that would require coordination throughout the community.
+
+        In this talk, we will start off by reviewing the fundamental concepts of the CMake ecosystem.  Next, we will examine an example process currently deployed for a software modernization effort of the Modular Ocean Model (MOM) that isolates the pre-existing build artifacts, allowing new development efforts to leverage CMake capabilities and simplify the integration of new software.  This will be done by demonstrating the evolution of how we have isolated non-CMake processes and dependencies, resulting in a new CMake infrastructure that is more portable and generic while integrated into current ecosystems.  This will cover the common pitfalls and caveats exposed by CMake, and solutions to overcome them sustainably.
+
+        Lastly, we will cover some of the long-term incentives gained by leveraging CMake.  This will touch on various features of the CMake ecosystem, such as generated build backend optimizations, ctest capability, and configurable environment presets.
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>9:30 AM</b></div>
+            <div class="cell">Gaurav Vaidya</div>
+            <div class="cell-content">
+    ??? abstract cell "Testing the (almost) untestable: some ideas for automated testing of scientific software that is big, slow or non-reproducible"
+
+        *Gaurav Vaidya, PhD has been a scientific software developer since his undergraduate days at the National University of Singapore in the mid-2000s (and was introduced to automated software testing soon afterwards). He completed his PhD in Ecology and Evolutionary Biology at the University of Colorado Boulder in 2017, and has worked as a Semantic Web Technologist at the Renaissance Computing Institute (RENCI) at the University of North Carolina at Chapel Hill since 2019. He creates scientific software tools for the NCATS Translator project and the HEAL Data Stewardship Group, and tries his best to incorporate software testing into his work wherever he can.*
+
+        Software testing methods and the software tools that help in implementing them — from unit testing libraries to static analysis tools to LLM-assisted code review — have made it much easier to produce higher-quality software. Such methods and tools work best on software that runs quickly and repeatably, produces a small amount of output data, that isn’t dependent on external data, and that can be run locally on a personal computer. Much scientific software is exactly the opposite: requiring large amounts of computing resources and time to run, producing large output datasets that require specialized tooling to query and analyze, and depending on ever-changing inputs produced by other scientific research teams, making their own outputs non-reproducible. How can such software tools be tested to catch newly introduced bugs quickly, to prevent previously closed bugs from reappearing, or to track known issues reported by output consumers so that they can be triaged and fixed rapidly?
+
+        Since 2021, I have been maintaining and improving one such software tool – the Babel pipelines (https://github.com/NCATSTranslator/Babel, https://arxiv.org/abs/2601.10008), a set of Snakemake pipelines for combining identifier cross-references from dozens of biomedical data sources to generate over 490M sets of equivalent identifiers for the NCATS Translator project. In my presentation, I plan to describe the many layers of testing that were part of Babel before I joined this project as well as those that I have subsequently added, including unit tests, integration tests, comparative tests and our strategies for incorporating our users in our testing, test data collection, triage and software development processes. I will also include some general advice for testing scientific software that is big, slow or non-reproducible with the hope of stimulating additional discussions during the conference.
+
+        My presentation will be based on my presentation to the US-RSE Testing Working Group in December 2025 (https://bit.ly/49w1w76), but will be condensed and will include some tooling that we are currently working on and that will be complete by April 2026.
         </div>
         </div>
         <div class="row">
@@ -1832,239 +692,76 @@
         </div>
         <div class="row">
             <div class="cell"><b>10:20 AM</b></div>
-            <div class="cell">Dom Heinzeller</div>
+            <div class="cell">Alex Richert</div>
             <div class="cell-content">
-    ??? abstract cell "The role of spack-stack in the operational implementation of the NAVY's next-generation weather forecasting model"
-        **[[Slides](https://drive.google.com/file/d/1IT6SzLXl5ppcwZhGRtZ5fMD1_LLUFX5A/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=8415s)]**
+    ??? abstract cell "Continuous integration workflow improvements at NOAA EMC"
 
-        *Dom Heinzeller graduated from Heidelberg University, Germany, with a
-        PhD in Theoretical Astrophysics. Following a postdoctoral fellowship on
-        the physical and chemical evolution of protoplanetary disks at Kyoto
-        University, Japan, he moved into the field of Numerical Weather
-        prediction in a number of organizations: The Forecasting Research Group
-        of the National Weather Service of New Zealand in Wellington, New
-        Zealand; the Institute for Meteorology and Climate Research of the
-        Karlsruhe Institute of Technology in Garmisch-Partenkirchen, Germany;
-        NOAA's Global Systems Laboratory in Boulder, CO; the Joint Center for
-        Satellite Data Assimilation in Boulder, CO; the United States Naval
-        Research Lab through a contract with UCAR CPAESS in Boulder, CO. He is
-        the original author of the Common Community Physics Package (CCPP) used
-        in the UFS, in NEPTUNE, in DTC's Single Column Model, and soon in CESM,
-        and he is one of the founders of the the spack-stack collaboration.*
+        *Alex Richert is a contractor for Lynker on the NCEP libraries development team and branch contract lead at the NOAA Environmental Modeling Center's Engineering and Implementation Branch. His technical interests include NWP workflows, package management & build systems, continuous integration, and AI-driven code development.*
 
-        In 2025, the United States Naval Research Lab (NRL) is transitioning its
-        next-generation numerical weather prediction (NWP) system NEPTUNE (Navy
-        Environmental Prediction sysTem Using a Nonhydrostatic Engine) to their
-        operational partner, Fleet Numerical Meteorology and Oceanography Center
-        (FNMOC). The transitioning of innovations from research to operations
-        (R2O) and the feedback from operations to research (O2R) is one of the
-        major challenges in the NWP world, to the extent that it is sometimes
-        referred to as the "valley of death". One of the contributors to this
-        challenge is that the environment in which the NWP systems operate can
-        differ greatly. The development and testing often take place on
-        different high-performance computing (HPC) systems, with varying
-        environments of software (also referred to as software stacks), and with
-        different workflows than in operations.
-
-        For the first operational implementation of NEPTUNE in 2025, NRL and
-        FNMOC are adopting a novel approach to address some of these challenges:
-        First, FNMOC will be running on highly secured, fenced-off partitions on
-        the same HPC systems that NRL uses for its development. Second, NRL will
-        provide a software environment based on spack-stack. The spack-stack
-        project is a joint effort of several major federal agencies and UCAR
-        labs. It leverages the spack package manager developed by Lawrence
-        Livermore National Laboratory and supported by a large community.
-        Spack-stack utilizes modern software development practices like
-        continuous integration (CI) and a fast release cycle. Through the use of
-        spack source mirrors and binary caches, FNMOC will be able to deploy
-        bit-for-bit identical software environments in their secured
-        environments in a matter of minutes.
-
-        In this presentation, we will revisit the challenges in the R2O2R cycle
-        in NWP, provide an overview of the joint spack-stack effort, and cover
-        the deployment of NEPTUNE in operations.
-
-        [Distribution Statement Approved for public release. Distribution is
-        unlimited.]
+        This presentation will discuss a number of recent improvements to NOAA EMC continuous integration (CI) workflows. These improvements include
+        - new Spack-based CI workflows for libraries and model applications;
+        - automated deployment of build caches and container images to provide software dependencies in order to speed up workflows; and
+        - the development of custom GitHub actions and Spack extensions that reduce code duplication, enhance reproducibility, and simplify the creation and maintenance of CI workflows.
+        Collectively, these improvements accelerate development, enable more robust software testing, and minimize time spent on CI debugging. This presentation will discuss the benefits, costs, and limitations of these approaches, as well as preview future development work in this area.
         </div>
         </div>
         <div class="row">
             <div class="cell"><b>10:40 AM</b></div>
-            <div class="cell">Carol Ruchti</div>
+            <div class="cell">Kevin Hrpcek</div>
             <div class="cell-content">
-    ??? abstract cell "Modernizing Product Generation for the NSF NCAR EOL Field Catalog"
-        **[[Slides](https://drive.google.com/file/d/1l_BZFyq8dXP0mtJFPTJQOvm1MPYS2VRe/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=9776s)]**
+    ??? abstract cell "Embracing cloud native, CI, and CD in Research Environments"
 
-        *Carol Ruchti is an associate scientist at NCAR/EOL. She has worked with
-        the EOL for the past 7 years as a manager for EOL Field Catalog. During
-        her time at NCAR, she has supported in field campaigns across the globe,
-        lead the NCAR Early Career Scientist Assembly (ECSA), participated in
-        the EOL's Council for Representation Engagement, and Well-being (CREW),
-        and continues to learn more about software engineering.*
+        *Kevin Hrpcek is a HPC/Cloud Engineer at the NSF National Center for Atmospheric Research with a decade of experience working alongside with atmospheric researchers. He has been using cloud native technologies to help researchers and developers transition to cloud-native style workflows to better enable research.*
 
-        The NSF NCAR EOL Field Catalog is a customizable tool to allow science
-        teams to document field project operations by collecting and displaying
-        products. These products can be satellite imagery, radar plots, weather
-        balloon SkewTs, field reports, etc. In most cases, these products for a
-        given field project’s field catalog are all generated by the EOL catalog
-        admins staff by either pulling products from the web or producing plots
-        from scientific data.
+        Modern research environments often face increasing demands for agility and reproducibility, hindered by traditional, monolithic software architectures. This talk explores the transition to cloud-native computing by leveraging containers and Kubernetes to create portable, consistent computational infrastructures that decouple applications from underlying hardware. By adopting these technologies, research teams can ensure their workflows operate identically across diverse environments, from local development machines to production-grade clusters, thereby eliminating the notorious "works on my machine" problem.
 
-        The field catalog was developed back in 1995, and there have been two
-        official UI versions of the field catalog released in 1995 and 2013, but
-        there haven’t been many major updates to the code that generates the
-        products that are displayed in the field catalog. These products were
-        mostly generated using perl code that was copied with minor changes
-        unique to each field campaign. For the last 30 years, this perl code has
-        served the EOL catalog team very well, but there was a desire to
-        modernize this code using object oriented principles in Python. Thus,
-        after working directly with an EOL Software Engineering mentor, a new
-        GitHub repository of Python code was developed. Within the new Python
-        code, an FCProduct class was defined, issues were tracked, branches were
-        created, and the importance of exception handling was learned. The
-        journey of creating this new object oriented python code for field
-        catalog product generation highlights the importance of continuing to
-        modernize our code at NSF NCAR and provides the capability to create
-        more unique and complex products for the EOL Field Catalog into the
-        future.
-            </div>
+        To maintain the integrity of these systems, this talk introduces the critical role of automation through Continuous Integration (CI) and Continuous Delivery (CD). The session will detail GitOps as the governing methodology for managing infrastructure as code, treating research environments with the same version control and auditability standards common in industry. By implementing automated testing and declarative infrastructure management, teams can drastically reduce manual errors and accelerate the deployment of new methodologies.
+
+        Ultimately, embracing these methodologies empowers researchers to focus on scientific discovery rather than logistical bottlenecks. Attendees will see how resilient, secure, and efficient workflows can accelerate the pace of innovation and data sharing. By bridging the gap between academic software development and industry best practices, this talk aims to foster a culture of collaboration, ensuring that the research community can fully exploit cloud-native development for the advancement of science.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:00 AM</b></div>
-            <div class="cell">Daniel Madren</div>
+            <div class="cell">Ben Kirk</div>
             <div class="cell-content">
-    ??? abstract cell "From Chaos to Clarity: Structuring Research Software Engineering Projects for Success"
-        **[[Slides](https://drive.google.com/file/d/1FhgH2dK8oTUA7Qd8vVQ_IAAOYAf08ebL/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=10856s)]**
+    ??? abstract cell "Enabling CI/CD for HPC Applications with NCAR-ish Development Containers"
 
-        *Daniel joined the Purdue Research Computing team in April 2024 as the
-        Program Manager for the newly established RSE Center. In this role, he
-        oversees the development of project management processes, including
-        project intake, rate setting, and business plan strategizing, to engage
-        both internal stakeholders at Purdue and potential external clients.
-        Daniel also serves as the co-chair for the USRSE Group Leaders Network,
-        contributing to leadership and collaboration across the research
-        software engineering community.*
+        *Leads the HPC Consulting Services Group at NSF NCAR*
 
-        *At SC24, Daniel delivered a talk on self-sustaining operational models
-        and growth strategies, showcasing innovative approaches to fostering
-        sustainability and scalability in the field. Committed to more than just
-        enhancing operational efficiency, Daniel strives to inspire and
-        establish sustainable, innovative practices that set new benchmarks for
-        excellence within the research software engineering community.*
+        This talk will describe a suite of HPC development containers intended to create a familiar environment for NSF NCAR developers.
 
-        Research Software Engineering (RSE) projects exist at the intersection
-        of technical innovation and interdisciplinary collaboration, presenting
-        unique management challenges. Without clear structures, teams often face
-        misaligned goals, miscommunication, scope creep, inconsistent
-        documentation, and difficulty scaling efforts. This presentation will
-        explore how modern project management practices, tailored to the
-        distinct needs of RSE, can transform chaos into clarity.
-
-        We’ll highlight the role of structured frameworks, including hybrid
-        methodologies and well-crafted Statements of Work (SOWs), in addressing
-        these challenges. SOWs provide clarity and direction, especially in the
-        absence of traditional grant funding, by establishing expectations,
-        timelines, and objectives. Real-world scenarios and case studies will
-        demonstrate how these approaches reduce inefficiencies, standardize
-        workflows, and ensure reproducibility.
-
-        Key topics will include effective documentation practices, hybrid
-        project management techniques, and strategies to reduce technical debt.
-        Whether managing a small RSE team or leading large-scale software
-        initiatives, attendees will gain actionable insights into creating
-        scalable, sustainable, and collaborative workflows that align with the
-        demands of modern scientific software development.
-            </div>
+        These containers can be used within continuous integration/continuous deployment workflows. The development of the contains themselves, their construction within a GitHub action framework and sample use cases will be provided.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:20 AM</b></div>
-            <div class="cell">Phil Du</div>
+            <div class="cell">Cena Brown</div>
             <div class="cell-content">
-    ??? abstract cell "A Practical Framework for Small Teams to Develop Sustainable Research Software"
-        **[[Slides](https://drive.google.com/file/d/13pTt9Y9E9XytgaYSLvaW7F4itsi_L9mE/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=12270s)]**
+    ??? abstract cell "Adding Automated Testing to MPAS-A and You Can Too"
 
-        *Phil is a current graduate student in Computing and Software at
-        McMaster University.*
+        *Cena Brown is a software engineer in NCAR’s CISL, where she works on GPU porting and optimization, and automated testing. She has contributed to GPU-enabled development and validation workflows for projects including MURaM, APAR/SAMURAI, and MPAS-A.*
 
-        Currently, a knowledge gap exists between research software and general
-        software engineering. The scientific literature is full of ideas to
-        close this gap, including documentation templates, code generation,
-        continuous integration/deployment and formal methods. Although these
-        ideas are promising, they often assume a large team that includes
-        individuals who have the required expertise.
+        This talk discusses how CI/CD and automated testing are applied in practice within large scientific software projects. Drawing on interviews, surveys, and CI/CD pilot efforts within NCAR’s Computational and Information Systems Laboratory (CISL), we focus on how scientists and software engineers develop, test, and maintain long-lived codes under real constraints. We discuss how newer tools, including large language models, fit into existing workflows and why reliable validation remains essential as the volume and pace of code change increase.
 
-        Our proposed practical framework instead targets a small team of domain
-        experts, with the only requirement being that someone be found (either
-        from the original team, or externally added) who is interested in
-        deepening their software knowledge by volunteering for the developer
-        role. Our framework, especially for the beginning stage of requirements
-        elicitation, includes step-by-step guidance. The process begins with
-        questions the developer asks the domain expert(s). These questions cover
-        topics such as the expected inputs and outputs, the computational scale
-        of the problem and special input cases with known solutions or trends.
-        The methodology shows how to map the answers to these questions to the
-        requirements, high-level design and verification documentation.
-        Templates for all documentation, in markdown format, are provided in a
-        GitHub template, along with the initial infrastructure for issue
-        tracking and continuous deployment of the project's webpage. The
-        proposed methodology incorporates four main pieces of advice: i) the
-        notation and structure for documenting the theory should be selected to
-        facilitate the transition to design and implementation; ii) continuous
-        integration should be part of the project from the start; iii) the
-        low-level design documentation should be done through structured
-        comments in the code, like docstrings or doxygen; and, iv) the modular
-        decomposition needs to consider the computational scale when balancing
-        information hiding and performance.
-
-        Our talk will present the details of the framework, examples of its
-        application and initial plans for experiments to assess its
-        effectiveness.
-            </div>
+        We present a case study from MPAS-Atmosphere, where we developed a modular CI framework supporting multiple compiler families (GCC, NVHPC, Intel oneAPI), MPI implementations (MPICH, OpenMPI), and I/O backends (SMIOL, PIO). The framework runs across both GitHub-hosted runners and NCAR's CIRRUS HPC infrastructure, enabling GPU-accelerated (OpenACC/CUDA) builds to be tested alongside CPU-only configurations. Automated validation compares model output against reference solutions, and we are beginning to incorporate methods such as the Ensemble Consistency Test to assess statistical consistency across builds when bit-for-bit reproducibility is not expected.
+        Supporting GPU testing on on-prem cloud resources requires substantial effort behind the scenes, including maintenance of custom CISL development containers and ongoing work to keep container images, drivers, and compiler stacks aligned with evolving hardware and software environments.
+        We also discuss how tools like LLMs fit into the development flow, making robust CI/CD even more important as a safeguard against rapid, potentially untested changes.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>11:40 AM</b></div>
-            <div class="cell">Maria Patrou</div>
+            <div class="cell">Lalo Torres</div>
             <div class="cell-content">
-    ??? abstract cell "Modernization and Standardization of Software tools in Spectroscopy"
-        **[[Slides](https://drive.google.com/file/d/1jnGY6dvzRj0LAqjLEU5bYOSP0ltTEVUp/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=13565s)]**
+    ??? abstract cell "Continuous Integration (CI) Using Project-Specific NCAR HPC Containers on the Cirrus Cloud"
 
-        **Coauthors: Kyle Ma, Andrei Savici*
+        *Dr. Hilario (Lalo) Torres is a software engineer in the Applied Scientific Computing (ASC) group at the National Science Foundation (NSF) National Center for Atmospheric Research (NCAR). He received his PhD in mechanical engineering from Stanford University in 2021 where his dissertation focused on writing performance portable multi-physics solvers for heterogeneous HPC systems. His current research interests are at the intersection of computational physics and HPC.*
 
-        *Dr. Maria Patrou joined Oak Ridge National Laboratory (ORNL) in 2023.
-        Her focus is on designing, developing, and deploying data reduction and
-        data analysis software for the neutron science community at the ORNL
-        facilities. Dr. Patrou graduated from the National and Kapodistrian
-        University of Athens in Greece, with a Bachelor's in Informatics and
-        Telecommunications in 2012. Additionally, she earned her Master's and
-        Ph.D. in Computer Science at the University of New Brunswick in Canada.
-        She defended her Ph.D. thesis with the title of "Efficiency and
-        Performance Architecture Optimization of Node.js Applications under
-        Parallel and Scalable Conditions" in April 2022.*
+        Continuous Integration (CI) for High-Performance Computing (HPC) applications faces specific challenges, particularly the significant variability in build and runtime environments across different machines. To address this, NSF NCAR provides a set of containers on Docker Hub that closely emulate the environments found on their HPC resources (Derecho and Casper). These NCAR HPC containers include pre-installed compilers, MPI implementations, and common HPC software libraries that are available as modules on NCAR HPC machines. While they are a valuable resource for developers, offering consistent, preconfigured environments that closely resemble the target HPC systems, the diversity of projects and applications that use these systems means that some will require additional, project-specific software dependencies not covered by the module system or the base containers.
 
-        *Dr. Patrou has worked as a Software Architect and Developer at Dot By
-        Dot Business and Technology Solutions LTD, in Athens, Greece. During her
-        studies at the University of New Brunswick, she worked as a Graduate
-        Teaching Assistant and Instructor, while being part of IBM Centre for
-        Advanced Studies - Atlantic (CASA), she collaborated with business
-        partners, such as IBM Canada and The Black Arcs. After her Ph.D.
-        completion, she continued to be part of CASA as a Research Assistant and
-        participated on a project affiliated with the 45Drives company.*
+        This talk will cover how we approached this challenge for the “Towards Ultra-High Resolution  Community Earth System Model (CESM) with MOM6 and Ocean Biogeochemistry” (TURBO) project at NCAR. We utilized the NCAR HPC Development containers as a foundation and installed extra project-specific libraries using Spack. By leveraging Spack's ability to treat the pre-installed compilers and libraries as "externals" within Spack environments, we ensured a consistent build environment for all the additional project-specific dependencies.
 
-        Oak Ridge National Laboratory has two of the most advanced neutron
-        scattering facilities in the world: the High Flux Isotope Reactor (HFIR)
-        and the Spallation Neutron Source (SNS). Together they provide 30
-        instruments to enable studies of materials, using different experimental
-        techniques, such as direct/indirect spectroscopy, triple axis
-        spectrometers etc. Research scientists from around the world use various
-        software tools to fetch, refine, and analyze neutron scattering data,
-        when conducting their research. As software tools advance, and new
-        updates are introduced, legacy tools need to be updated to follow modern
-        software guidelines. In this talk, we will walk through the
-        modernization process of legacy Spectroscopy tools, including deployment
-        challenges and code quality improvements. Finally, we will present the
-        way that the shared techniques and guidelines that we use to update the
-        software can become a standard to follow naturally for future ones.
-            </div>
+        These custom, project-specific containers were then deployed for CI runs on both GitHub-hosted runners and NCAR's on-prem Cirrus Cloud. Additionally, the same Spack environments are being used for local development outside of the containers, except Spack is responsible for building the entire software stack as opposed to using preinstalled external dependencies for the compilers and core libraries.
+        </div>
         </div>
         <div class="row">
             <div class="cell"><b>12:00 PM</b></div>
@@ -2074,95 +771,25 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>1:20 PM</b></div>
-            <div class="cell">Julia Sloan</div>
+            <div class="cell"><b>1:00 PM</b></div>
+            <div class="cell">Ian Kim</div>
             <div class="cell-content">
-    ??? abstract cell "Leveraging Modern Computing and Calibration-driven Development for Climate Modeling at CliMA"
-        **[[Slides](https://drive.google.com/file/d/1_C1rEe8HeEjgWOJ9iX4Ilu8ul4B4vKvd/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=19192s)]**
+    ??? abstract cell "EdgeOptimizer: An End-to-End Toolkit for AI Model Specification and Optimization for Mobile Deployment"
 
-        *Julia is a research software engineer working in the Climate Modeling
-        Alliance (CliMA) at Caltech. She leads the group’s coupling team in
-        developing ClimaCoupler.jl, and also contributes software support for
-        the land model, ClimaLand.jl. She’s passionate about applying
-        high-performance computing to solve real-world problems, specifically in
-        the interdisciplinary realm of climate sciences. Outside of work, Julia
-        is an avid surfer, volunteer coach for Caltech’s water polo team, and
-        ardent fan of her cat Comet.*
+        *Dr. Ian Kim is a Postdoctoral Fellow at Stanford University, specializing in Big Data and AI/ML. His current research focuses on developing AI model optimization techniques for edge deployment, to enhance their applications in digital health, behavior modeling, and embedded intelligence. He has spearheaded open-source initiatives aimed at creating comprehensive, end-to-end infrastructures that eliminate technical, financial, and logistical barriers, thereby democratizing access to Big Data and AI/ML in academic research. Notable projects include Stanford Screenomics, DOSE, and EdgeOptimizer.*
 
-        Today’s Earth System Models (ESMs) are primarily process-based models
-        that allow scientists to understand the evolution of our planet’s
-        climate on seasonal to centennial timescales. Many existing ESMs are
-        based on legacy codes dating back decades. These codes often require
-        hundreds to thousands of CPUs to run, predate modern software design
-        principles, and are typically manually tuned with a fraction of the
-        Earth observations currently available. The Climate Modeling Alliance
-        (CliMA) is developing an open source ESM from scratch, with the
-        intention of providing the wider community with access to a model that
-        leverages modern computing capabilities, including cloud GPUs, and
-        enables rapidly iterated learning from the wealth of Earth observations
-        now available.
+        This 2-hour hands-on workshop introduces EdgeOptimizer, a comprehensive toolkit designed to streamline the specification, optimization, and deployment of AI models on mobile and wearable devices. Participants will learn to use a single declarative configuration file to define model inputs, outputs, architectures, and optimization strategies. EdgeOptimizer automatically generates, trains, and optimizes models through techniques such as pruning, quantization, low-rank factorization, and hardware-aware vectorization, resulting in models ready for real-time on-device deployment.
 
-        This talk will provide an overview of the CliMA model and software
-        ecosystem. It focuses on the project’s software infrastructure and
-        integrated pipeline for automated calibration and uncertainty
-        quantification of model components with data. As the ESM itself is
-        computationally intensive to run, the calibration also becomes very
-        expensive, even when leveraging GPU resources. To address this problem,
-        we have developed methods to use ML-based emulators to accelerate model
-        calibration and uncertainty quantification, which we are able to use
-        within an iterative cycle during the model development process.
-            </div>
+        Through guided exercises, attendees will build and optimize their own models, evaluate performance, and deploy them to smartphone and wearable platforms. The workshop will demonstrate how these optimization techniques enhance efficiency, reduce memory and energy consumption, and enable continuous on-device inference, even for complex multimodal applications. We will also explore real-world domains where lightweight, adaptive edge AI is critical, including mobile health interventions, digital phenotyping, behavior modeling, real-time sensing, and embedded intelligence.
+
+        By the end of the workshop, participants will have practical experience with the entire workflow, from model specification to optimized deployment, and will be prepared to incorporate EdgeOptimizer into their own mobile and edge AI projects.
+        </div>
         </div>
         <div class="row">
-            <div class="cell"><b>1:40 PM</b></div>
-            <div class="cell">Erik Kluzek</div>
-            <div class="cell-content">
-    ??? abstract cell "Helping Scientists Embrace their Inner Research Software Engineer (RSE) and Working Together with the Community Earth System Model (CESM) RSE's to improve CESM Science; From a Land Component Model (CTSM) Perspective"
-        **[[Slides](https://drive.google.com/file/d/1tWercFlWkF6DgL7iktaEUVTgDLegzeii/view?usp=drive_link)] - [[Recording](https://www.youtube.com/watch?v=jdpMXYFufBs&t=20391s)]**
-
-        *Erik Kluzek has been working as a Research Software Engineer for four
-        decades. Working alongside scientists for that time and with an
-        education coming from the science side. At one point he decided that
-        Research Software was the place to put his focus. RSE Development and
-        the Research Software he'd been working on needed attention and
-        improvement. And it's a fun place to focus and a challenging problem,
-        with lots of new learning to do along the way.*
-
-        The Community Earth System Model (CESM) is science expressed in
-        Software, which means everyone who touches CESM code to work on the
-        science -- is doing RSE work. There is a list of challenges that CESM
-        RSE’s have with both bringing in new science for CESM and ensuring CESM
-        is well tested, robust, flexible as well as having the correct science.
-        As such CESM Scientists working in CESM code need to work alongside CESM
-        RSE’s to adopt RSE practices while their science is being developed. For
-        CESM to be useful for scientists it needs to be: well-tested, robust,
-        reproducible, flexible and have assurance that the science is
-        implemented correctly. This is needed both for the science and the
-        software of CESM. Helping  scientists embrace their inner RSE is an
-        effort to keep CESM as a leading model in Earth System Science research,
-        by having more people who work with the CESM code adopt good coding
-        practices. In this talk I will specifically talk about RSE practices for
-        the Land Model component of CESM, the Community Terrestrial Science Mode
-        (CTSM)l. I will present on the RSE challenges we have in CTSM and how to
-        solve them we need to involve and educate CTSM scientists to improve our
-        RSE practices. I will also present regarding the CTSM RSE team’s efforts
-        to educate the scientists and on some improvements to our RSE practices
-        that we’ve been implementing on our CTSM Software Development.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>2:00 PM</b></div>
+            <div class="cell"><b>3:10 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? success cell "Notebook Proceedings Office Hours"
-        During the Notebook Proceedings Office Hours, we will provide guidance on preparing and formatting Jupyter Notebook-based conference proceedings. Attendees can get help with markdown formatting, reproducibility best practices, code execution issues, and submission requirements to ensure their notebooks meet the conference standards.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>3:00 PM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
-    ??? warning cell "End of the Conference"
+    ??? info cell "End of Conference"
         </div>
         </div>
     </div>
