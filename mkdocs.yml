@@ -40,6 +40,7 @@ nav:
     - iss/index.md
     - 2026:
       - Conference: iss/2026/index.md
+      - Program: iss/2026/program.md
     - 2025: 
       - Conference: iss/2025/index.md
       - Program: iss/2025/program.md
