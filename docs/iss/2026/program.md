@@ -257,15 +257,17 @@
             <div class="cell"><b>3:50 PM</b></div>
             <div class="cell">Negin Sobhani</div>
             <div class="cell-content">
-    ??? abstract cell "The AI Transformation of Earth System Modeling: Opportunities, Challenges, and What Comes Next"
+    ??? abstract cell "Benchmarking and Optimizing AI/ML Workflow Performance for Earth System Sciences"
 
         *Negin Sobhani is an HPC Consultant at the National Center for Atmospheric Research (NCAR), where she supports researchers in optimizing computational workflows for Earth system modeling and prediction. Her expertise spans high-performance computing, distributed training strategies, and AI/ML applications in geosciences. She works closely with the scientific community to improve GPU utilization, scalability, and performance of large-scale machine learning workflows on HPC systems.*
 
-        The integration of Artificial Intelligence (AI) and Machine Learning (ML) into Earth System Science (ESS) has the potential to substantially transform the way we conduct science, from modeling Earth system processes to data analysis and discovery, to decision-making and support. AI/ML techniques such as online bias correction, parameter estimation, ML-based parameterizations, model component emulators, and uncertainty quantification enhance models and allow for more efficient, accurate, and scalable simulation of complex processes that are traditionally challenging and computationally expensive for Earth System Models (ESMs) to capture.
+        As Artificial Intelligence (AI) and Machine Learning (ML) become essential tools for Earth system modeling and prediction, the community faces a growing challenge: how to objectively measure and compare the computational performance of AI/ML workflows across diverse hardware configurations and software stacks. Without standardized performance benchmarks, researchers cannot reliably identify bottlenecks, evaluate optimization strategies, or make informed decisions about resource allocation on high-performance computing systems.
 
-        In recent years, fully data-driven AI/ML emulators have emerged that emulate the atmosphere (and other Earth components) as a whole, offering the capability to generate global medium-range weather forecasts in minutes on a single GPU—a significant improvement over the computational time required by previous Numerical Weather Prediction (NWP) models. Hybrid modeling approaches integrate physics-based models with data-driven AI/ML components, leveraging the strengths of both paradigms to improve predictive accuracy, enhance model interpretability, and reduce computational costs while maintaining physical laws and improving representation of subgrid-scale processes. Additionally, AI/ML methods are advancing Data Assimilation (DA) techniques, inverse problems, and ensemble forecasting. Beyond modeling, Large Language Models (LLMs) are redefining scientific workflows by enabling researchers to interact with complex datasets through natural language queries and to extract features from multidimensional data, such as identifying ocean eddies in satellite imagery or detecting precursors to extreme events.
+        This presentation introduces a benchmarking initiative focused on quantifying the computational performance of AI/ML workflows for geoscientific applications. We define a suite of standardized metrics capturing GPU utilization, memory bandwidth, I/O throughput, inter-node communication efficiency, and scaling behavior across multi-GPU and multi-node configurations. The benchmark suite includes representative workloads spanning common model architectures and dataset sizes encountered in Earth System Sciences. 
 
-        In this talk, we will examine how AI/ML is reshaping Earth system modeling and explore the implications for cyber-infrastructure as data-driven and physics-based approaches converge. We discuss the technical advances enabling this transformation: differentiable programming frameworks, tools for coupling neural networks with Fortran-based codes, and architectures that encode physical priors. We also consider the challenges ahead—ensuring conservation properties, maintaining stability across timescales, generalizing to extreme events outside training distributions, and developing evaluation frameworks that assess physical fidelity alongside forecast skill.  To fully realize the potentials of these technologies in ESM, it is important that the supporting infrastructure, including GPU-enabled HPC, AI-ready data pipelines, accessible inference workflows, and workforce training, evolve together with the scientific methods themselves.
+        We present baseline results demonstrating how performance varies with different data loading strategies, parallelization approaches, mixed-precision configurations, and communication backends. These benchmarks reveal where workflows typically underperform, whether due to data starvation, memory pressure, or communication overhead. 
+
+        By establishing open, reproducible performance benchmarks in the community, the focus should be on enabling researchers to diagnose inefficiencies in their own workflows, compare infrastructure options, and track improvements over time. Attendees will gain practical guidance on methods to maximize hardware utilization and reduce time-to-solution for large-scale geoscientific AI/ML training.
         </div>
         </div>
         <div class="row">
@@ -384,7 +386,7 @@
             <div class="cell"><b>1:00 PM</b></div>
             <div class="cell">Jenny Knuth</div>
             <div class="cell-content">
-    ??? abstract cell "Rapid Usability Testing: it's easier than you think"
+    ??? note cell "Rapid Usability Testing: it's easier than you think"
 
         *I am a frontend web developer at CU Boulder's Laboratory for Atmospheric and Space Physics (LASP) and a certified instructor for The Carpentries (i.e., Data Carpentries, Software Carpentries, etc.). I believe that incorporating user feedback while developing scientific software is a small investment that can pay off with greatly improved adoption and use.*
 
@@ -577,7 +579,7 @@
             <div class="cell"><b>1:00 PM</b></div>
             <div class="cell">Kate Rasmussen</div>
             <div class="cell-content">
-    ??? abstract cell "Idiomatic Vibe Testing with Julienne"
+    ??? note cell "Idiomatic Vibe Testing with Julienne"
 
         *Katherine Rasmussen is a Computer Systems Engineer who applies Linguistics knowledge to developing, testing, and compiling programming languages for high-performance computing. She has experience in language grammars and abstract syntax trees (ASTs) for Fortran, C, and C++. She works in the Computer Languages and Systems Software (CLaSS) Group at Lawrence Berkeley National Laboratory where she contributes to the Julienne unit-testing and string-handling utility, the LLVM Flang Fortran compiler, and the Caffeine parallel runtime library. She does software archaeology, digging through ancient layers of legacy code for purposes of modernization, porting, building, testing, and parallelization.*
 
