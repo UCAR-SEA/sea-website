@@ -44,7 +44,7 @@
     <figcaption>**Maintaining the Joy of Software Development**</figcaption>
 </figure>
 
-## Online Program
+## Program
 
 === "Monday, April 6"
     <div class="table">
@@ -277,6 +277,13 @@
     ??? info cell "Proceedings Office Hours"
         </div>
         </div>
+        <div class="row">
+            <div class="cell"><b>5:00 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "end of day"
+        </div>
+        </div>
     </div>
 
 === "Tuesday, April 7"
@@ -426,6 +433,13 @@
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "Proceedings Office Hours"
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>4:50 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "end of day"
         </div>
         </div>
     </div>
@@ -617,6 +631,13 @@
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "Proceedings Office Hours"
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>4:50 PM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "end of day"
         </div>
         </div>
     </div>
