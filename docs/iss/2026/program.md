@@ -776,7 +776,7 @@
             <div class="cell"><b>1:00 PM</b></div>
             <div class="cell">Ian Kim</div>
             <div class="cell-content">
-    ??? abstract cell "EdgeOptimizer: An End-to-End Toolkit for AI Model Specification and Optimization for Mobile Deployment"
+    ??? note cell "EdgeOptimizer: An End-to-End Toolkit for AI Model Specification and Optimization for Mobile Deployment"
 
         *Dr. Ian Kim is a Postdoctoral Fellow at Stanford University, specializing in Big Data and AI/ML. His current research focuses on developing AI model optimization techniques for edge deployment, to enhance their applications in digital health, behavior modeling, and embedded intelligence. He has spearheaded open-source initiatives aimed at creating comprehensive, end-to-end infrastructures that eliminate technical, financial, and logistical barriers, thereby democratizing access to Big Data and AI/ML in academic research. Notable projects include Stanford Screenomics, DOSE, and EdgeOptimizer.*
 
