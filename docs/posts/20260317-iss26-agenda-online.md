@@ -6,6 +6,7 @@ authors:
 categories:
   - Announcements
   - ISS Conference
+  - Program
 ---
 
 # ISS 2026 program now online.
