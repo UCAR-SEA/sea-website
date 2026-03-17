@@ -9,6 +9,7 @@ This repository generates the UCAR SEA website from markdown files using the [Mk
 
 1. Fork this repository
 2. Clone it on your local computer and ensure the theme submodule is cloned too:
+3. test
 ```
 git clone git@github.com:<user>/sea-website.git
 cd sea-website
