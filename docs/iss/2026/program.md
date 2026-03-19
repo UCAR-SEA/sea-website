@@ -432,13 +432,6 @@
             <div class="cell"><b>4:00 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? info cell "Proceedings Office Hours"
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>4:50 PM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
     ??? info cell "end of day"
         </div>
         </div>
@@ -628,13 +621,6 @@
         </div>
         <div class="row">
             <div class="cell"><b>4:00 PM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
-    ??? info cell "Proceedings Office Hours"
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>4:50 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "end of day"
