@@ -17,5 +17,5 @@ Inn until March 22nd. Virtual participants may register until April 3rd.
 
 The ISS Conference, hosted by the UCAR Software Engineering Assembly, will be held April 6-9,
 2026 in Boulder CO, with the theme of Maintaining the Joy of Software Development. Visit our
-conference website [conference website](iss/2026) for more information.
+conference website [conference website](https://sea.ucar.edu/iss/) for more information.
 

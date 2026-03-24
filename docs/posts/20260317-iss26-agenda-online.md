@@ -11,7 +11,7 @@ categories:
 
 # ISS 2026 program now online.
 
-The ISS 2026 agenda is now available!  You can find it [online here](iss/2026/program).
+The ISS 2026 agenda is now available!  You can find it [online here](https://sea.ucar.edu/iss/2026/program/).
 
 Hope to see you in April at ISS 2026!
 
