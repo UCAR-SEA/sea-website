@@ -15,4 +15,4 @@ Boulder](https://www.marriott.com/en-us/hotels/vbocg-residence-inn-boulder/overv
 has been extended to **Sunday, March 22, 2026**, so if you missed the
 original deadline you now have another chance to book.
 
-See our [conference website](iss/2026) for a link to the booking portal.
+See our [conference website](../iss/2026/index.md) for a link to the booking portal.

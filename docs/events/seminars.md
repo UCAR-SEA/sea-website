@@ -8,7 +8,7 @@ in-person seminars in Boulder, CO as well if there is a clear benefit.
 
 If you wish to give a seminar, or have a topic or speaker in mind and want us to
 facilitate an event, reach out to the [SEA Steering
-Committee](sea_committee@ucar.edu) with a description of your vision for the
+Committee](mailto:sea_committee@ucar.edu) with a description of your vision for the
 seminar.
 
 ## Seminar Archive

@@ -12,7 +12,7 @@ categories:
 # Register now to attend the 2026 Improving Scientific Software Conference!
 
 Registration is now open for the [2026 Improving Scientific Software
-Conference](iss/2026). The ISS Conference, hosted by the UCAR Software
+Conference](../iss/2026/index.md). The ISS Conference, hosted by the UCAR Software
 Engineering Assembly, will be held April 6-9, 2026 in Boulder, CO with the theme
 of *Maintaining the Joy of Software Development*.
 
@@ -22,4 +22,4 @@ software topics. The deadline to register is March 20th, 2026 if you are
 attending in person, and April 3rd, 2026 for the virtual option. We will also
 offer block-rate hotel lodging at the walking-distance Residence Inn Boulder.
 
-Visit our [conference website](iss/2026) for more information.
+Visit our [conference website](../iss/2026/index.md) for more information.
