@@ -21,13 +21,14 @@ watch:
 validation:
   nav:
     not_found: warn             # check if stubs exist or not!
-    omitted_files: ignore       # check for files that exist without any links to them in nav
+    omitted_files: warn         # check for files that exist without any links to them in nav
     absolute_links : warn       # check for absolute links -- pointers to outside htmls in nav
 
   links:
-    not_found: ignore           # check for broken links inside mds. (to be activated later!)
-    absolute_links : ignore     # check for absolute links -- pointers to outside htmls in files (to be activated later!)
-    unrecognized_links: ignore  # unrecognized relative links (to be activated later!)
+    not_found: warn             # check for broken links inside mds. (to be activated later!)
+    absolute_links : warn       # check for absolute links -- pointers to outside htmls in files (to be activated later!)
+    unrecognized_links: warn    # unrecognized relative links (to be activated later!)
+    anchors: warn
 
 # ------------------------------------
 # ----------- content ----------------
