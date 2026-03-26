@@ -203,7 +203,16 @@ Papers will undergo a light, single-blind review process to ensure the content
 is technically sound, clearly written, provides appropriate documentation and
 references, and adheres to submission guidelines.
 
-Instructions for Zenodo submissions will be coming soon.
+For slides, please follow [these instructions from Zenodo](https://help.zenodo.org/docs/share/submit-for-review/)
+to upload your content and submit to our [conference community](https://zenodo.org/communities/iss26).
+
+For computational notebooks, please upload your materials to a public GitHub
+repository including a README file with a short description and enough
+information to run your notebook and successfully reproduce the results.
+This repository should then be [connected to Zenodo](https://help.zenodo.org/docs/github/)
+and [submitted to the conference community](https://help.zenodo.org/docs/share/submit-to-community/).
+Notebooks will undergo a light review to ensure reproducibility, relevance,
+and technical correctness.
 
 Paper submissions will be due April 24th, 2026.  Slides and computational
 notebooks should be submitted to Zenodo by the end of the conference.
