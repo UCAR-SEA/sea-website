@@ -214,7 +214,7 @@ is technically sound, clearly written, provides appropriate documentation and
 references, and adheres to submission guidelines.
 
 For slides, please follow [these instructions from Zenodo](https://help.zenodo.org/docs/share/submit-for-review/)
-to upload your content and submit to our [conference community](https://sea.ucar.edu/iss/2026/).
+to upload your content and submit to our [conference community](https://zenodo.org/communities/iss26).
 
 For computational notebooks, please upload your materials to a public GitHub
 repository including a README file with a short description and enough
