@@ -18,7 +18,7 @@ notes](https://docs.google.com/document/d/1ZqB4E1Zu7Gkv8_6VkLLpnAfrYbcOqw8d4XpWd
 from the event have also been uploaded.
 
 You can find links to all notes and recordings in our [Open Discussions
-page](events/discussions). We're currently planning the next discussion for
+page](../events/discussions.md). We're currently planning the next discussion for
 early March - stay tuned for an announcement (topic hint: using LLMs in coding)!
 
 As always, if you would like to suggest a Discussion topic, or volunteer to lead

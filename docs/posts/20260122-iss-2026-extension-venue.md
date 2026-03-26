@@ -12,7 +12,7 @@ categories:
 # ISS 2026 Abstract Deadline is Now January 30th
 
 The deadline is fast approaching to submit abstracts to the 2026 [Improving
-Scientific Software Conference](iss). The ISS Conference will be held April
+Scientific Software Conference](../iss/index.md). The ISS Conference will be held April
 6-10, 2026 in Boulder, CO with the theme of *Maintaining the Joy of Software
 Development*.
 
@@ -29,5 +29,5 @@ facilities construction timeline changes, this venue is once again available to
 us and offers easier logistics for conference attendees. The conference will be
 hybrid, so virtual presentations are also welcome.
 
-You may submit an abstract [here](iss/2026/#submitting-an-abstract) and visit
-our [conference website](iss/2026) for more information.
+You may submit an abstract [here](../iss/2026/index.md#submitting-an-abstract) and visit
+our [conference website](../iss/2026/index.md) for more information.

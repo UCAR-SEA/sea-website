@@ -11,11 +11,11 @@ categories:
 
 # Reminder: Improving Scientific Software Conference Accepting Abstracts
 
-The [2026 Improving Scientific Software Conference](iss/2026) is accepting
+The [2026 Improving Scientific Software Conference](../iss/2026/index.md) is accepting
 abstracts through January 23, 2026. The conference is planned for April 6-10,
 2026 at NSF NCAR's Mesa Laboratory in Boulder, CO with the theme being
 *Maintaining the Joy of Software Development*. We are [accepting abstract
-submissions](iss/2026/#submitting-an-abstract) for talks, tutorials, and panel
+submissions](../iss/2026/index.md#submitting-an-abstract) for talks, tutorials, and panel
 sessions, and presenters may attend either in person or virtually.
 
 You have likely seen news coverage last week that the National Science

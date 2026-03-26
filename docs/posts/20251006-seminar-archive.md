@@ -19,6 +19,6 @@ opportunities to evaluate the platform with your code base, [contact
 us](mailto:sea_committee@ucar.edu) and we can faciliate further conversation.
 
 This seminar, and future SEA seminars, will be made available on the [SEA Seminar
-archive](events/seminars). Stay tuned for future SEA seminar announcements,
+archive](../events/seminars.md). Stay tuned for future SEA seminar announcements,
 and please reach out to the [SEA Steering
 Committee](mailto:sea_committee@ucar.edu) if you have ideas for future seminars.

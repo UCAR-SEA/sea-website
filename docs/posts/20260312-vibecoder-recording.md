@@ -18,8 +18,8 @@ notes](https://docs.google.com/document/d/14JhCesbYJI6eNoCaw_KjMOK9mDBs5g0ZNJqxE
 from the event have also been uploaded.
 
 You can find links to all notes and recordings in our [Open Discussions
-page](events/discussions). As the yearly [Improving Scientific Software
-Conference](iss/2026) will take place in early April, we will not have an SEA
+page](../events/discussions.md). As the yearly [Improving Scientific Software
+Conference](../iss/2026/index.md) will take place in early April, we will not have an SEA
 event, but stay tuned for future announcements after ISS.
 
 If you would like to suggest a Discussion topic, or volunteer to lead a
