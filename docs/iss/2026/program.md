@@ -289,7 +289,7 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jesse Nusbaumer</div>
             <div class="cell-content">
     ??? info cell "Opening Remarks"
         </div>
@@ -446,7 +446,7 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jesse Nusbaumer</div>
             <div class="cell-content">
     ??? info cell "Opening Remarks"
         </div>
