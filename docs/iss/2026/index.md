@@ -54,6 +54,10 @@ geosciences will likely find it most relevant.  However, anyone who finds the
 agenda beneficial to them is welcome to attend, even if they do not fit the
 category previously stated.
 
+### Agenda
+
+The agenda for ISS 2026 can be [found here](./program.md).
+
 ### Sponsoring ISS 2026
 
 The 2026 Improving Scientific Software Conference is organized by the UCAR

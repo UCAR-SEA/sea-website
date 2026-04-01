@@ -50,17 +50,16 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jesse Nusbaumer and Doug Schuster</div>
             <div class="cell-content">
     ??? info cell "Opening Remarks"
         </div>
         </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell">Keynote (TBD)</div>
+            <div class="cell">Rory Kelly (Keynote)</div>
             <div class="cell-content">
-    ??? abstract cell "TBD"
-        *TBD*
+    ??? abstract cell "History and Impact of NSF NCAR High Performance Computing"
         </div>
         </div>
         <div class="row">
@@ -263,9 +262,9 @@
 
         As Artificial Intelligence (AI) and Machine Learning (ML) become essential tools for Earth system modeling and prediction, the community faces a growing challenge: how to objectively measure and compare the computational performance of AI/ML workflows across diverse hardware configurations and software stacks. Without standardized performance benchmarks, researchers cannot reliably identify bottlenecks, evaluate optimization strategies, or make informed decisions about resource allocation on high-performance computing systems.
 
-        This presentation introduces a benchmarking initiative focused on quantifying the computational performance of AI/ML workflows for geoscientific applications. We define a suite of standardized metrics capturing GPU utilization, memory bandwidth, I/O throughput, inter-node communication efficiency, and scaling behavior across multi-GPU and multi-node configurations. The benchmark suite includes representative workloads spanning common model architectures and dataset sizes encountered in Earth System Sciences. 
+        This presentation introduces a benchmarking initiative focused on quantifying the computational performance of AI/ML workflows for geoscientific applications. We define a suite of standardized metrics capturing GPU utilization, memory bandwidth, I/O throughput, inter-node communication efficiency, and scaling behavior across multi-GPU and multi-node configurations. The benchmark suite includes representative workloads spanning common model architectures and dataset sizes encountered in Earth System Sciences.
 
-        We present baseline results demonstrating how performance varies with different data loading strategies, parallelization approaches, mixed-precision configurations, and communication backends. These benchmarks reveal where workflows typically underperform, whether due to data starvation, memory pressure, or communication overhead. 
+        We present baseline results demonstrating how performance varies with different data loading strategies, parallelization approaches, mixed-precision configurations, and communication backends. These benchmarks reveal where workflows typically underperform, whether due to data starvation, memory pressure, or communication overhead.
 
         By establishing open, reproducible performance benchmarks in the community, the focus should be on enabling researchers to diagnose inefficiencies in their own workflows, compare infrastructure options, and track improvements over time. Attendees will gain practical guidance on methods to maximize hardware utilization and reduce time-to-solution for large-scale geoscientific AI/ML training.
         </div>
@@ -290,17 +289,23 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jesse Nusbaumer</div>
             <div class="cell-content">
     ??? info cell "Opening Remarks"
         </div>
         </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell">Keynote (TBD)</div>
+            <div class="cell">Panel Discussion</div>
             <div class="cell-content">
-    ??? abstract cell "TBD"
-        *TBD*
+    ??? abstract cell "The Impact of Automation and AI on Software Developers"
+        *Sue Ellen Haupt - NCAR/RAL*
+
+        *Haipeng Lin - NCAR/CGD*
+
+        *Evan Parker - UCAR/JCSDA*
+
+        *Luke Peffers - Nexus Weather*
         </div>
         </div>
         <div class="row">
@@ -441,17 +446,16 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jesse Nusbaumer</div>
             <div class="cell-content">
     ??? info cell "Opening Remarks"
         </div>
         </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell">Keynote (TBD)</div>
+            <div class="cell">Cheryl Craig (Keynote)</div>
             <div class="cell-content">
-    ??? abstract cell "TBD"
-        *TBD*
+    ??? abstract cell "A day in the life of a modern software developer... using the technology of the 1980/early 90's"
         </div>
         </div>
         <div class="row">
