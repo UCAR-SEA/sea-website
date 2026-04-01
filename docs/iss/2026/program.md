@@ -50,7 +50,7 @@
     <div class="table">
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
-            <div class="cell"></div>
+            <div class="cell">Jesse Nusbaumer and Doug Schuster</div>
             <div class="cell-content">
     ??? info cell "Opening Remarks"
         </div>
@@ -296,7 +296,7 @@
         </div>
         <div class="row">
             <div class="cell"><b>8:40 AM</b></div>
-            <div class="cell">Panel discussion (Keynote)</div>
+            <div class="cell">Panel Discussion</div>
             <div class="cell-content">
     ??? abstract cell "The Impact of Automation and AI on Software Developers"
         *Sue Ellen Haupt - NCAR/RAL*
