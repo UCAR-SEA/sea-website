@@ -49,6 +49,13 @@
 === "Monday, April 6"
     <div class="table">
         <div class="row">
+            <div class="cell"><b>8:00 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Doors Open"
+        </div>
+        </div>
+        <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
             <div class="cell">Jesse Nusbaumer and Doug Schuster</div>
             <div class="cell-content">
@@ -288,6 +295,13 @@
 === "Tuesday, April 7"
     <div class="table">
         <div class="row">
+            <div class="cell"><b>8:00 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Doors Open"
+        </div>
+        </div>
+        <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
             <div class="cell">Jesse Nusbaumer</div>
             <div class="cell-content">
@@ -444,6 +458,13 @@
 
 === "Wednesday, April 8"
     <div class="table">
+        <div class="row">
+            <div class="cell"><b>8:00 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Doors Open"
+        </div>
+        </div>
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
             <div class="cell">Jesse Nusbaumer</div>
@@ -634,6 +655,13 @@
 
 === "Thursday, April 9"
     <div class="table">
+        <div class="row">
+            <div class="cell"><b>8:00 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Doors Open"
+        </div>
+        </div>
         <div class="row">
             <div class="cell"><b>8:30 AM</b></div>
             <div class="cell">Felix Hirwa Nshuti</div>
