@@ -218,21 +218,6 @@
         </div>
         <div class="row">
             <div class="cell"><b>2:50 PM</b></div>
-            <div class="cell">Melis Fidansoy</div>
-            <div class="cell-content">
-    ??? abstract cell "Landslide Risk Assessment using Vision-Language Models: A California Case Study"
-
-        *I am a second-year PhD candidate focused on large-scale, software-centric geohazard risk analysis. Additionally, I am working on designing and implementing scalable scientific software for AI-driven environmental hazard analysis and infrastructure resilience and risk assessment for large-scale road networks. My work emphasizes reproducible, performance-aware pipelines that integrate spatiotemporal modeling, high-performance computing, and large-scale geospatial data processing. Moreover, it includes landslide susceptibility modeling, interactive web-based decision support systems, distributed workflow automation, and an open-source, map-based framework that applies vision–language models for spatial reasoning and inference under partial environmental data availability. At ISS 2026, I look forward to engaging with the community on sustainable scientific software practices, modular system design, and the role of interpretable AI tools in environmental decision-support systems.*
-
-        Landslides are a geohazard that affects infrastructure systems, public safety, and climate resilience, particularly in regions such as California, where wet-drought cycles are experienced. They pose threats to transportation infrastructure, including highways and local road networks, where slope failures can cause roadway closures, structural damage, and prolonged service disruptions that delay emergency response and economic activity.
-
-        This talk will introduce an open-source, map-based framework that integrates geospatial datasets, including rainfall, normalized difference vegetation index (NDVI), slope, geology, and historical landslide inventories, into a region-focused landslide risk assessment. For a case study, statewide data from California are processed and visualized to produce high-resolution maps that capture the spatiotemporal environmental conditions associated with landslide occurrence. These maps are used as inputs to vision–language models (VLMs) for spatial reasoning. The framework uses open-source VLMs to perform landslide risk inference under partial data availability. In this setting, NDVI, rainfall, slope, and geology maps from specific time periods are provided as inputs, and VLMs are prompted to identify regions with high landslide susceptibility and to predict high-risk landslide hotspots beyond the input time span.
-
-        The framework performance is evaluated by comparing predicted high-risk regions against documented landslide events. Research results suggest that VLMs can capture meaningful patterns associated with subsequent landslide activity and demonstrate the promise of vision–language modeling as a flexible, interpretable tool for geohazard analysis. In addition to the landslide hazard presented here, the software framework also enables broader use in environmental risk assessment and decision support.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>3:10 PM</b></div>
             <div class="cell">Lee Liming</div>
             <div class="cell-content">
     ??? abstract cell "Globus Auth: Federated Identity and Access Management for Scientific AI Systems"
@@ -247,7 +232,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>3:30 PM</b></div>
+            <div class="cell"><b>3:10 PM</b></div>
             <div class="cell">Damian Rouson</div>
             <div class="cell-content">
     ??? abstract cell "Data reduction and surrogate-model training for cloud microphysics with Fiats"
@@ -260,7 +245,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>3:50 PM</b></div>
+            <div class="cell"><b>3:30 PM</b></div>
             <div class="cell">Negin Sobhani</div>
             <div class="cell-content">
     ??? abstract cell "Benchmarking and Optimizing AI/ML Workflow Performance for Earth System Sciences"
@@ -277,14 +262,14 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>4:10 PM</b></div>
+            <div class="cell"><b>3:50 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "Proceedings Office Hours"
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>5:00 PM</b></div>
+            <div class="cell"><b>4:40 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "end of day"
@@ -477,6 +462,11 @@
             <div class="cell">Cheryl Craig (Keynote)</div>
             <div class="cell-content">
     ??? abstract cell "A day in the life of a modern software developer... using the technology of the 1980/early 90's"
+
+        While we concentrate on increasing computer processor speeds which better our compute performance, I will touch on other developments in the computing environment which had as big an effect, but are not usually discussed.  These advances shaped the landscape of how we go about our day-to-day programming and I propose our enjoyment in our jobs.  
+
+        In this lighthearted presentation, I will take a retrospective look at what programming might be like if the supporting hardware capabilities stalled in the 1980's/early 90's.  Based on the computing environment in my early days at NCAR,  I will look at what it might be like to use that technology to do software development today.  
+
         </div>
         </div>
         <div class="row">
@@ -555,23 +545,6 @@
         </div>
         <div class="row">
             <div class="cell"><b>11:00 AM</b></div>
-            <div class="cell">Endalkachew Gelaw</div>
-            <div class="cell-content">
-    ??? abstract cell "Parallel Performance Characterization of WRF-Hydro using HPC Profiling Tools"
-
-        *Endalkachew Gelaw is a PhD student in Civil and Environmental Engineering at South Dakota Mines. Leveraging prior experience in parallelizing distributed hydrological models for HPC architectures, he is undertaking a parallel performance characterization of WRF-Hydro using Intel profiling tools, complementing his primary research in flood inundation and hydrological modeling. He is particularly interested in research at the intersection of software development and hydrological and hydraulic modeling.*
-
-        Understanding the performance characteristics of large-scale hydrological models is critical for enabling efficient flood forecasting and environmental modeling on high-performance computing (HPC) systems. WRF-Hydro is a widely used hydrological modeling framework that couples atmospheric and hydrologic processes to simulate flood inundation, streamflow, and watershed dynamics. However, as simulations scale to hundreds of cores and process larger spatial and temporal domains, performance bottlenecks—particularly related to communication, computation, and I/O—can limit scalability and increase time-to-solution.
-
-        To investigate these challenges, I conducted a detailed performance study of WRF-Hydro using the standard test case provided by the model developers, running simulations on up to 100 cores. Results from Intel Application Performance Snapshot (APS) show that increasing the number of cores does not yield significant runtime improvements, indicating that WRF-Hydro is strongly MPI-bound and that inter-process communication is a primary bottleneck. Building on these results, I am using Intel HPC Performance Characterization Analysis to examine computational hotspots, memory usage, and communication patterns in greater detail.
-
-        To capture the full behavior of WRF-Hydro under realistic workloads, I plan to extend the standard 11-day test case to a one-year simulation, allowing for a comprehensive view of performance when processing complete hydrometeorological datasets. In addition, I am designing a new large-scale test case with expanded spatial and temporal domains to explore scalability limits and identify potential bottlenecks under extreme scenarios.
-
-        The next phase of the study will leverage Intel MPI Tuner to optimize MPI configurations and explore strategies to alleviate communication bottlenecks. By combining multiple profiling tools and testing across varying temporal and spatial scales, this work provides a comprehensive understanding of WRF-Hydro’s parallel performance. The presentation will share methodology, profiling results, preliminary findings, and insights into practical strategies for diagnosing and improving the performance of large-scale hydrological models on modern HPC architectures.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>11:20 AM</b></div>
             <div class="cell">Jian Sun</div>
             <div class="cell-content">
     ??? abstract cell "Status update of the StormSPEED project"
@@ -589,7 +562,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>11:40 AM</b></div>
+            <div class="cell"><b>11:20 AM</b></div>
             <div class="cell">Ren Stengel</div>
             <div class="cell-content">
     ??? abstract cell "Evaluating the feasibility of language interoperability for atmospheric modeling using CAM parameterizations in E3SM"
@@ -598,6 +571,13 @@
 
         Many atmospheric legacy codes are written in Fortran, which can make them challenging to port and run efficiently on newer high-performance computing systems. Additionally, as Fortran becomes less favored in the software engineering community, many researchers are starting to write physics models in modern languages such as Python, Python/JAX, and Julia. However, sharing progress and physics capabilities between these different language versions is non-trivial and rarely done in practice. We use EAMxx, the atmospheric model hosted in E3SM, to explore the feasibility of linking atmospheric parameterizations written in different languages into one system.
         EAMxx is written in C++/Kokkos offers direct interoperability support as well as code portability. We first describe the process of adding trivial parameterizations written in C++, Kokkos, Fortran, and Python in production configurations of EAMxx. We also take advantage of the recent work of converting CAM physics to be compliant with the Common Community Physics Package (CCPP); this recent development allows for CAM physics parameterizations to be utilized outside of CAM. We describe the process and effort to port the CCPP-enabled Kessler parameterization from CAM into EAMxx and provide preliminary results of the effort.
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>11:40 AM</b></div>
+            <div class="cell"></div>
+            <div class="cell-content">
+    ??? info cell "Discussion"
         </div>
         </div>
         <div class="row">
@@ -633,22 +613,16 @@
         </div>
         <div class="row">
             <div class="cell"><b>3:40 PM</b></div>
-            <div class="cell">Jesse Nusbaumer</div>
+            <div class="cell"></div>
             <div class="cell-content">
-    ??? abstract cell "Challenges in support large legacy codebases"
-
-        *Jesse Nusbaumer is a software engineer at the National Center for Atmospheric Research (NCAR), where he helps maintain the Community Atmosphere Model (CAM), a decades-old, million line Fortran code for simulating the atmosphere, and works on developing its eventual replacement, CAM-SIMA.*
-
-        Many scientific fields have large, legacy software and modeling systems that are supported by a relatively small number of people, which can result in difficult engineering decisions and a potential worsening in software quality/technical debt over time, particularly if users desire the continued addition of new features or capabilities.  As a software engineer maintaining one of these legacy systems, I have run into these exact kinds of issues, as well as seen various attempts at trying to make the software better.
-
-        This talk will be a somewhat-informal talk where I describe in more detail my team's experiences with a large legacy software system, what has (and has not) worked to try and improve the software, and what I would personally do if I could magically make all the decisions.  Ultimately I will try to argue that it is not the technical constraints themselves that are the root problem, as much as the managerial and financial constraints that are placed on these systems and their developers/contributors .
+    ??? info cell "end of day"
         </div>
         </div>
         <div class="row">
             <div class="cell"><b>4:00 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
-    ??? info cell "end of day"
+    ??? info cell "Social at Rayback Collective"
         </div>
         </div>
     </div>
@@ -813,21 +787,6 @@
         </div>
         <div class="row">
             <div class="cell"><b>1:00 PM</b></div>
-            <div class="cell">Ian Kim</div>
-            <div class="cell-content">
-    ??? note cell "EdgeOptimizer: An End-to-End Toolkit for AI Model Specification and Optimization for Mobile Deployment"
-
-        *Dr. Ian Kim is a Postdoctoral Fellow at Stanford University, specializing in Big Data and AI/ML. His current research focuses on developing AI model optimization techniques for edge deployment, to enhance their applications in digital health, behavior modeling, and embedded intelligence. He has spearheaded open-source initiatives aimed at creating comprehensive, end-to-end infrastructures that eliminate technical, financial, and logistical barriers, thereby democratizing access to Big Data and AI/ML in academic research. Notable projects include Stanford Screenomics, DOSE, and EdgeOptimizer.*
-
-        This 2-hour hands-on workshop introduces EdgeOptimizer, a comprehensive toolkit designed to streamline the specification, optimization, and deployment of AI models on mobile and wearable devices. Participants will learn to use a single declarative configuration file to define model inputs, outputs, architectures, and optimization strategies. EdgeOptimizer automatically generates, trains, and optimizes models through techniques such as pruning, quantization, low-rank factorization, and hardware-aware vectorization, resulting in models ready for real-time on-device deployment.
-
-        Through guided exercises, attendees will build and optimize their own models, evaluate performance, and deploy them to smartphone and wearable platforms. The workshop will demonstrate how these optimization techniques enhance efficiency, reduce memory and energy consumption, and enable continuous on-device inference, even for complex multimodal applications. We will also explore real-world domains where lightweight, adaptive edge AI is critical, including mobile health interventions, digital phenotyping, behavior modeling, real-time sensing, and embedded intelligence.
-
-        By the end of the workshop, participants will have practical experience with the entire workflow, from model specification to optimized deployment, and will be prepared to incorporate EdgeOptimizer into their own mobile and edge AI projects.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>3:10 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "End of Conference"
