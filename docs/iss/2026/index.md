@@ -202,7 +202,7 @@ to a conference collection on Zenodo.
 For paper submissions, we ask that authors leverage one of the
 [IEEE manuscript templates for conference proceedings](https://www.ieee.org/conferences/publishing/templates)
 and follow [their guidance on topics such as recycled material and the use of generative AI](https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/).
-Papers should be roughly 3000-6000 words excluding references.
+Papers should be roughly 3000-6000 words including references.
 Papers will undergo a light, single-blind review process to ensure the content
 is technically sound, clearly written, provides appropriate documentation and
 references, and adheres to submission guidelines.
