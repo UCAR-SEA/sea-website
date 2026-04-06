@@ -246,30 +246,13 @@
         </div>
         <div class="row">
             <div class="cell"><b>3:30 PM</b></div>
-            <div class="cell">Negin Sobhani</div>
-            <div class="cell-content">
-    ??? abstract cell "Benchmarking and Optimizing AI/ML Workflow Performance for Earth System Sciences"
-
-        *Negin Sobhani is an HPC Consultant at the National Center for Atmospheric Research (NCAR), where she supports researchers in optimizing computational workflows for Earth system modeling and prediction. Her expertise spans high-performance computing, distributed training strategies, and AI/ML applications in geosciences. She works closely with the scientific community to improve GPU utilization, scalability, and performance of large-scale machine learning workflows on HPC systems.*
-
-        As Artificial Intelligence (AI) and Machine Learning (ML) become essential tools for Earth system modeling and prediction, the community faces a growing challenge: how to objectively measure and compare the computational performance of AI/ML workflows across diverse hardware configurations and software stacks. Without standardized performance benchmarks, researchers cannot reliably identify bottlenecks, evaluate optimization strategies, or make informed decisions about resource allocation on high-performance computing systems.
-
-        This presentation introduces a benchmarking initiative focused on quantifying the computational performance of AI/ML workflows for geoscientific applications. We define a suite of standardized metrics capturing GPU utilization, memory bandwidth, I/O throughput, inter-node communication efficiency, and scaling behavior across multi-GPU and multi-node configurations. The benchmark suite includes representative workloads spanning common model architectures and dataset sizes encountered in Earth System Sciences.
-
-        We present baseline results demonstrating how performance varies with different data loading strategies, parallelization approaches, mixed-precision configurations, and communication backends. These benchmarks reveal where workflows typically underperform, whether due to data starvation, memory pressure, or communication overhead.
-
-        By establishing open, reproducible performance benchmarks in the community, the focus should be on enabling researchers to diagnose inefficiencies in their own workflows, compare infrastructure options, and track improvements over time. Attendees will gain practical guidance on methods to maximize hardware utilization and reduce time-to-solution for large-scale geoscientific AI/ML training.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>3:50 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "Proceedings Office Hours"
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>4:40 PM</b></div>
+            <div class="cell"><b>4:20 PM</b></div>
             <div class="cell"></div>
             <div class="cell-content">
     ??? info cell "end of day"
