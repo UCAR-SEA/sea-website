@@ -209,6 +209,9 @@ references, and adheres to submission guidelines.
 
 For slides, please follow [these instructions from Zenodo](https://help.zenodo.org/docs/share/submit-for-review/)
 to upload your content and submit to our [conference community](https://zenodo.org/communities/iss26).
+If you have already uploaded your slides to Zenodo, you may follow [these
+instructions](https://help.zenodo.org/docs/share/submit-to-community/) to
+submit them to the conference community.
 
 For computational notebooks, please upload your materials to a public GitHub
 repository including a README file with a short description and enough
@@ -218,12 +221,14 @@ and [submitted to the conference community](https://help.zenodo.org/docs/share/s
 Notebooks will undergo a light review to ensure reproducibility, relevance,
 and technical correctness.
 
-Paper submissions will be due April 24th, 2026.  Slides and computational
-notebooks should be submitted to Zenodo by the end of the conference.
+Paper submissions will be due April 24th, 2026 and should be submitted via
+email to the [ISS Proceedings committee](mailto:iss_proceedings@ucar.edu).
+Slides and computational notebooks should be submitted to Zenodo by the end
+of the conference week.
 
-If you have any questions, please email the [ISS Proceedings
+If you have any questions or concerns, please email the [ISS Proceedings
 committee](mailto:iss_proceedings@ucar.edu). We also plan to host office hours
-during the conference if you have questions before the submission deadline.
+during the conference if you have questions before the submission deadlines.
 
 ## Code of Conduct
 
