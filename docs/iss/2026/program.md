@@ -527,7 +527,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>11:00 PM</b></div>
+            <div class="cell"><b>11:00 AM</b></div>
             <div class="cell">Negin Sobhani</div>
             <div class="cell-content">
     ??? abstract cell "Benchmarking and Optimizing AI/ML Workflow Performance for Earth System Sciences"
