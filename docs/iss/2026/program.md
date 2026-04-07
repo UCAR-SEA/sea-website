@@ -527,7 +527,24 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>11:00 AM</b></div>
+            <div class="cell"><b>11:00 PM</b></div>
+            <div class="cell">Negin Sobhani</div>
+            <div class="cell-content">
+    ??? abstract cell "Benchmarking and Optimizing AI/ML Workflow Performance for Earth System Sciences"
+
+        *Negin Sobhani is an HPC Consultant at the National Center for Atmospheric Research (NCAR), where she supports researchers in optimizing computational workflows for Earth system modeling and prediction. Her expertise spans high-performance computing, distributed training strategies, and AI/ML applications in geosciences. She works closely with the scientific community to improve GPU utilization, scalability, and performance of large-scale machine learning workflows on HPC systems.*
+
+        As Artificial Intelligence (AI) and Machine Learning (ML) become essential tools for Earth system modeling and prediction, the community faces a growing challenge: how to objectively measure and compare the computational performance of AI/ML workflows across diverse hardware configurations and software stacks. Without standardized performance benchmarks, researchers cannot reliably identify bottlenecks, evaluate optimization strategies, or make informed decisions about resource allocation on high-performance computing systems.
+
+        This presentation introduces a benchmarking initiative focused on quantifying the computational performance of AI/ML workflows for geoscientific applications. We define a suite of standardized metrics capturing GPU utilization, memory bandwidth, I/O throughput, inter-node communication efficiency, and scaling behavior across multi-GPU and multi-node configurations. The benchmark suite includes representative workloads spanning common model architectures and dataset sizes encountered in Earth System Sciences.
+
+        We present baseline results demonstrating how performance varies with different data loading strategies, parallelization approaches, mixed-precision configurations, and communication backends. These benchmarks reveal where workflows typically underperform, whether due to data starvation, memory pressure, or communication overhead.
+
+        By establishing open, reproducible performance benchmarks in the community, the focus should be on enabling researchers to diagnose inefficiencies in their own workflows, compare infrastructure options, and track improvements over time. Attendees will gain practical guidance on methods to maximize hardware utilization and reduce time-to-solution for large-scale geoscientific AI/ML training.
+        </div>
+        </div>
+        <div class="row">
+            <div class="cell"><b>11:20 AM</b></div>
             <div class="cell">Jian Sun</div>
             <div class="cell-content">
     ??? abstract cell "Status update of the StormSPEED project"
@@ -545,7 +562,7 @@
         </div>
         </div>
         <div class="row">
-            <div class="cell"><b>11:20 AM</b></div>
+            <div class="cell"><b>11:40 AM</b></div>
             <div class="cell">Ren Stengel</div>
             <div class="cell-content">
     ??? abstract cell "Evaluating the feasibility of language interoperability for atmospheric modeling using CAM parameterizations in E3SM"
@@ -554,13 +571,6 @@
 
         Many atmospheric legacy codes are written in Fortran, which can make them challenging to port and run efficiently on newer high-performance computing systems. Additionally, as Fortran becomes less favored in the software engineering community, many researchers are starting to write physics models in modern languages such as Python, Python/JAX, and Julia. However, sharing progress and physics capabilities between these different language versions is non-trivial and rarely done in practice. We use EAMxx, the atmospheric model hosted in E3SM, to explore the feasibility of linking atmospheric parameterizations written in different languages into one system.
         EAMxx is written in C++/Kokkos offers direct interoperability support as well as code portability. We first describe the process of adding trivial parameterizations written in C++, Kokkos, Fortran, and Python in production configurations of EAMxx. We also take advantage of the recent work of converting CAM physics to be compliant with the Common Community Physics Package (CCPP); this recent development allows for CAM physics parameterizations to be utilized outside of CAM. We describe the process and effort to port the CCPP-enabled Kessler parameterization from CAM into EAMxx and provide preliminary results of the effort.
-        </div>
-        </div>
-        <div class="row">
-            <div class="cell"><b>11:40 AM</b></div>
-            <div class="cell"></div>
-            <div class="cell-content">
-    ??? info cell "Discussion"
         </div>
         </div>
         <div class="row">
