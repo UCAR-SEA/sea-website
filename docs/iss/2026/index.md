@@ -221,10 +221,10 @@ and [submitted to the conference community](https://help.zenodo.org/docs/share/s
 Notebooks will undergo a light review to ensure reproducibility, relevance,
 and technical correctness.
 
-Paper submissions will be due April 24th, 2026 and should be submitted via
+Paper submissions will be due May 1st, 2026 and should be submitted via
 email to the [ISS Proceedings committee](mailto:iss_proceedings@ucar.edu).
-Slides and computational notebooks should be submitted to Zenodo by the end
-of the conference week.
+Slides and computational notebooks should be submitted to Zenodo by
+May 1st, 2026.
 
 If you have any questions or concerns, please email the [ISS Proceedings
 committee](mailto:iss_proceedings@ucar.edu). We also plan to host office hours
