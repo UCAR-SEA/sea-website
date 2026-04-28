@@ -5,7 +5,7 @@
 </style>
 
 <figure markdown="span">
-    <img src="../../assets/iss2026.png" alt="drawing" width="70%"/>
+    <img src="../../../assets/iss2026.png" alt="drawing" width="80%"/>
     <figcaption>**Maintaining the Joy of Software Development**</figcaption>
 </figure>
 
