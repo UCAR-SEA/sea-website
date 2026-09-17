@@ -11,15 +11,20 @@ The SEA Steering Committee is currently comprised by the following members from 
 * Janine Aquino
 * Orhan Eroglu
 * Ward Fisher
-* Katelyn FitzGerald
 * Erik Johnson
 * Jesse Nusbaumer (chair)
+* Paul Prestopnik
 * Sam Rabin
 * Sam Scalise (admin support)
 * Kyle Shores
 * Marlee Smith
-* Negin Sobhani
 * Sheri Voelz
 * Haiying Xu
+
+### Committee Alumni
+
+* Brian Vanderwende (ex-chair)
+* Katelyn FitzGerald
+* Negin Sobhani
 
 To contact the Steering Committee, please send an email to <sea_committee@ucar.edu> or reach out us on Slack.
