@@ -8,18 +8,18 @@ The mission of the UCAR Software Engineering Assembly is to foster a sense of co
 
 The SEA Steering Committee is currently comprised by the following members from across the organization:
 
-* Janine Aquino
-* Orhan Eroglu
-* Ward Fisher
-* Erik Johnson
-* Jesse Nusbaumer (chair)
-* Paul Prestopnik
-* Sam Rabin
-* Sam Scalise (admin support)
-* Kyle Shores
-* Marlee Smith
-* Sheri Voelz
-* Haiying Xu
+* Janine Aquino (NCAR/EOL)
+* Orhan Eroglu (NCAR/CISL)
+* Ward Fisher (UCP/UNIDATA)
+* Erik Johnson (NCAR/EOL)
+* Jesse Nusbaumer (chair, NCAR/CGD)
+* Paul Prestopnik (NCAR/RAL)
+* Sam Rabin (NCAR/CGD)
+* Sam Scalise (admin support, NCAR/CISL)
+* Kyle Shores (NCAR/ACOM)
+* Marlee Smith (NCAR/CISL)
+* Sheri Voelz (NCAR/CISL)
+* Haiying Xu (NCAR/CISL)
 
 ### Committee Alumni
 
